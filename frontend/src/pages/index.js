@@ -1,5 +1,12 @@
-import React from "react"
+import React from "react";
 
+
+import Nav from '../components/Nav.js';
+import Layout from '../components/Layout.js';
 export default function Home() {
-  return <div>Hello world!</div>
+  return(
+    <>
+      <p>Hello this is the homepage</p>
+    </>
+  )
 }

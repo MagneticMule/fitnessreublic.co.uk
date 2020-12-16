@@ -24,7 +24,8 @@ module.exports = {
         graphqlTag: 'default',
       },
     },
-    // ...
+      {resolve: `gatsby-plugin-styled-components`},
+
   ],
-  // ...
+
 }
