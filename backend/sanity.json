@@ -12,6 +12,7 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
+    "@sanity/dashboard",
     "@sanity/desk-tool",
     "mux-input",
     "asset-source-unsplash",
@@ -19,8 +20,8 @@
     "seo-tools",
     "@sanity/color-input",
     "dashboard-widget-netlify",
-    "@sanity/dashboard",
-    "tabs"
+    "tabs",
+    "dashboard-widget-document-chart"
   ],
   "env": {
     "development": {
@@ -33,6 +34,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "src/dashboardConfig.js"
     }
   ]
 }
