@@ -69,8 +69,8 @@ class HomeIndex extends React.Component {
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Ipsum</h3>
-                  <p>Nisl sed aliquam</p>
+                  <h3>The Team</h3>
+                  <p>All About Us</p>
                 </header>
               </Link>
             </article>
@@ -99,6 +99,8 @@ class HomeIndex extends React.Component {
               </Link>
             </article>
           </section>
+
+
           <section id="two">
             <div className="inner">
               <header className="major">
