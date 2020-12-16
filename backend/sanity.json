@@ -13,8 +13,14 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "dark-mode",
-    "mux-input"
+    "mux-input",
+    "asset-source-unsplash",
+    "media",
+    "seo-tools",
+    "@sanity/color-input",
+    "dashboard-widget-netlify",
+    "@sanity/dashboard",
+    "tabs"
   ],
   "env": {
     "development": {

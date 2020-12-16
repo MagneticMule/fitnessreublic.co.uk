@@ -5,11 +5,15 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // object schemas
-import staffMember from './objects/staffMember.js';
+import hero from './objects/hero.js';
 import news from './objects/news.js';
+import staffMember from './objects/staffMember.js';
+import staff from './objects/staff.js';
+import businessDetails from './objects/businessDetails.js';
 
 // document schemas
 import page from './documents/page.js';
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,7 +24,10 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     staffMember,
+    staff,
+    page,
+    businessDetails,
+    hero,
     news,
-    page
   ]),
 })
