@@ -17,7 +17,7 @@ class HomeIndex extends React.Component {
         <Helmet
           title="Fitness Republic - Gym in Ashby De La Zouch"
           meta={[
-            { name: 'description', content: 'Hello, we are Fitness Republic! A family run gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a fun and  friendly environment, all at an amazing affordable cost.' },
+            { name: 'description', content: 'Hello, we are Fitness Republic! A family run gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a fun and friendly environment, all at an amazing affordable cost.' },
             { name: 'keywords', content: 'gym, fitness, personal training, ashby, leicestershire' },
           ]}
         ></Helmet>
@@ -40,7 +40,7 @@ class HomeIndex extends React.Component {
               <ul className="actions">
                 <li>
                   <a href="https://app.clubright.co.uk/c/fitnessrepublic/register"
-                    aria-label="Link to Landing Page"
+                    aria-label="Link to Clubright Website"
                     className="button special"
                   >
                     JOIN NOW
@@ -98,30 +98,7 @@ class HomeIndex extends React.Component {
                 </header>
               </Link>
             </article>
-            <article style={{ backgroundImage: `url(${pic05})` }}>
-              <Link
-                aria-label="Link to Landing Page"
-                to="/landing"
-                className="link primary"
-              >
-                <header className="major">
-                  <h3>Consequat</h3>
-                  <p>Ipsum dolor sit amet</p>
-                </header>
-              </Link>
-            </article>
-            <article style={{ backgroundImage: `url(${pic06})` }}>
-              <Link
-                aria-label="Link to Landing Page"
-                to="/landing"
-                className="link primary"
-              >
-                <header className="major">
-                  <h3>Classes</h3>
-                  <p>Group training activities both on site and over the web</p>
-                </header>
-              </Link>
-            </article>
+
           </section>
 
 

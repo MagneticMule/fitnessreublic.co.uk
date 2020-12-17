@@ -14,7 +14,7 @@ const Banner = props => (
         </p>
         <ul className="actions">
           <li>
-            <a href="#one" name="Get Started" className="button next scrolly">
+            <a href="#two" name="Get Started" className="button next scrolly">
               FREE SEVEN DAY PASS
             </a>
           </li>
