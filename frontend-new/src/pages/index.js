@@ -25,6 +25,30 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div id="main">
+          <section id="news">
+            <div className="inner">
+              <header className="major">
+                <h2>10% OFF MEMBERSHIP FEE'S</h2>
+              </header>
+              <p>
+               <h3>THIS JANUARY WE WANT YOU!</h3>
+
+                We are offering <strong>10% off our range of memberships each month</strong> when you pay  by direct debit.
+                <br/>
+                Remember at Fitness Republic there are <strong>no Joining Fee's</strong> and <strong>no contracts</strong>.
+              </p>
+              <ul className="actions">
+                <li>
+                  <a href="https://app.clubright.co.uk/c/fitnessrepublic/register"
+                    aria-label="Link to Landing Page"
+                    className="button special"
+                  >
+                    JOIN NOW
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
           <section id="one" className="tiles">
             <article style={{ backgroundImage: `url(${pic01})` }}>
               <Link
