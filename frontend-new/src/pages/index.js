@@ -5,8 +5,6 @@ import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
-import pic05 from '../assets/images/pic05.jpg'
-import pic06 from '../assets/images/pic06.jpg'
 import Banner from '../components/Banner'
 import Layout from '../components/layout'
 
@@ -39,12 +37,13 @@ class HomeIndex extends React.Component {
               </p>
               <ul className="actions">
                 <li>
-                  <a href="https://app.clubright.co.uk/c/fitnessrepublic/register"
-                    aria-label="Link to Clubright Website"
+                  <Link
+                    aria-label="Link to Membership Plans Page"
+                    to="/membership"
                     className="button special"
                   >
                     JOIN NOW
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -52,8 +51,8 @@ class HomeIndex extends React.Component {
           <section id="one" className="tiles">
             <article style={{ backgroundImage: `url(${pic01})` }}>
               <Link
-                aria-label="Link to Landing Page"
-                to="/landing"
+                aria-label="Link to Membership Page"
+                to="/membership"
                 className="link primary"
               >
                 <header className="major">
@@ -64,8 +63,8 @@ class HomeIndex extends React.Component {
             </article>
             <article style={{ backgroundImage: `url(${pic02})` }}>
               <Link
-                aria-label="Link to Landing Page"
-                to="/landing"
+                aria-label="Link to Membership Page"
+                to="/membership"
                 className="link primary"
               >
                 <header className="major">
@@ -98,7 +97,6 @@ class HomeIndex extends React.Component {
                 </header>
               </Link>
             </article>
-
           </section>
 
 
