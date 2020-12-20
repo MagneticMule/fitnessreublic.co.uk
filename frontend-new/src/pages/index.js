@@ -7,6 +7,7 @@ import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 import Banner from '../components/Banner'
 import Layout from '../components/layout'
+import Form from '../components/Form'
 
 class HomeIndex extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class HomeIndex extends React.Component {
         ></Helmet>
 
         <Banner />
+        <Form/>
 
         <div id="main">
           <section id="news">
