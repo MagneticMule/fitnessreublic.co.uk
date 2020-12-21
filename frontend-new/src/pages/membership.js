@@ -21,15 +21,11 @@ const Membership = (props) => (
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                        <h2>Pure Gym Memberships</h2>
+                        <h2>Gym and Class Memberships</h2>
                     </header>
-                    <p>Our <strong>Pure Gym</strong> memberships give you access to our...etc</p>
-                    <h4>SIMON, are you still offering Gym only memberships, without classes? I am thinking we sort these plans out in terms of what is on offer. e.g. </h4>
-                    <ul className="alt">
-                        <li>Pure Gym</li>
-                        <li>Gym and Classes</li>
-                        <li>Maybe Gym Classes and some Personal Training???</li>
-                    </ul>
+                    <p>Simon, can you write a little about what the benfits are of this membership?
+                    <br/> So, Gym and class. We probably want to say something about Classes taking place online AND at the Gym when lock down isnt an issue?</p>
+
                 </div>
             </section>
             <section id="two">
@@ -41,7 +37,7 @@ const Membership = (props) => (
                             <header>
                                 <h3>Single Adult Monthly</h3>
                             </header>
-                            <p>Full access to the Gym facilities for one person.</p>
+                                                     <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <p><strong>£32.99</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
@@ -55,7 +51,7 @@ const Membership = (props) => (
                             <header>
                                 <h3>Joint Adult Monthly</h3>
                             </header>
-                            <p>Full access to the Gym facilities for one person.</p>
+                                                     <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <p><strong>£55.00</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
@@ -69,7 +65,7 @@ const Membership = (props) => (
                             <header>
                                 <h3>Single Adult Annual</h3>
                             </header>
-                            <p>Full access to the Gym facilities for one person.</p>
+                                                     <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <p><strong>£299</strong> Per Year</p>
                             <p>Payable either In Person or Onine</p>
                             <ul className="actions">
@@ -78,16 +74,34 @@ const Membership = (props) => (
                         </div>
                     </div>
 
+                    <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Single Adult Class Only</h3>
+                            </header>
+                            <p>Full access to fitness classes only. No gym access.</p>
+                            <p><strong>£25.99</strong> Per Year</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
 
-        <section id="three">
-                <div className="inner">
-                    <header className="major">
-                        <h2>Standard Memberships</h2>
-                    </header>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+                    <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Student Monthly</h3>
+                            </header>
+                            <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <p><strong>£25.99</strong> Per Year</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </section>
         </div>

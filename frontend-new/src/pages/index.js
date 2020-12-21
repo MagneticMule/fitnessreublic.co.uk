@@ -22,7 +22,7 @@ class HomeIndex extends React.Component {
         ></Helmet>
 
         <Banner />
-        <Form/>
+
 
         <div id="main">
           <section id="news">

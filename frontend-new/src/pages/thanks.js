@@ -2,8 +2,8 @@ import React from 'react'
 
 const thanks= (props) => (
   <>
-    <h1>Thank you!</h1>
-    <p>gfd</p>
+    <h2>Thank you {props.name}</h2>
+    <p>We will be back in touch with you shortly.</p>
   </>
 
 )
