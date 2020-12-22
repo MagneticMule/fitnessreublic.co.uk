@@ -72,7 +72,7 @@ const Training = (props) => (
 
                     <div className="inner">
                     <header className="major">
-                        <h2>Memberships with Physical Training</h2>
+                        <h2>With Physical Training</h2>
                     </header>
                     <p>Personal Training can help you gain the most from your time at Fitness Republic. We offer three packages with combine the benefits of free gym access, classes and one on one personal training sessions.</p>
 
