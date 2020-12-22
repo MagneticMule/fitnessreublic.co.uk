@@ -18,17 +18,18 @@ const Membership = (props) => (
         <BannerMembership />
 
         <div id="main">
-            <section id="one">
+            <section id="standard">
                 <div className="inner">
                     <header className="major">
                         <h2>Gym and Class Memberships</h2>
                     </header>
-                    <p>Simon, can you write a little about what the benfits are of this membership?
-                    <br/> So, Gym and class. We probably want to say something about Classes taking place online AND at the Gym when lock down isnt an issue?</p>
+                    <p>We have a mission to help as many people as possible achieve a healthy and strong body. Being fit and healthy has been proven to make all areas of life better, with a healthier body comes a healthier mind and a happier life.
+                    These are our most popular monthly Direct Debit membership packages, by clicking Choose Plan, you will be directed to our registration page, and here, once registered, you will be able to see all of our options.</p>
+                    <p>Once on the membership page scroll down to the bottom, and input the code <strong>10OFF</strong> into the promo code box to reveal the 10% off options.</p>
 
+                    <h4>Remember, this month we have 10% off our Direct Debit Memberships.</h4>
                 </div>
-            </section>
-            <section id="two">
+
                 <div className="inner">
                 <div className="grid-wrapper">
 
@@ -37,7 +38,7 @@ const Membership = (props) => (
                             <header>
                                 <h3>Single Adult Monthly</h3>
                             </header>
-                                                     <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <p><strong>£32.99</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
@@ -51,7 +52,7 @@ const Membership = (props) => (
                             <header>
                                 <h3>Joint Adult Monthly</h3>
                             </header>
-                                                     <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                                                     <p>Full access to the Gym facilities and fitness classes for two people.</p>
                             <p><strong>£55.00</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
@@ -88,7 +89,25 @@ const Membership = (props) => (
                         </div>
                     </div>
 
-                    <div className="col-4">
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="student">
+
+                    <div className="inner">
+                    <header className="major">
+                        <h2>Student Membership</h2>
+                    </header>
+                    <p>Supporting youth training
+                    Fitness Republic is a very supportive of encouraging the whole family to exercise. This is why we support training from the age of 14 with our Student Membership. Getting started at an early age is found to be extremely beneficial to the success of keeping fit for life. We help and guide our younger members in the gym and class facility with expert advice and continued guidance and supervision. Correct form and technique is encouraged and shown on a continued basis, helping you get the best out of your training, safely and effectivly.
+                    </p>
+                    <p>If you are under 16 years of age we will require a written consent form to be signed by your guardian and brought into us at the gym. Download the print consent form here.</p>
+
+
+
+                <div className="col-4">
                     <div className="content box align-center">
                             <header>
                                 <h3>Student Monthly</h3>
@@ -101,12 +120,24 @@ const Membership = (props) => (
                             </ul>
                         </div>
                     </div>
-                    </div>
                 </div>
             </section>
-        </div>
+             <section id="student">
 
-    </Layout>
+                    <div className="inner">
+                    <header className="major">
+                        <h2>Cancellation</h2>
+                    </header>
+                    <p>Memberships cannot be cancelled prior to the agreed contract length that you have signed up for and the last payment has been made. A contract may be cancelled once the final payment has been made; this requires 30 days notice to Fitness Republic.</p>
+
+                    <p>Please email info@fitnessrepublic.co.uk with your cancellation request. Upon receiving your email a cancellation form will be emailed to you to complete and be returned. Cancellations cannot be actioned until receipt of your cancellation form. please note one final payment may be due this will depend on weather your current payment falls within the 30 day cancellation period.</p>
+                </div>
+                </section>
+                </div>
+           </Layout>
+
+
+
 )
 
 export default Membership
