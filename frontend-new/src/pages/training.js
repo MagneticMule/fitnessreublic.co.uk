@@ -14,22 +14,20 @@ const Training = (props) => (
         <BannerTraining />
 
         <div id="main">
-            <section id="one">
+            <section id="intro">
                 <div className="inner">
-                    <header className="major">
-                        <h4>What is Personal Training?</h4>
-                    </header>
+
+
+                <h4>What is Personal Training?</h4>
+
                     <p>A Personal Trainer is a qualified Fitness Coach who possesses the knowledge and ability to an exercise programme and Nutrition plan suited to your individual health and fitness goals.
-                    Our Coaches are much more than just personal trainers, that’s why we call ourselves Coaches, we go the extra mile to get you results. Coaching you to success is a passion of ours, we know how good it feels to see you succeed. To see your confidence grow along with your increased fitness and a decreased waistline!</p>
+                    Our Coaches are much more than just personal trainers, that’s why we call ourselves Coaches, we go the extra mile to get you results. Coaching you to success is a passion of ours, we know how good it feels to see you succeed and witness your confidence grow along with your increased fitness and a decreased waistline!</p>
 
-                    <hr/>
 
-                <header className="major">
-                        <h4>Why Hire a Personal Trainer?</h4>
-                    </header>
+                <h4>Why Hire a Personal Trainer?</h4>
+
                     <p>There are many benefits to having a personal coach with you in the gym. Knowing that you have someone on your side helping you to achieve a better version of yourself gives you the confidence to know you can achieve your fitness goals, we give you the push you need on the days you really don’t feel like working out and always make sure you get the best out of your training sessions.</p>
 
-                    <hr/>
 
                      <header className="major">
                         <h4>The Fitness Republic Personal Coaching Difference</h4>
@@ -67,7 +65,68 @@ const Training = (props) => (
                     </dl>
 
                 </div>
+                </section>
+
+
+                 <section id="membership">
+
+                    <div className="inner">
+                    <header className="major">
+                        <h2>Memberships with Physical Training</h2>
+                    </header>
+                    <p>Personal Training can help you gain the most from your time at Fitness Republic. We offer three packages with combine the benefits of free gym access, classes and one on one personal training sessions.</p>
+
+
+               <div className="grid-wrapper">
+                <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Bronze Package</h3>
+                            </header>
+                            <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <p>One personal training session per month.</p>
+                            <hr/>
+                            <p><strong>£62.99</strong> Per Month</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Silver Package</h3>
+                            </header>
+                            <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <p>Two personal training session per month.</p>
+                            <hr/>
+                            <p><strong>£82.99</strong> Per Month</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Gold Package</h3>
+                            </header>
+                            <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <p>Four personal training session per month.</p>
+                            <hr/>
+                            <p><strong>£99.99</strong> Per Month</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </section>
+
             </div>
 
            </Layout>

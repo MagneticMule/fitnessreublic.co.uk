@@ -106,23 +106,84 @@ const Membership = (props) => (
                     <p>If you are under 16 years of age we will require a written consent form to be signed by your guardian and brought into us at the gym. Download the print consent form here.</p>
 
 
-
+                <div className="grid-wrapper">
                 <div className="col-4">
                     <div className="content box align-center">
                             <header>
                                 <h3>Student Monthly</h3>
                             </header>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
-                            <p><strong>£25.99</strong> Per Year</p>
+                            <hr/>
+                            <p><strong>£25.99</strong> Per Month</p>
                             <p>Payable via Monthly Direct Debit</p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
                             </ul>
                         </div>
                     </div>
+                    </div>
                 </div>
             </section>
-             <section id="student">
+
+            <section id="training">
+
+                    <div className="inner">
+                    <header className="major">
+                        <h2>Memberships with Physical Training</h2>
+                    </header>
+                    <p>Personal Training can help you gain the most from your time at Fitness Republic. We offer three packages with combine the benefits of free gym access, classes and one on one personal training sessions.</p>
+
+
+               <div className="grid-wrapper">
+                <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Bronze Package</h3>
+                            </header>
+                            <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <p>One personal training session per month.</p>
+                            <hr/>
+                            <p><strong>£62.99</strong> Per Month</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Silver Package</h3>
+                            </header>
+                            <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <p>Two personal training session per month.</p>
+                            <hr/>
+                            <p><strong>£82.99</strong> Per Month</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Gold Package</h3>
+                            </header>
+                            <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <p>Four personal training session per month.</p>
+                            <hr/>
+                            <p><strong>£99.99</strong> Per Month</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+             <section id="policy">
 
                     <div className="inner">
                     <header className="major">
