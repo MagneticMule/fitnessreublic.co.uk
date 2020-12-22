@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerMembership from '../components/BannerMembership'
+import FormSevenDayPass from '../components/FormSevenDayPass'
 
 import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
@@ -16,8 +17,27 @@ const Membership = (props) => (
         </Helmet>
 
         <BannerMembership />
+        <div className="inner">
+
+        </div>
 
         <div id="main">
+            <section id="freepass">
+                <div className="inner">
+                    <header className="major">
+                        <h2>Free Seven Day Pass</h2>
+                    </header>
+                    <p>Our Free Pass to gives you the opportunity to try out our facility before you commit. You can try the Gym, Classes, and our Personal Training service all FREE. If you feel comfortable to train on your own please feel free to pop in at anytime, we will just ask you to fill in a medical questionnaire before you start training.
+
+                    To get started with your seven day pass just fill out the form below with your Name, Email and Phone Number so we can get back in contact with you as soon as possible.
+                    </p>
+                    <p>
+                        The free pass is available to people local to Ashby de la Zouch and surrounding areas.
+
+                    If you are only working in Ashby de la Zouch for a short period of time please let us know in the form below and we can chat about what we can do for you.</p>
+                    <FormSevenDayPass />
+                </div>
+            </section>
             <section id="standard">
                 <div className="inner">
                     <header className="major">

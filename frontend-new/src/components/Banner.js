@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const Banner = props => (
   <section id="banner" className="major">
@@ -14,9 +15,9 @@ const Banner = props => (
         </p>
         <ul className="actions">
           <li>
-            <a href="#two" name="Get Started" className="button next scrolly">
+            <Link to="/membership#freepass" name="Get Started" className="button next scrolly">
               FREE SEVEN DAY PASS
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
