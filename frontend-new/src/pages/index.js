@@ -17,18 +17,20 @@ class HomeIndex extends React.Component {
           title="Fitness Republic - Gym in Ashby De La Zouch"
           meta={[
             { name: 'description', content: 'Hello, we are Fitness Republic! A family run gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a fun and friendly environment, all at an amazing affordable cost.' },
-            { name: 'keywords', content: 'gym, fitness, personal training, ashby, leicestershire' },
-          ]}
-        ></Helmet>
+            { name: 'keywords', content: 'gym, fitness, personal training, ashby, leicestershire, free pass, student membership' },
+          ]}>
+          <script src="https://fitnessrepublic.clubright.co.uk/js/openingTimes.js?=2"></script>
+        </Helmet>
 
         <Banner />
 
-
         <div id="main">
+
           <section id="news">
             <div className="inner">
               <header className="major">
-                <h2>10% OFF MEMBERSHIP FEE'S</h2>
+
+              <h2>10% OFF MEMBERSHIP FEE'S</h2>
               </header>
               <p>
                <h3>THIS JANUARY WE WANT YOU!</h3>
@@ -90,8 +92,8 @@ class HomeIndex extends React.Component {
             </article>
             <article style={{ backgroundImage: `url(${pic04})` }}>
               <Link
-                aria-label="Link to Landing Page"
-                to="/landing"
+                aria-label="Link to Team Page"
+                to="/team"
                 className="link primary"
               >
                 <header className="major">
@@ -103,32 +105,34 @@ class HomeIndex extends React.Component {
           </section>
 
 
-          <section id="two">
+        <section id="covid">
             <div className="inner">
               <header className="major">
-                <h2>Free Seven Day Pass</h2>
+
+              <h2>Covid 19 and Safe Training</h2>
               </header>
               <p>
-                Our Free Pass to gives you the opportunity to try out our facility before you commit. You can try the Gym, Classes, and our Personal Training service all FREE.
-                If you feel comfortable to train on your own please feel free to pop in at anytime, we will just ask you to fill in a medical questionnaire before you start training.
 
-                The free pass is available to people local to Ashby de la Zouch and surrounding areas.
+
+                We are offering <strong>10% off our range of memberships each month</strong> when you pay  by direct debit.
                 <br/>
-                If you are only working in Ashby de la Zouch for a short period of time please contact us for a chat about what we can do for you.
+                Remember at Fitness Republic there are <strong>no Joining Fee's</strong> and <strong>no contracts</strong>.
               </p>
               <ul className="actions">
                 <li>
                   <Link
-                    aria-label="Link to Landing Page"
-                    to="/landing"
-                    className="button next"
+                    aria-label="Link to Fitness Republic Policies on Covid"
+                    to="/covid"
+                    className="button special"
                   >
-                    Get Started
+                    OUR COVID ACTION PLAN
                   </Link>
                 </li>
               </ul>
             </div>
           </section>
+
+
         </div>
       </Layout>
     )
