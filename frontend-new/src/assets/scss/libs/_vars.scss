@@ -21,6 +21,7 @@ $size: (
 // Font.
 $font: (
   family: (
+    'Gill Sans',
     'Source Sans Pro',
     Helvetica,
     sans-serif,
@@ -37,19 +38,37 @@ $font: (
 
 // Palette.
 $palette: (
-  bg: #242943,
-  bg-alt: #2a2f4a,
-  fg: #ffffff,
-  fg-bold: #ffffff,
+  bg: #ffa61a,
+  bg-alt: #fcfcfc,
+  fg: #242943,
+  fg-bold: #242943,
   fg-light: rgba(244, 244, 255, 0.2),
   border: rgba(212, 212, 255, 0.1),
   border-bg: rgba(212, 212, 255, 0.035),
-  highlight: #ffa61a,
+  highlight: #010101,
   accent1: #6fc3df,
   accent2: #8d82c4,
   accent3: #ec8d81,
   accent4: #e7b788,
   accent5: #8ea9e8,
   accent6: #87c5a4,
-  home-title: #ffa61a,
+  home-title: rgba(212, 212, 255, 0.035),
 );
+
+// $palette: (
+//   bg: #242943,
+//   bg-alt: #2a2f4a,
+//   fg: #ffffff,
+//   fg-bold: #ffffff,
+//   fg-light: rgba(244, 244, 255, 0.2),
+//   border: rgba(212, 212, 255, 0.1),
+//   border-bg: rgba(212, 212, 255, 0.035),
+//   highlight: #ffa61a,
+//   accent1: #6fc3df,
+//   accent2: #8d82c4,
+//   accent3: #ec8d81,
+//   accent4: #e7b788,
+//   accent5: #8ea9e8,
+//   accent6: #87c5a4,
+//   home-title: #ffa61a,
+// );

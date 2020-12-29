@@ -19,7 +19,6 @@ class HomeIndex extends React.Component {
             { name: 'description', content: 'Hello, we are Fitness Republic! A family run gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a fun and friendly environment, all at an amazing affordable cost.' },
             { name: 'keywords', content: 'gym, fitness, personal training, ashby, leicestershire, free pass, student membership' },
           ]}>
-          <script src="https://fitnessrepublic.clubright.co.uk/js/openingTimes.js?=2"></script>
         </Helmet>
 
         <Banner />
