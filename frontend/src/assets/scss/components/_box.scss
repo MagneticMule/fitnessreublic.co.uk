@@ -18,8 +18,9 @@
   }
 
   &.alt {
-    border: 0;
-    border-radius: 0;
-    padding: 0;
+    border-radius: 4px;
+    background-color: _palette(white);
+    box-shadow: 0px 9px 16px 0px rgba(0, 0, 0, 0.1),
+      0px 2px 1px 0px rgba(0, 0, 0, 0.05);
   }
 }

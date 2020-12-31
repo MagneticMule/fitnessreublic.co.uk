@@ -123,9 +123,10 @@ button,
   }
 
   &.special {
-    background-color: _palette(fg-bold);
+    background-color: _palette(bg);
+    border: 1px solid _palette(fg);
     box-shadow: none;
-    color: _palette(bg);
+    color: _palette(fg);
 
     &:hover,
     &:active,

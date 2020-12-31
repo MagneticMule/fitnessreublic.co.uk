@@ -20,7 +20,7 @@ const Membership = (props) => (
         </div>
 
         <div id="main">
-            <section id="freepass">
+            <section id="freepass" >
                 <div className="inner">
                     <header className="major">
                         <h2>Free Seven Day Pass</h2>
@@ -52,7 +52,7 @@ const Membership = (props) => (
                 <div className="grid-wrapper">
 
                     <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Single Adult Monthly</h3>
                             </header>
@@ -66,7 +66,7 @@ const Membership = (props) => (
                     </div>
 
                    <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Joint Adult Monthly</h3>
                             </header>
@@ -80,7 +80,7 @@ const Membership = (props) => (
                     </div>
 
                    <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Single Adult Annual</h3>
                             </header>
@@ -94,7 +94,7 @@ const Membership = (props) => (
                     </div>
 
                     <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Single Adult Class Only</h3>
                             </header>
@@ -126,7 +126,7 @@ const Membership = (props) => (
 
                 <div className="grid-wrapper">
                 <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Student Monthly</h3>
                             </header>
@@ -153,7 +153,7 @@ const Membership = (props) => (
 
                 <div className="grid-wrapper">
                 <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Fitness Republic TV</h3>
                             </header>
@@ -181,7 +181,7 @@ const Membership = (props) => (
 
                <div className="grid-wrapper">
                 <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Bronze Package</h3>
                             </header>
@@ -196,7 +196,7 @@ const Membership = (props) => (
                         </div>
                     </div>
                 <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Silver Package</h3>
                             </header>
@@ -211,7 +211,7 @@ const Membership = (props) => (
                         </div>
                     </div>
                 <div className="col-4">
-                    <div className="content box align-center">
+                    <div className="content box align-center alt">
                             <header>
                                 <h3>Gold Package</h3>
                             </header>
