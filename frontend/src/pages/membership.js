@@ -86,7 +86,7 @@ const Membership = (props) => (
                             </header>
                                                      <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <p><strong>£299</strong> Per Year</p>
-                            <p>Payable either In Person or Onine</p>
+                            <p>Payable either In Person or Online</p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
                             </ul>
@@ -133,6 +133,33 @@ const Membership = (props) => (
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <hr/>
                             <p><strong>£25.99</strong> Per Month</p>
+                            <p>Payable via Monthly Direct Debit</p>
+                            <ul className="actions">
+                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section id="online">
+
+                    <div className="inner">
+                    <header className="major">
+                        <h2>Online Membership</h2>
+                    </header>
+                    <p>Join us for our very own online class schedule via Fitness Republic TV. Lots of live workouts daily, easily accessible for working out in your own home. Lots of training tips too!</p>
+
+
+                <div className="grid-wrapper">
+                <div className="col-4">
+                    <div className="content box align-center">
+                            <header>
+                                <h3>Fitness Republic TV</h3>
+                            </header>
+                            <p>Full access to our online classes and private Facebook group.</p>
+                            <hr/>
+                            <p><strong>£12.99</strong> Per Month</p>
                             <p>Payable via Monthly Direct Debit</p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
