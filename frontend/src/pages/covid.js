@@ -37,9 +37,14 @@ const Covid = (props) => (
                 <div className="col-4">
                     <strong>Get the latest information from GOV.UK about coronovirus.</strong>
                     </div>
-                <div className="col-8">
+                <div className="col-4">
                             <ul className="actions">
                                 <li><a href="https://www.gov.uk/coronavirus" className="button right">Learn More</a></li>
+                            </ul>
+                            </div>
+                            <div className="col-12">
+                            <ul className="actions">
+                                <li><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/coronavirus-vaccine/" className="right">Learn about vaccine progress from the NHS</a></li>
                             </ul>
                             </div>
                             </div>
