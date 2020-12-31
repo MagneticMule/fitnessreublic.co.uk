@@ -123,12 +123,15 @@ button,
   }
 
   &.special {
-    background-color: _palette(bg);
-    border: 1px solid _palette(fg);
+    background-color: _palette(fg);
+    border: 1px solid _palette(bg);
     box-shadow: none;
-    color: _palette(fg);
+    color: _palette(bg);
 
-    &:hover,
+    &:hover {
+      background-color: _palette(bg);
+    }
+
     &:active,
     &:focus {
       background-color: _palette(highlight);
