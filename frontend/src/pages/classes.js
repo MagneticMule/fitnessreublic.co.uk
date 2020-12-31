@@ -55,7 +55,7 @@ const Landing = (props) => (
                 </section>
                 <section>
                     <Link to="/generic" className="image fit">
-                        <img src={ladyropes} alt="" />
+                        <img src={ladyropes} alt="Lady in a fitness class using ropes" />
                     </Link>
                     <div className="content">
                         <div className="inner">
