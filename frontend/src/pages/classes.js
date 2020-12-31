@@ -15,42 +15,33 @@ const Landing = (props) => (
         <Helmet>
             <title>Fitness Classes</title>
             <meta name="description" content="Fitness Classes at Fitness Republic including timetable" />
+            <script src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
         </Helmet>
 
         <BannerClasses />
 
         <div id="main">
-                        <section id="timetable">
+            <section id="timetable">
                 <div className="inner">
                     <header className="major">
                         <h2>Timetable</h2>
                     </header>
+                        <div id="clubrightcalendar" data-clubname="fitnessrepublic" data-classes=""></div>
                     <p>
                         Unfortunately, Leicestershire is currently in Tier 4 lockdown and as such we are not permitted to hold live classes here at the gym. However, we are currently hosting fitness classes online via our Fitness Republic TV initiative.
                     </p>
                     <div className="image fit">
                         <img src={timetable} alt="Our current class timetable" />
                     </div>
-                </div>
-            </section>
-            <section id="intro">
-                <div className="inner">
-                    <header className="major">
-                        <h2>Tier 4 Lockdown</h2>
-                    </header>
-                    <p>
-                        Unfortunately, Leicestershire is currently in Tier 4 lockdown and as such we are not permitted to hold live classes here at the gym. However, we are currently hosting fitness classes online via our Fitness Republic TV initiative.
-                    </p>
-                    <p>Our current timetable is available further down the page.</p>
-
-
+                            <ul className="actions">
+                                <li><a href={timetable} download="fitness_republic_class_timetable.jpg" className="button">Download Timetable</a></li>
+                            </ul>
                 </div>
             </section>
 
             <section id="two" className="spotlights">
 
                 <section>
-
                     <div className="image fit">
                         <img src={ladiesboxfit} alt="" />
                     </div>

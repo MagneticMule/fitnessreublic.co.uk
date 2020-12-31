@@ -88,7 +88,7 @@ const Landing = (props) => (
                             </p>
 
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Simon About Personal Training</Link></li>
+                                <li><Link to="/generic" className="button">Contact Simon</Link></li>
                             </ul>
                         </div>
                     </div>
