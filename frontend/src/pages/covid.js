@@ -28,20 +28,24 @@ const Covid = (props) => (
                         videoSrcURL="https://www.youtube.com/embed/ozCYQ0K1NBE"
                         videoTitle="Train Safe at Fitness Republic Ashby De La Zouch"
                     />
-<hr/>
-<div className="grid-wrapper">
-    <div className="col-4"><strong>Get the latest information from GOV.UK about coronovirus.</strong></div>
-<div className="col-8">
+                </div>
+            </section>
+
+            <section id="update">
+                <div className="inner">
+                <div className="grid-wrapper">
+                <div className="col-4">
+                    <strong>Get the latest information from GOV.UK about coronovirus.</strong>
+                    </div>
+                <div className="col-8">
                             <ul className="actions">
                                 <li><a href="https://www.gov.uk/coronavirus" className="button right">Learn More</a></li>
                             </ul>
                             </div>
+                            </div>
 
 
-</div>
-
-                </div>
-            </section>
+</div></section>
         </div>
     </Layout>
 )
