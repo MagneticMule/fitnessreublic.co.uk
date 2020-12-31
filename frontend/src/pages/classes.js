@@ -8,6 +8,8 @@ import ladiesboxfit from '../assets/images/ladies-boxfit-class.jpg';
 import ladyropes from '../assets/images/lady-ropes-fitness.jpg';
 import ladymanboxfit from '../assets/images/lady-man-boxfit.jpg'
 
+import timetable from '../assets/images/timetable/classtimetable.jpg'
+
 const Landing = (props) => (
     <Layout>
         <Helmet>
@@ -18,7 +20,20 @@ const Landing = (props) => (
         <BannerClasses />
 
         <div id="main">
-            <section id="one">
+                        <section id="timetable">
+                <div className="inner">
+                    <header className="major">
+                        <h2>Timetable</h2>
+                    </header>
+                    <p>
+                        Unfortunately, Leicestershire is currently in Tier 4 lockdown and as such we are not permitted to hold live classes here at the gym. However, we are currently hosting fitness classes online via our Fitness Republic TV initiative.
+                    </p>
+                    <div className="image fit">
+                        <img src={timetable} alt="Our current class timetable" />
+                    </div>
+                </div>
+            </section>
+            <section id="intro">
                 <div className="inner">
                     <header className="major">
                         <h2>Tier 4 Lockdown</h2>
@@ -26,6 +41,7 @@ const Landing = (props) => (
                     <p>
                         Unfortunately, Leicestershire is currently in Tier 4 lockdown and as such we are not permitted to hold live classes here at the gym. However, we are currently hosting fitness classes online via our Fitness Republic TV initiative.
                     </p>
+                    <p>Our current timetable is available further down the page.</p>
 
 
                 </div>
@@ -35,9 +51,9 @@ const Landing = (props) => (
 
                 <section>
 
-                    <Link to="/generic" className="image fit">
+                    <div className="image fit">
                         <img src={ladiesboxfit} alt="" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -54,9 +70,9 @@ const Landing = (props) => (
 
                 </section>
                 <section>
-                    <Link to="/generic" className="image fit">
+                    <div className="image fit">
                         <img src={ladyropes} alt="Lady in a fitness class using ropes" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -87,6 +103,7 @@ const Landing = (props) => (
                 </section>
 
             </section>
+
         </div>
 
     </Layout>

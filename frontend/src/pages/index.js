@@ -111,8 +111,6 @@ class HomeIndex extends React.Component {
               <h2>Covid 19 and Safe Training</h2>
               </header>
               <p>
-
-
                 We are offering <strong>10% off our range of memberships each month</strong> when you pay  by direct debit.
                 <br/>
                 Remember at Fitness Republic there are <strong>no Joining Fee's</strong> and <strong>no contracts</strong>.
