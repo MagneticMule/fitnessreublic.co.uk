@@ -21,12 +21,18 @@ const Landing = (props) => (
         <BannerClasses />
 
         <div id="main">
+            <section className="clubright">
+                <div className="inner">
+                <div id="clubrightcalendar" data-clubname="fitnessrepublic" data-classes=""></div>
+                </div>
+            </section>
+
             <section id="timetable">
                 <div className="inner">
                     <header className="major">
                         <h2>Timetable</h2>
                     </header>
-                        <div id="clubrightcalendar" data-clubname="fitnessrepublic" data-classes=""></div>
+
                     <p>
                         Unfortunately, Leicestershire is currently in Tier 4 lockdown and as such we are not permitted to hold live classes here at the gym. However, we are currently hosting fitness classes online via our Fitness Republic TV initiative.
                     </p>
