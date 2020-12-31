@@ -7,6 +7,7 @@ import BannerTeam from '../components/BannerTeam'
 import simon from '../assets/images/staff/simon.jpg'
 import ben from '../assets/images/staff/ben.jpg'
 import sarah from '../assets/images/staff/sarah.jpg'
+import marcus from '../assets/images/staff/marcus.jpg'
 
 
 const Landing = (props) => (
@@ -128,16 +129,48 @@ const Landing = (props) => (
                 </section>
                                 <section>
                     <Link to="/generic" className="image">
-                        <img src={ben} alt="Ben Pellecchia" />
+                        <img src={marcus} alt="Marcus White" />
                     </Link>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Ben Pellecchia</h3>
+                                <h3>Marcus White</h3>
                             </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+
+<h4>
+    What did you do before working at Fitness Republic?
+</h4>
+ <p>
+     I was at Loughborough college , having done my A levels went straight to college to do my Qualifications.
+ </p>
+ <h4>Why did you become a personal trainer?</h4>
+<p>
+    To help people, I love training and pushing myself towards my goals and wanted to help other people achieve their own goals.
+</p>
+<h4>What aspect of your work do you enjoy most?</h4>
+<p>
+    The friendly atmosphere , meeting and getting to know lots of the members.
+</p>
+<h4>It's the weekend, how might you be spending your time?</h4>
+<p>
+    Relaxing , playing football or going to concerts (covid permitting).
+</p>
+<h4>
+    What's next for you?
+</h4>
+<p>
+    Working hard towards my next competition.
+</p>
+<h4>
+    Favourite exercise
+</h4>
+
+<p>
+    DB chest press / dB shoulder press
+</p>
+
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Social Media Links</Link></li>
+                                <li><Link to="/generic" className="button">Contact Marcus About Personal Training</Link></li>
                             </ul>
                         </div>
                     </div>
