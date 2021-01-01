@@ -29,7 +29,7 @@ const FormSevenDayPass = (props)=> (
 
   <ul className="actions">
     <li>
-      <input type="submit" value="Send Me The Free Seven Day Pass" className="special" />
+      <input type="submit" value="Send Me The Free Seven Day Pass" className="button" />
     </li>
   </ul>
 </form>

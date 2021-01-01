@@ -45,8 +45,8 @@ const Landing = (props) => (
                 </div>
             </section>
 
-            <section id="two" className="spotlights">
-
+            <section id="spotlights" className="spotlights">
+<div className="inner"></div>
                 <section>
                     <div className="image fit">
                         <img src={ladiesboxfit} alt="" />
