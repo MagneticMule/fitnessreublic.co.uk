@@ -107,7 +107,7 @@ const Landing = (props) => (
                             </header>
                             <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Social Media Links</Link></li>
+                                <li><Link to="/generic" className="button">Contact Sarah</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ const Landing = (props) => (
                             </header>
                             <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Social Media Links</Link></li>
+                                <li><Link to="/generic" className="button">Contact Ben</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -178,6 +178,54 @@ const Landing = (props) => (
                 </section>
 
 
+            <section>
+                    <Link to="/generic" className="image">
+                        <img src={connor} alt="Connor Chamberlain" />
+                    </Link>
+                    <div className="content">
+                        <div className="inner">
+                            <header className="major">
+                                <h3>Connor Chamberlain</h3>
+                            </header>
+
+<h4>
+    What did you do before working at Fitness Republic?
+</h4>
+ <p>
+Before working at FR I was at Loughborough college training to become a PT, I also worked at FR for work experience, and had various part time jobs alongside this.
+ </p>
+ <h4>Why did you become a personal trainer?</h4>
+<p>
+I became a PT because I had a passion for training, it’s a lifestyle , I wanted to train people ,and show them how to get the results they want ASAP!
+</p>
+<h4>What aspect of your work do you enjoy most?</h4>
+<p>
+I enjoy the people side of my work and showing people they can achieve what they want! I’m a people person, even if it’s a quick chat with someone I’ve never spoke to before.
+</p>
+<h4>It's the weekend, how might you be spending your time?</h4>
+<p>
+I train over the weekend Friday, Sunday, usually on Saturdays I’ll relax, catch up with friends and family, and maybe have a cheat meal!
+</p>
+<h4>
+    What's next for you?
+</h4>
+<p>
+I’m currently studying for my L3 PT course here at FR, once I’ve completed this I’d like to grow my client base even more, carry on working and learning more too. I’d like to get into bootcamp style training for clients as well.
+</p>
+<h4>
+    Favourite exercise
+</h4>
+
+<p>
+    My favourite exercise would have to be anything pressing so a DB chest press, it’s in all of the old school training, and I’ve found it works best for me!
+</p>
+
+                            <ul className="actions">
+                                <li><Link to="/generic" className="button">Contact Connor</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             <section>
                     <Link to="/generic" className="image">
                         <img src={connor} alt="Connor Chamberlain" />
