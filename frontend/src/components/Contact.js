@@ -18,7 +18,7 @@ const Contact = (props) => (
                     </div>
                     <div className="field">
                         <label htmlFor="phone">Telephone Number (optional)</label>
-                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+                        <input type="tel" name="phone" id="phone" />
                     </div>
                     <div className="field">
                         <label htmlFor="message">Message</label>

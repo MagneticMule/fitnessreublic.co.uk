@@ -22,7 +22,7 @@ const Covid = (props) => (
 
                     <p>Fitness Republic is working within tight Covid19 restrictions, keeping you fit, healthy and motivated while ensuring your safety. As such we have implimented some basic guidlines that we ask that you follow when training at the gym.
                     This is a trying time for all of us but hopefully we can pull through this together.</p>
-<hr/>
+                    <hr/>
 
                     <Video
                         videoSrcURL="https://www.youtube.com/embed/ozCYQ0K1NBE"
