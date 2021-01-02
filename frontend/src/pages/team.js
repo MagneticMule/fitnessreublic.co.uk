@@ -170,7 +170,7 @@ const Landing = (props) => (
 </p>
 
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Marcus About Personal Training</Link></li>
+                                <li><Link to="/generic" className="button">Contact Marcus</Link></li>
                             </ul>
                         </div>
                     </div>
