@@ -20,7 +20,7 @@ const Membership = (props) => (
         </div>
 
         <div id="main">
-            <section id="freepass" >
+            <section id="freepass" className="alt">
                 <div className="inner">
                     <header className="major">
                         <h2>Free Seven Day Pass</h2>

@@ -27,7 +27,7 @@ const Landing = (props) => (
                 </div>
             </section>
 
-            <section id="timetable">
+            <section id="timetable" className="timetable">
                 <div className="inner">
                     <header className="major">
                         <h2>Timetable</h2>

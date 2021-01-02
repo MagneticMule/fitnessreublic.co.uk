@@ -6,7 +6,12 @@
 
 /* Section/Article */
 
-section,
+section {
+  &.timetable {
+    background-color: _palette(white);
+  }
+}
+
 article {
   &.special {
     text-align: left;
