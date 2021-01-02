@@ -11,14 +11,16 @@ section {
     background-color: _palette(white);
   }
   &#covid {
+    text-align: center;
     background-color: _palette(bg);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 162, 124, 1) 0%,
-      rgba(255, 202, 105, 1) 49%,
-      rgba(255, 162, 124, 1) 100%
-    );
+    background: _palette(fg);
     border: 1px solid _palette(fg);
+    h2 {
+      text-align: center;
+    }
+    * {
+      color: white;
+    }
   }
 }
 

@@ -106,14 +106,15 @@ class HomeIndex extends React.Component {
 
         <section id="covid" className="covid">
             <div className="inner">
-              <header className="major">
 
-              <h2>Covid 19 and Safe Training</h2>
-              </header>
+
+              <h2 className="align-center">Covid 19 and Safe Training</h2>
+
               <p>
-                We are offering <strong>10% off our range of memberships each month</strong> when you pay by direct debit.
-                <br/>
-                Remember at Fitness Republic there are <strong>no Joining Fee's</strong> and <strong>no contracts</strong>.
+                    Fitness Republic is working within tight Covid19 restrictions, keeping you fit, healthy and motivated while ensuring your safety.
+                    <br/>As such we have implimented some basic guidlines that we ask that you follow when training at the gym.
+                    <br/>
+                    This is a trying time for all of us but hopefully we can pull through this together.
               </p>
               <ul className="actions">
                 <li>
