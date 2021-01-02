@@ -104,7 +104,7 @@ class HomeIndex extends React.Component {
           </section>
 
 
-        <section id="covid" className="covid">
+        <section id="covid" className="inverted">
             <div className="inner">
 
 

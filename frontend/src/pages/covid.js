@@ -13,8 +13,8 @@ const Covid = (props) => (
             <meta name="description" content="Fitness Republic is working within tight Covid19 restrictions, keeping you fit, healthy and motivated while ensuring your safety" />
         </Helmet>
 
-        <div id="main" className="alt">
-            <section id="one">
+        <div id="main">
+            <section id="video" >
                 <div className="inner">
                     <header className="major">
                     <h1>Covid 19 and Training Safe</h1>

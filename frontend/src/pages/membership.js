@@ -228,12 +228,12 @@ const Membership = (props) => (
                     </div>
                 </div>
             </section>
-             <section id="policy">
+             <section id="policy" className="inverted">
 
                     <div className="inner">
-                    <header className="major">
+
                         <h2>Cancellation</h2>
-                    </header>
+
                     <p>Memberships cannot be cancelled prior to the agreed contract length that you have signed up for and the last payment has been made. A contract may be cancelled once the final payment has been made; this requires 30 days notice to Fitness Republic.</p>
 
                     <p>Please email info@fitnessrepublic.co.uk with your cancellation request. Upon receiving your email a cancellation form will be emailed to you to complete and be returned. Cancellations cannot be actioned until receipt of your cancellation form. please note one final payment may be due this will depend on weather your current payment falls within the 30 day cancellation period.</p>

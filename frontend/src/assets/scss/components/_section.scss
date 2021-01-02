@@ -10,7 +10,7 @@ section {
   &.timetable {
     background-color: _palette(white);
   }
-  &#covid {
+  &.inverted {
     text-align: center;
     background-color: _palette(bg);
     background: _palette(fg);
@@ -19,6 +19,7 @@ section {
       text-align: center;
     }
     * {
+      text-align: center;
       color: white;
     }
   }
