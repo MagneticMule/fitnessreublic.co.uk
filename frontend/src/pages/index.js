@@ -104,14 +104,14 @@ class HomeIndex extends React.Component {
           </section>
 
 
-        <section id="covid">
+        <section id="covid" className="covid">
             <div className="inner">
               <header className="major">
 
               <h2>Covid 19 and Safe Training</h2>
               </header>
               <p>
-                We are offering <strong>10% off our range of memberships each month</strong> when you pay  by direct debit.
+                We are offering <strong>10% off our range of memberships each month</strong> when you pay by direct debit.
                 <br/>
                 Remember at Fitness Republic there are <strong>no Joining Fee's</strong> and <strong>no contracts</strong>.
               </p>
@@ -120,7 +120,7 @@ class HomeIndex extends React.Component {
                   <Link
                     aria-label="Link to Fitness Republic Policies on Covid"
                     to="/covid"
-                    className="button special"
+                    className="button"
                   >
                     OUR COVID ACTION PLAN
                   </Link>

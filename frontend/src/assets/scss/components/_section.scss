@@ -10,6 +10,16 @@ section {
   &.timetable {
     background-color: _palette(white);
   }
+  &#covid {
+    background-color: _palette(bg);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 162, 124, 1) 0%,
+      rgba(255, 202, 105, 1) 49%,
+      rgba(255, 162, 124, 1) 100%
+    );
+    border: 1px solid _palette(fg);
+  }
 }
 
 article {
