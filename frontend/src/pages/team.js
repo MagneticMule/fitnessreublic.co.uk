@@ -201,32 +201,33 @@ const Landing = (props) => (
                                 What did you do before working at Fitness Republic?
                             </h4>
                             <p>
-                            Before working at FR I was at Loughborough college training to become a PT, I also worked at FR for work experience, and had various part time jobs alongside this.
+                            Until the age of 18 I was a professional ballroom dancer , competing and doing shows in my native Hungary. I then moved to England and started a career in hospitality, holding various management roles before returning to my roots of dance with my Zumba career.
                             </p>
                             <h4>Why did you become a personal trainer?</h4>
                             <p>
-                            I became a PT because I had a passion for training, it’s a lifestyle , I wanted to train people ,and show them how to get the results they want ASAP!
+                            After experiencing the benefits of personal training for myself and  how it is such a personal benefit. I wanted to help others achieve their goals for their fitness and lifestyle.
                             </p>
                             <h4>What aspect of your work do you enjoy most?</h4>
                             <p>
-                            I enjoy the people side of my work and showing people they can achieve what they want! I’m a people person, even if it’s a quick chat with someone I’ve never spoke to before.
+                            The people! Seeing the difference that my work does to someones life and the way they feel about themselves is deeply rewarding.
+                            4) it's the weekend, how might you be spending your time?
                             </p>
                             <h4>It's the weekend, how might you be spending your time?</h4>
                             <p>
-                            I train over the weekend Friday, Sunday, usually on Saturdays I’ll relax, catch up with friends and family, and maybe have a cheat meal!
+                            With two young children, I love nothing more than spending time with them - feeding ducks at our local park, doing arts & crafts and, of course, plenty of kisses and cuddles!
                             </p>
                             <h4>
                                 What's next for you?
                             </h4>
                             <p>
-                            I’m currently studying for my L3 PT course here at FR, once I’ve completed this I’d like to grow my client base even more, carry on working and learning more too. I’d like to get into bootcamp style training for clients as well.
+                            To continue my fitness education and to grow within the industry. Helping others with the knowledge that I gain.
                             </p>
                             <h4>
                                 Favourite exercise
                             </h4>
 
                             <p>
-                                My favourite exercise would have to be anything pressing so a DB chest press, it’s in all of the old school training, and I’ve found it works best for me!
+                                I love cardio machines and running within my local area with my headphones on - really helps me to "switch off" and get some "me" time!
                             </p>
 
                             <ul className="actions">

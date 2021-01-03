@@ -9,6 +9,7 @@ import ladyropes from '../assets/images/lady-ropes-fitness.jpg';
 import ladymanboxfit from '../assets/images/lady-man-boxfit.jpg'
 
 import timetable from '../assets/images/timetable/classtimetable.jpg'
+import ad from '../assets/images/adforonline.png'
 
 const Landing = (props) => (
     <Layout>
@@ -42,11 +43,11 @@ const Landing = (props) => (
                             <ul className="actions">
                                 <li><a href={timetable} download="fitness_republic_class_timetable.jpg" className="button">Download Timetable</a></li>
                             </ul>
-                </div>
+                    </div>
             </section>
 
             <section id="spotlights" className="spotlights">
-<div className="inner"></div>
+                <div className="inner"></div>
                 <section>
                     <div className="image fit">
                         <img src={ladiesboxfit} alt="" />
@@ -97,10 +98,17 @@ const Landing = (props) => (
 
                         </div>
                     </div>
+
                 </section>
 
             </section>
-
+                <section>
+                    <div className="inner">
+                    <div className="image fit">
+                        <img src={ad} alt="Our new online fitness plan" />
+                    </div>
+                    </div>
+                    </section>
         </div>
 
     </Layout>
