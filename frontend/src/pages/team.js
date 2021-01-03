@@ -97,9 +97,7 @@ const Landing = (props) => (
                                 Got to be the Dumbbell Shoulder Press. Simple but highly effective!
                             </p>
 
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Simon</Link></li>
-                            </ul>
+
                         </div>
                     </div>
                 </section>
@@ -114,9 +112,9 @@ const Landing = (props) => (
                             <header className="major">
                                 <h3>Sarah Pellecchia</h3>
                             </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+                            <p></p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Sarah</Link></li>
+
                             </ul>
                         </div>
                     </div>
@@ -130,10 +128,8 @@ const Landing = (props) => (
                             <header className="major">
                                 <h3>Ben Pellecchia</h3>
                             </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Ben</Link></li>
-                            </ul>
+                            <p></p>
+
                         </div>
                     </div>
                 </section>
@@ -179,9 +175,7 @@ const Landing = (props) => (
                                 DB chest press / dB shoulder press
                             </p>
 
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Marcus</Link></li>
-                            </ul>
+
                         </div>
                     </div>
                 </section>
@@ -230,9 +224,7 @@ const Landing = (props) => (
                                 I love cardio machines and running within my local area with my headphones on - really helps me to "switch off" and get some "me" time!
                             </p>
 
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Blanka</Link></li>
-                            </ul>
+
                         </div>
                     </div>
                 </section>
@@ -278,9 +270,7 @@ const Landing = (props) => (
                                 My favourite exercise would have to be anything pressing so a DB chest press, it’s in all of the old school training, and I’ve found it works best for me!
                             </p>
 
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Connor</Link></li>
-                            </ul>
+
                         </div>
                     </div>
                 </section>

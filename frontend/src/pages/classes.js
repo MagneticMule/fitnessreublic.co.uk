@@ -48,8 +48,8 @@ const Landing = (props) => (
                 </div>
             </section>
 
-            <section id="two" className="spotlights">
-                <div className="inner">
+            <section id="two" className="spotlights inner">
+
                 <section>
                     <div className="image fit">
                         <img src={ladiesboxfit} alt="" />
@@ -100,7 +100,7 @@ const Landing = (props) => (
                     </div>
 
                 </section>
-                </div>
+
                 </section>
             <section>
                 <div className="inner">
