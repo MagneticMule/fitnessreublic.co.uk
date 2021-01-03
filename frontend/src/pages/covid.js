@@ -14,7 +14,7 @@ const Covid = (props) => (
         </Helmet>
 
         <div id="main">
-            <section id="video" >
+            <section id="videocovid" >
                 <div className="inner">
                     <header className="major">
                     <h1>Covid 19 and Training Safe</h1>
@@ -51,6 +51,22 @@ const Covid = (props) => (
 
 
 </div></section>
+           <section id="videoapp" >
+                <div className="inner">
+                    <header className="major">
+                    <h4>Using Our App</h4>
+                    </header>
+
+                    <p>Before coming to the gym we ask that you install our FR APP which you can access via our <a href="https://fitnessrepublic.clubright.co.uk/register">portal at Clubright</a></p>
+                    <hr/>
+
+                    <Video
+                        videoSrcURL="https://www.youtube.com/embed/Hf8xbtKsLWg"
+                        videoTitle="Hot to use the Fitness Republic App"
+                    />
+
+                </div>
+            </section>
         </div>
     </Layout>
 )
