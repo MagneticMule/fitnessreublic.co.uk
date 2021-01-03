@@ -16,7 +16,7 @@ const Landing = (props) => (
         <Helmet>
             <title>Fitness Classes</title>
             <meta name="description" content="Fitness Classes at Fitness Republic including timetable" />
-            <script src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
+            <script crossOrigin src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
         </Helmet>
 
         <BannerClasses />
@@ -24,6 +24,9 @@ const Landing = (props) => (
         <div id="main">
             <section className="clubright">
                 <div className="inner">
+                <header className="major">
+                        <h2>Calender</h2>
+                    </header>
                 <div id="clubrightcalendar" data-clubname="fitnessrepublic" data-classes=""></div>
                 </div>
             </section>
@@ -31,7 +34,7 @@ const Landing = (props) => (
             <section id="timetable">
                 <div className="inner">
                     <header className="major">
-                        <h2>Timetable</h2>
+                        <h2>Virtual Timetable</h2>
                     </header>
 
                     <p>
@@ -65,8 +68,8 @@ const Landing = (props) => (
                             </ul>
                         </div>
                     </div>
-
                 </section>
+
                 <section>
                     <div className="image fit">
                         <img src={ladyropes} alt="Lady in a fitness class using ropes" />
@@ -100,12 +103,10 @@ const Landing = (props) => (
                 </section>
                 </div>
                 </section>
-
-
             <section>
                 <div className="inner">
                     <div className="image fit">
-                        <img src={ad} alt="Our current class timetable" />
+                        <img src={ad} alt="Our online classes" />
                     </div>
                     </div>
             </section>
