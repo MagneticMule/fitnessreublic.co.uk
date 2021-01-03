@@ -12,6 +12,7 @@ import physiorepublic from '../assets/images/physio-republic-logo.jpg'
 import gym1 from '../assets/images/gym/fitness-republic-gym-1.jpg'
 import gym2 from '../assets/images/gym/fitness-republic-gym-2.jpg'
 import gym3 from '../assets/images/gym/fitness-republic-gym-3.jpg'
+import simonropes from '../assets/images/gym/fitness-republic-simon-ropes.jpg'
 
 const Training = (props) => (
     <Layout>
@@ -99,7 +100,7 @@ const Training = (props) => (
 
 
 
-                        <div className="col-12"><span className="image main"><img src={gym3} alt="" /></span></div>
+                        <div className="col-12"><span className="image main"><img src={simonropes} alt="" /></span></div>
 
                         <div className="col-12">
 
