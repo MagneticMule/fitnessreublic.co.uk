@@ -29,11 +29,9 @@ class HomeIndex extends React.Component {
 
               <h1>Lets leave 2020 behind, and make 2021 your best year ever!</h1>
 
-
               <h2>10% OFF MEMBERSHIP FEE'S</h2>
+              <h3>THIS JANUARY WE WANT YOU!</h3>
               <p>
-               <h3>THIS JANUARY WE WANT YOU!</h3>
-
                 We are offering <strong>10% off our range of memberships each month</strong> when you pay  by direct debit.
                 <br/>
                 Remember at Fitness Republic there are <strong>no Joining Fee's</strong> and <strong>no contracts</strong>.
@@ -49,6 +47,7 @@ class HomeIndex extends React.Component {
                   </Link>
                 </li>
               </ul>
+              <p>Join now and pay nothing until February 2021</p>
             </div>
           </section>
           <section id="one" className="tiles">

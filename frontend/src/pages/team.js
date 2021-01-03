@@ -32,7 +32,7 @@ const Landing = (props) => (
                     <p>
                     Our expert team have a wealth of fitness, nutrition and wellbeing knowledge. we care and support everyone who walks through our door. We’re passionate about helping people meet their fitness and health goals.</p>
                     <h4>Our ethos is to welcome everybody.</h4>
-                    <p>Facilities include
+                    <p><strong>Facilities include: </strong>
                     High quality gym equipment,  cardiovascular and resistance.
                     Studio, air conditioned studio
                     Changing facilities, including showers, lockers and wc’s</p>

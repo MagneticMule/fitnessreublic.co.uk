@@ -25,7 +25,7 @@ const Landing = (props) => (
             <section className="clubright">
                 <div className="inner">
                 <header className="major">
-                        <h2>Calender</h2>
+                        <h2>Calendar</h2>
                     </header>
                 <div id="clubrightcalendar" data-clubname="fitnessrepublic" data-classes=""></div>
                 </div>
@@ -49,7 +49,6 @@ const Landing = (props) => (
             </section>
 
             <section id="two" className="spotlights inner">
-
                 <section>
                     <div className="image fit">
                         <img src={ladiesboxfit} alt="" />
