@@ -24,13 +24,13 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div id="main">
-
-          <section id="news">
+          <section id="news" className="inverted">
             <div className="inner">
-              <header className="major">
+
+              <h1>Lets leave 2020 behind, and make 2021 your best year ever!</h1>
+
 
               <h2>10% OFF MEMBERSHIP FEE'S</h2>
-              </header>
               <p>
                <h3>THIS JANUARY WE WANT YOU!</h3>
 

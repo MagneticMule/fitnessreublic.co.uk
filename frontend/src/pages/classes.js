@@ -16,7 +16,7 @@ const Landing = (props) => (
         <Helmet>
             <title>Fitness Classes</title>
             <meta name="description" content="Fitness Classes at Fitness Republic including timetable" />
-            <script crossOrigin src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
+            <script src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
         </Helmet>
 
         <BannerClasses />
@@ -36,7 +36,6 @@ const Landing = (props) => (
                     <header className="major">
                         <h2>Virtual Timetable</h2>
                     </header>
-
                     <p>
                         Unfortunately, Leicestershire is currently in Tier 4 lockdown and as such we are not permitted to hold live classes here at the gym. However, we are currently hosting fitness classes online via our Fitness Republic TV initiative.
                     </p>
@@ -49,7 +48,7 @@ const Landing = (props) => (
                 </div>
             </section>
 
-            <section id="spotlights" className="spotlights">
+            <section id="two" className="spotlights">
                 <div className="inner">
                 <section>
                     <div className="image fit">
@@ -60,9 +59,9 @@ const Landing = (props) => (
                             <header className="major">
                                 <h3>Online Classes</h3>
                             </header>
-                    <p>
-                        However, from January 2021, we will again take our classes online. We will post our virtual timetable here in the next couple of weeks. Keep checking back to see how we are planning to keep you fit during this unprecedented times. Join us for our very own online class schedule. Lots of live workouts daily, easily accessible for working out in your own home. Lots of training tips too! <strong>All this for only £12.99 per month.</strong>
-                    </p>
+                            <p>
+                                However, from January 2021, we will again take our classes online. We will post our virtual timetable here in the next couple of weeks. Keep checking back to see how we are planning to keep you fit during this unprecedented times. Join us for our very own online class schedule. Lots of live workouts daily, easily accessible for working out in your own home. Lots of training tips too! <strong>All this for only £12.99 per month.</strong>
+                            </p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/register" className="button">Sign Up</a></li>
                             </ul>
