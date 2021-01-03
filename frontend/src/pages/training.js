@@ -43,10 +43,15 @@ const Training = (props) => (
                         <h2>The Fitness Republic Personal Coaching Difference</h2>
                     </header>
                     <div className="grid-wrapper">
-                        <div className="col-12">
-                        <h3>We will keep you accountable</h3>
-                        <p>Our Personal Coaches should keep you accountable. Ensuring you turn up and give it your all, every session.</p>
+
+                         <div className="col-8">
+                        <h3>
+                            We can work directly with a physiotherapist
+                        </h3>
+                        <p>At our facility in Ashby de la Zouch we have an in house physiotherapist with over 20 years of experience. Craig is on hand to help with any injuries or problems you may have. Craig is also an active runner and performs running assessments held at the gym. All of our coaches work with Craig helping us to help you even more!</p>
                         </div>
+
+                        <div className="col-4"><span className="image main"><img src={physiorepublic} alt="" /></span></div>
                         <div className="col-6">
                         <h3>We help with your individual requirements</h3>
                         <p>We know that everybody has different levels of fitness, flexibility, balance, strength, agility and motor skills. Many of our clients come to us with injuries and we have the knowledge and skills to work with them to continue training, rehabilitate and make consistent progress.</p>
@@ -72,14 +77,7 @@ const Training = (props) => (
                         </h3>
                         <p>Habits can make you or break you. In order to change you must change certain things you do daily. Most of the time we don’t even realise the habits we have that are having a detrimental effect on our bodies and mind.</p>
                         </div>
-                        <div className="col-6">
-                        <h3>
-                            We can work directly with a physiotherapist
-                        </h3>
-                        <p>At our facility in Ashby de la Zouch we have an in house physiotherapist with over 20 years of experience. Craig is on hand to help with any injuries or problems you may have. Craig is also an active runner and performs running assessments held at the gym. All of our coaches work with Craig helping us to help you even more!</p>
-                        </div>
 
-                        <div className="col-6"><span className="image main"><img src={physiorepublic} alt="" /></span></div>
 
                         <div className="col-6"><span className="image main"><img src={gym1} alt="" /></span></div>
 
@@ -98,14 +96,12 @@ const Training = (props) => (
                         <p> All our coaches have been educated in nutrition for fitness and sport, we also have a dedicated nutritionist on hand to answer questions or create <div className="col-4"></div>a nutrition plan to compliment your training.</p>
                         </div>
 
-
-
                         <div className="col-12"><span className="image main"><img src={simonropes} alt="" /></span></div>
-
-                        <div className="col-12">
-
-                        <h3> What you think is achievable and where you think your limitations are, is just the beginning.</h3>
+ <div className="col-12">
+                        <h3>We will keep you accountable</h3>
+                        <p>Our Personal Coaches should keep you accountable. Ensuring you turn up and give it your all, every session. What you think is achievable and where you think your limitations are, is just the beginning.</p>
                         </div>
+
                 </div>
                 </div>
                 </section>
