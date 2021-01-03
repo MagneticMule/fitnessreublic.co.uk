@@ -232,7 +232,7 @@ const Membership = (props) => (
 
                     <div className="inner">
 
-                        <h2>Cancellation</h2>
+                    <h2>Cancellation</h2>
 
                     <p>Memberships cannot be cancelled prior to the agreed contract length that you have signed up for and the last payment has been made. A contract may be cancelled once the final payment has been made; this requires 30 days notice to Fitness Republic.</p>
 

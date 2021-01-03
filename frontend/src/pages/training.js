@@ -40,7 +40,7 @@ const Training = (props) => (
 
 
                      <header className="major">
-                        <h2>The Fitness Republic Personal Coaching Difference</h2>
+                        <h2>Our Approach</h2>
                     </header>
                     <div className="grid-wrapper">
 
@@ -111,7 +111,7 @@ const Training = (props) => (
 
                     <div className="inner">
                     <header className="major">
-                        <h2>Physical Training</h2>
+                        <h2>Packages</h2>
                     </header>
                     <p>Personal Training can help you gain the most from your time at Fitness Republic. We offer three packages with combine the benefits of free gym access, classes and one on one personal training sessions.</p>
 

@@ -9,6 +9,7 @@ import ben from '../assets/images/staff/ben.jpg'
 import sarah from '../assets/images/staff/sarah.jpg'
 import marcus from '../assets/images/staff/marcus.jpg'
 import connor from '../assets/images/staff/connor.jpg'
+import blanka from '../assets/images/staff/blanka.jpg'
 
 
 const Landing = (props) => (
@@ -26,7 +27,15 @@ const Landing = (props) => (
                     <header className="major">
                         <h2>Our Story</h2>
                     </header>
-                    <p>We opened Fitness Republic in etc... over the last 12 years we have etc</p>
+                    <p><strong>Fitness Republic first opened in May 2010.</strong>{' '}
+                    We wanted to open a facility that  focused on creating the most comfortable, fun, friendly and social place to workout and better yourself. We’re extremely passionate about helping everyone reach their goals. Our team are a dedicated bunch of fitness and wellbeing professionals, here to guide and support you on your unique fitness journey.</p>
+                    <p>
+                    Our expert team have a wealth of fitness, nutrition and wellbeing knowledge. we care and support everyone who walks through our door. We’re passionate about helping people meet their fitness and health goals.</p>
+                    <h4>Our ethos is to welcome everybody.</h4>
+                    <p>Facilities include
+                    High quality gym equipment,  cardiovascular and resistance.
+                    Studio, air conditioned studio
+                    Changing facilities, including showers, lockers and wc’s</p>
                 </div>
             </section>
             <section id="two" className="spotlights inner">
@@ -138,37 +147,37 @@ const Landing = (props) => (
                                 <h3>Marcus White</h3>
                             </header>
 
-<h4>
-    What did you do before working at Fitness Republic?
-</h4>
- <p>
-     I was at Loughborough college , having done my A levels went straight to college to do my Qualifications.
- </p>
- <h4>Why did you become a personal trainer?</h4>
-<p>
-    To help people, I love training and pushing myself towards my goals and wanted to help other people achieve their own goals.
-</p>
-<h4>What aspect of your work do you enjoy most?</h4>
-<p>
-    The friendly atmosphere , meeting and getting to know lots of the members.
-</p>
-<h4>It's the weekend, how might you be spending your time?</h4>
-<p>
-    Relaxing , playing football or going to concerts (covid permitting).
-</p>
-<h4>
-    What's next for you?
-</h4>
-<p>
-    Working hard towards my next competition.
-</p>
-<h4>
-    Favourite exercise
-</h4>
+                            <h4>
+                                What did you do before working at Fitness Republic?
+                            </h4>
+                            <p>
+                                I was at Loughborough college , having done my A levels went straight to college to do my Qualifications.
+                            </p>
+                            <h4>Why did you become a personal trainer?</h4>
+                            <p>
+                                To help people, I love training and pushing myself towards my goals and wanted to help other people achieve their own goals.
+                            </p>
+                            <h4>What aspect of your work do you enjoy most?</h4>
+                            <p>
+                                The friendly atmosphere , meeting and getting to know lots of the members.
+                            </p>
+                            <h4>It's the weekend, how might you be spending your time?</h4>
+                            <p>
+                                Relaxing , playing football or going to concerts (covid permitting).
+                            </p>
+                            <h4>
+                                What's next for you?
+                            </h4>
+                            <p>
+                                Working hard towards my next competition.
+                            </p>
+                            <h4>
+                                Favourite exercise
+                            </h4>
 
-<p>
-    DB chest press / dB shoulder press
-</p>
+                            <p>
+                                DB chest press / dB shoulder press
+                            </p>
 
                             <ul className="actions">
                                 <li><Link to="/generic" className="button">Contact Marcus</Link></li>
@@ -180,48 +189,48 @@ const Landing = (props) => (
 
             <section>
                     <Link to="/generic" className="image">
-                        <img src={connor} alt="Connor Chamberlain" />
+                        <img src={blanka} alt="Blanka Harvey" />
                     </Link>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Connor Chamberlain</h3>
+                                <h3>Blanka Harvey</h3>
                             </header>
 
-<h4>
-    What did you do before working at Fitness Republic?
-</h4>
- <p>
-Before working at FR I was at Loughborough college training to become a PT, I also worked at FR for work experience, and had various part time jobs alongside this.
- </p>
- <h4>Why did you become a personal trainer?</h4>
-<p>
-I became a PT because I had a passion for training, it’s a lifestyle , I wanted to train people ,and show them how to get the results they want ASAP!
-</p>
-<h4>What aspect of your work do you enjoy most?</h4>
-<p>
-I enjoy the people side of my work and showing people they can achieve what they want! I’m a people person, even if it’s a quick chat with someone I’ve never spoke to before.
-</p>
-<h4>It's the weekend, how might you be spending your time?</h4>
-<p>
-I train over the weekend Friday, Sunday, usually on Saturdays I’ll relax, catch up with friends and family, and maybe have a cheat meal!
-</p>
-<h4>
-    What's next for you?
-</h4>
-<p>
-I’m currently studying for my L3 PT course here at FR, once I’ve completed this I’d like to grow my client base even more, carry on working and learning more too. I’d like to get into bootcamp style training for clients as well.
-</p>
-<h4>
-    Favourite exercise
-</h4>
+                            <h4>
+                                What did you do before working at Fitness Republic?
+                            </h4>
+                            <p>
+                            Before working at FR I was at Loughborough college training to become a PT, I also worked at FR for work experience, and had various part time jobs alongside this.
+                            </p>
+                            <h4>Why did you become a personal trainer?</h4>
+                            <p>
+                            I became a PT because I had a passion for training, it’s a lifestyle , I wanted to train people ,and show them how to get the results they want ASAP!
+                            </p>
+                            <h4>What aspect of your work do you enjoy most?</h4>
+                            <p>
+                            I enjoy the people side of my work and showing people they can achieve what they want! I’m a people person, even if it’s a quick chat with someone I’ve never spoke to before.
+                            </p>
+                            <h4>It's the weekend, how might you be spending your time?</h4>
+                            <p>
+                            I train over the weekend Friday, Sunday, usually on Saturdays I’ll relax, catch up with friends and family, and maybe have a cheat meal!
+                            </p>
+                            <h4>
+                                What's next for you?
+                            </h4>
+                            <p>
+                            I’m currently studying for my L3 PT course here at FR, once I’ve completed this I’d like to grow my client base even more, carry on working and learning more too. I’d like to get into bootcamp style training for clients as well.
+                            </p>
+                            <h4>
+                                Favourite exercise
+                            </h4>
 
-<p>
-    My favourite exercise would have to be anything pressing so a DB chest press, it’s in all of the old school training, and I’ve found it works best for me!
-</p>
+                            <p>
+                                My favourite exercise would have to be anything pressing so a DB chest press, it’s in all of the old school training, and I’ve found it works best for me!
+                            </p>
 
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Contact Connor</Link></li>
+                                <li><Link to="/generic" className="button">Contact Blanka</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -236,37 +245,37 @@ I’m currently studying for my L3 PT course here at FR, once I’ve completed t
                                 <h3>Connor Chamberlain</h3>
                             </header>
 
-<h4>
-    What did you do before working at Fitness Republic?
-</h4>
- <p>
-Before working at FR I was at Loughborough college training to become a PT, I also worked at FR for work experience, and had various part time jobs alongside this.
- </p>
- <h4>Why did you become a personal trainer?</h4>
-<p>
-I became a PT because I had a passion for training, it’s a lifestyle , I wanted to train people ,and show them how to get the results they want ASAP!
-</p>
-<h4>What aspect of your work do you enjoy most?</h4>
-<p>
-I enjoy the people side of my work and showing people they can achieve what they want! I’m a people person, even if it’s a quick chat with someone I’ve never spoke to before.
-</p>
-<h4>It's the weekend, how might you be spending your time?</h4>
-<p>
-I train over the weekend Friday, Sunday, usually on Saturdays I’ll relax, catch up with friends and family, and maybe have a cheat meal!
-</p>
-<h4>
-    What's next for you?
-</h4>
-<p>
-I’m currently studying for my L3 PT course here at FR, once I’ve completed this I’d like to grow my client base even more, carry on working and learning more too. I’d like to get into bootcamp style training for clients as well.
-</p>
-<h4>
-    Favourite exercise
-</h4>
+                            <h4>
+                                What did you do before working at Fitness Republic?
+                            </h4>
+                            <p>
+                            Before working at FR I was at Loughborough college training to become a PT, I also worked at FR for work experience, and had various part time jobs alongside this.
+                            </p>
+                            <h4>Why did you become a personal trainer?</h4>
+                            <p>
+                            I became a PT because I had a passion for training, it’s a lifestyle , I wanted to train people ,and show them how to get the results they want ASAP!
+                            </p>
+                            <h4>What aspect of your work do you enjoy most?</h4>
+                            <p>
+                            I enjoy the people side of my work and showing people they can achieve what they want! I’m a people person, even if it’s a quick chat with someone I’ve never spoke to before.
+                            </p>
+                            <h4>It's the weekend, how might you be spending your time?</h4>
+                            <p>
+                            I train over the weekend Friday, Sunday, usually on Saturdays I’ll relax, catch up with friends and family, and maybe have a cheat meal!
+                            </p>
+                            <h4>
+                                What's next for you?
+                            </h4>
+                            <p>
+                            I’m currently studying for my L3 PT course here at FR, once I’ve completed this I’d like to grow my client base even more, carry on working and learning more too. I’d like to get into bootcamp style training for clients as well.
+                            </p>
+                            <h4>
+                                Favourite exercise
+                            </h4>
 
-<p>
-    My favourite exercise would have to be anything pressing so a DB chest press, it’s in all of the old school training, and I’ve found it works best for me!
-</p>
+                            <p>
+                                My favourite exercise would have to be anything pressing so a DB chest press, it’s in all of the old school training, and I’ve found it works best for me!
+                            </p>
 
                             <ul className="actions">
                                 <li><Link to="/generic" className="button">Contact Connor</Link></li>
