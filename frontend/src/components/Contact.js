@@ -5,9 +5,9 @@ const Contact = (props) => (
         <div className="inner">
             <section>
                     <form method="post" action="#" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-                         <input type="hidden" name="bot-field" />
 
-                        <input type="hidden" name="form-name" value="contact" />
+                         <input type="hidden" name="bot-field" />
+                        <input type="hidden" name="form-name" value="General Question" />
                     <div className="field half first">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" />
@@ -32,11 +32,6 @@ const Contact = (props) => (
             </section>
             <section className="split">
                 <section>
-                    <div className="contact-method">
-                        <span className="icon alt fa-envelope"></span>
-                        <h3>Email</h3>
-                        <a href="mailto:info@fitnessrepublic.co.uk">info@fitnessrepublic.co.uk</a>
-                    </div>
                 </section>
                 <section>
                     <div className="contact-method">

@@ -8,7 +8,7 @@ const FormSevenDayPass = (props)=> (
  <form name="SevenDayPass" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="#">
 
  <input type="hidden" name="bot-field" />
- <input type="hidden" name="form-name" value="SevenDayPass" />
+ <input type="hidden" name="form-name" value="Seven Day Pass" />
 
  <div className="field half first">
     <label htmlFor="name">Name</label>

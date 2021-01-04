@@ -9,7 +9,7 @@ const Form = (props)=> (
  <form name="contact" method="post" action="#" data-netlify="true" data-netlify-honeypot="bot-field">
 
  <input type="hidden" name="bot-field" />
- <input type="hidden" name="form-name" value="contact" />
+ <input type="hidden" name="form-name" value="General Question" />
 
  <div className="field half first">
     <label htmlFor="name">Name</label>
