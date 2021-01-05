@@ -128,8 +128,54 @@ const Landing = (props) => (
                             <header className="major">
                                 <h3>Ben Pellecchia</h3>
                             </header>
-                            <p></p>
+                            <h4>
+                                What did you do before working at Fitness Republic?
+                            </h4>
 
+                            <p>
+                                I’ve spent many years experiencing different life paths, I've been a Supermarket Manager, Window cleaner, Warehouse worker, Website designer, Sound Engineer, Business Owner both online and bricks and mortar and directly prior to working at Fitness Republic i was a Roofline Specialist. (I'm sure there's a few things i've missed out that i don't currently recall)I was actually working on the roofs and website building while working at the before i went full time and the gym and focused all my efforts on being the best coach i could.
+                            </p>
+
+                            <h4>
+                                Why did you become a personal trainer?
+                            </h4>
+
+                            <p>
+                                I had always been into working out and trying to better myself and started out training my friends a long time ago, seeing how exercise, training and coaching helped both my friends and I,not only aesthetically but also with confidence and energy, gave me a boost and tremendous feeling of wellbeing. So i think the only next logical step was to make it a career and not just a pass time.
+                            </p>
+
+                            <h4>
+                                What aspect of your work do you enjoy most?
+                            </h4>
+
+                            <p>
+                                Playing a small part in clients overall wellbeing, it's not all about losing weight to look good on the beach. Being able to build their confidence, strength and feeling of self worth. I love when clients tell me how getting into exercise and health has changed them for the better from one person who managed to get himself off antidepressants and turn his life around to others who have managed to come a long way in reversing their  type 2 diabetes. If all i did was make it enjoyable enough for them to keep going then that is enough. As personal trainers we can only show you the door you have to walk through it.
+                            </p>
+
+                            <h4>
+                                it's the weekend, how might you be spending your time?
+                            </h4>
+
+                            <p>
+                                If I'm not working then I'll be spending my time playing my guitar or learning, personal growth plays a big part in my life and I can literally spend hours at a time watching lectures, reading or listening to podcasts, anything that will improve the quality of my life and hopefully i can pass on what i learn to others. I also like to take walks in the countryside.
+                            </p>
+
+                            <h4>
+                                what's next for you?
+                            </h4>
+
+                            <p>
+                                I want to take my experience and continue to pass it on, hopefully having some kind of impact, if only on a small scale. I want to focus on total wellbeing incorporating physical strength and fitness with mental strength and fitness, and contribute to a more peaceful state of mind for anyone who is willing to listen.
+                            </p>
+
+
+                            <h4>
+                                Favourite exercise?
+                            </h4>
+
+                            <p>
+                                It may not be one that you expect or even think of as an exercise, but i would have to say meditation. I have found that meditation has a profound effect on my overall health both mind and body. There have been thousands of studies done on the benefits of meditation and some of the results have been outstanding. It's not always that easy to do but once you get to grips with it and practice it consistently you will see why it's my favorite exercise.
+                            </p>
                         </div>
                     </div>
                 </section>

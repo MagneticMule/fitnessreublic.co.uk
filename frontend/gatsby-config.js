@@ -7,8 +7,11 @@ module.exports = {
     description: 'Fitness Republix is the premiere family run gym in Ashby De La Zouch, England',
   },
   plugins: [
-
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -28,9 +31,23 @@ module.exports = {
         path: path.join(__dirname, `src`, `pages`),
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+{
+    resolve: 'gatsby-plugin-gdpr-tracking',
+      options: {
+        // logging to the console, if debug is true
+        debug: true,
+        googleAnalytics: {
+            // The property ID; the tracking code won't be generated without it.
+            trackingId: 'UA-45461666-1',
+            // Defines it google analytics should be started with out the cookie consent
+            autoStart: false, // <--- default
+            // Setting this parameter is optional
+            anonymize: true, // <--- default
+            // Name of the cookie, that enables the tracking if it is true
+            controlCookieName: 'gdpr-analytics-enabled', // <--- default
+            cookieFlags: 'secure;samesite=none' // <--- default
+        }
+      }
+    },
   ],
 }
