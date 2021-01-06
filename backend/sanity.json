@@ -21,7 +21,8 @@
     "@sanity/color-input",
     "dashboard-widget-netlify",
     "tabs",
-    "dashboard-widget-document-chart"
+    "dashboard-widget-document-chart",
+    "table"
   ],
   "env": {
     "development": {

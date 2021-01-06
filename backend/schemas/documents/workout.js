@@ -1,0 +1,27 @@
+// page.js
+
+export default {
+
+  // Setup a 'document' type to house the page builder field
+  title: "Workout",
+  name: "workout",
+  type: "document",
+  fields: [
+    {
+      title: "Name",
+      name: "name",
+      type: "string",
+      validation: Rule => Rule.required().min(2).warning('Name should be longer than 2 characters'),
+      description: `This is the title of the page as it will appear in the main menu and any other navigation such as the site footer. Use a simple, single word title if you can e.g. "About Us", "Store", "Personal Training".`
+    },
+    {
+      name: 'workoutBuilder',
+      type: 'array',
+      title: 'Workout Builder',
+      of: [
+        { type: 'hero' },
+        { type: 'excercise'}
+      ]
+    }
+  ]
+}

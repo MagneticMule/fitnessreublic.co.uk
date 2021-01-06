@@ -7,12 +7,15 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // object schemas
 import hero from './objects/hero.js';
 import news from './objects/news.js';
+import excercise from './objects/excercise.js';
 import staffMember from './objects/staffMember.js';
 import staff from './objects/staff.js';
 import businessDetails from './objects/businessDetails.js';
 
 // document schemas
 import page from './documents/page.js';
+import shop from './documents/shop.js';
+import workout from './documents/workout.js';
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -29,5 +32,7 @@ export default createSchema({
     businessDetails,
     hero,
     news,
+    workout,
+    excercise,
   ]),
 })

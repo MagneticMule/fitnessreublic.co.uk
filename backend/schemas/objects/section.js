@@ -1,5 +1,5 @@
 export default {
-  title: "News",
+  title: "Section",
   name: "news",
   type: "document",
   fields: [
@@ -15,8 +15,8 @@ export default {
       title: "Title",
       name: "title",
       type: "string",
-      validation: Rule => Rule.required().min(2).warning('Title should be longer than 2 characters'),
-      descrition: `The title will be displayed in large type in the first setion of the home page, think about the text you want to grab the viewers attention. This could be the current status of the gym's opening hours or perhaps a sale on gym memberships.`
+      validation: Rule => Rule.min(2).warning('Title should be longer than 2 characters'),
+      descrition: `The title of the section is optional. However, you choose to add one then it will be displayed at the top of the section. Choose a name tha`
     },
     {
       title: "Background",
@@ -32,7 +32,7 @@ export default {
       name: 'content',
       type: 'array',
       of: [{ type: 'block' }],
-      description: `This is the body of the news item. Tell the gym members what's happening in around a paragraph of text, for example if the gym is closing for a while let them know why. If you are having a sale then let them know for how long the sale will run. You can style text as you like, embolden, italicize and add header.. You can also add links and images.`,
+      description: `This is the body of the news item. Tell the gym members what's happening in around a paragraph of text, for example if the gym is closing for a while let them know why. If you are having a sale then let them know for how long the sale will run. You can style text as you like, embolden, italicize and add header. You can also add links.`,
       validation: Rule => [
         Rule.required().min(50).warning('Body text should be longer than 50 characters.'),
           Rule.max(200).error('Body text must be shorter than 200 characters')
