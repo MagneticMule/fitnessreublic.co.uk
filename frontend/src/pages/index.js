@@ -26,13 +26,13 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="news" className="inverted">
             <div className="inner">
-
-              <h1>Lets leave 2020 behind, and make 2021 your best year ever!</h1>
+              <h1>Don't let National Lockdown hold your fitness back!</h1>
+              <h2>Lets leave 2020 behind, and make 2021 your best year ever!</h2>
 
               <h2>10% OFF MEMBERSHIP FEE'S</h2>
-              <h3>THIS JANUARY WE WANT YOU!</h3>
+              <h3>This Lockdown we want you</h3>
               <p>
-                We are offering <strong>10% off our range of memberships each month</strong> when you pay  by direct debit.
+                We are offering <strong>10% off our range of memberships each month</strong> when you pay by direct debit.
                 <br/>
                 Remember at Fitness Republic there are <strong>no Joining Fee's</strong> and <strong>no contracts</strong>.
               </p>
@@ -47,7 +47,7 @@ class HomeIndex extends React.Component {
                   </Link>
                 </li>
               </ul>
-              <p>Join now and pay nothing until February 2021</p>
+              <p>Join now and pay nothing until 15th March 2021</p>
             </div>
           </section>
           <section id="one" className="tiles">
