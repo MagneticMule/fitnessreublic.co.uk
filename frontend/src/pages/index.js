@@ -14,11 +14,27 @@ class HomeIndex extends React.Component {
     return (
       <Layout>
         <Helmet
-          title="Fitness Republic - Gym in Ashby De La Zouch"
+
+          title="Fitness Republic - Fitness Gym in Ashby"
           meta={[
             { name: 'description', content: 'Hello, we are Fitness Republic! A family run gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a fun and friendly environment, all at an amazing affordable cost.' },
-            { name: 'keywords', content: 'gym, fitness, personal training, ashby, leicestershire, free pass, student membership' },
+            { name: 'keywords', content: 'gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, student membership, local, near me' },
           ]}>
+              <script type="application/ld+json">
+              {`
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "url": "https://www.fitnessrepublic.co.uk",
+                    "name": "Fitness Republic",
+                    "contactPoint": {
+                      "@type": "ContactPoint",
+                      "telephone": "01530 413330",
+                      "contactType": "Enquiries"
+                    }
+                  }
+                `}
+            </script>
         </Helmet>
 
         <Banner />

@@ -7,6 +7,7 @@ module.exports = {
     description: 'Fitness Republix is the premiere family run gym in Ashby De La Zouch, England',
   },
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
