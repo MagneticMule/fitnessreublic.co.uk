@@ -3,8 +3,9 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'Fitness Republic UK',
+    siteUrl: 'https://www.fitnessrepublic.co.uk',
     author: 'Thomas Sweeney',
-    description: 'Fitness Republix is the premiere family run gym in Ashby De La Zouch, England',
+    description: 'Fitness Republic is the premiere family run gym in Ashby De La Zouch, England',
   },
   plugins: [
     `gatsby-plugin-advanced-sitemap`,

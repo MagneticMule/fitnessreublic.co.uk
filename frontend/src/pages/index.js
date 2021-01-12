@@ -127,7 +127,8 @@ class HomeIndex extends React.Component {
 
               <p>
                     Fitness Republic is working within tight Covid19 restrictions, keeping you fit, healthy, motivated and safe.
-                    <br/>As such we have implimented some basic guidlines that we ask that you follow when training at the gym.
+                    <br/>
+                    As such we have implimented some basic guidlines that we ask that you follow when training at the gym.
                     <br/>
                     This is a trying time for all of us but hopefully we can pull through this together.
               </p>
