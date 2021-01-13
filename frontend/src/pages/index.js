@@ -8,6 +8,7 @@ import pic04 from '../assets/images/pic04.jpg'
 import Banner from '../components/Banner'
 import Layout from '../components/layout'
 import Form from '../components/Form'
+import Video from '../components/Video'
 
 class HomeIndex extends React.Component {
   render() {
@@ -40,6 +41,15 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div id="main">
+          <section id="frtv" className="inverted">
+            <div className="inner">
+              <h1>The Latest from Fitness Republic TV</h1>
+              <Video
+                  videoSrcURL="https://www.youtube.com/embed/1JaAu6Z8FHI"
+                  videoTitle="Train Safe at Fitness Republic Ashby De La Zouch"
+              />
+            </div>
+          </section>
           <section id="news" className="inverted">
             <div className="inner">
               <h1>Don't let National Lockdown hold your fitness back!</h1>
@@ -66,6 +76,7 @@ class HomeIndex extends React.Component {
               <p>Join now and pay nothing until 15th March 2021</p>
             </div>
           </section>
+
           <section id="one" className="tiles">
             <article style={{ backgroundImage: `url(${pic01})` }}>
               <Link

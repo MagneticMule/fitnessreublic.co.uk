@@ -61,9 +61,7 @@ class Layout extends React.Component {
                             <div className="inner">
                             <p>We store cookies on your computer. These cookies are used to collect information about how you interact with this website and allow us to remember you.
                             We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors on this website.</p>
-
-
-                            <p>If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.</p>
+                            <p>By using this website you agree for us to store cookies on your local computer.</p>
                             </div>
                         </CookieConsent>
             </div>
