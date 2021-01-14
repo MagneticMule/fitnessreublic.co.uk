@@ -45,10 +45,11 @@ class HomeIndex extends React.Component {
             <div className="inner">
               <h1>The Latest from Fitness Republic TV</h1>
               <Video
-                  videoSrcURL="https://www.youtube.com/embed/1JaAu6Z8FHI"
-                  videoTitle="Train Safe at Fitness Republic Ashby De La Zouch"
+                  videoSrcURL="https://www.youtube.com/embed/NiUYGQEagP0"
+                  videoTitle="Latest Video from FItness Republic TV"
               />
             </div>
+            <p>Remember, Fitness Republic TV has daily videos like this one over on our <a href="https://www.youtube.com/channel/UCU1sJeJfHC4tLO_x9vZiDhw" alt="Fitness republic TV">YouTube channel</a>.</p>
           </section>
           <section id="news" className="inverted">
             <div className="inner">

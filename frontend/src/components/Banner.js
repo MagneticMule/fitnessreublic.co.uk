@@ -11,7 +11,7 @@ const Banner = props => (
         <p>
           A family run gym
           <br />
-          in the heart of Ashby De la Zouch.
+          in the heart of <strong>Ashby De la Zouch</strong>.
         </p>
         <ul className="actions">
           <li>
