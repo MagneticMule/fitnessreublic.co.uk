@@ -20,24 +20,28 @@
   status = 301
   force = false
   query = {path = ":path"}
+
 	[[redirects]]
 	from = "/free-pass"
   to = "/membership"
   status = 301
   force = false
   query = {path = ":path"}
+
 	[[redirects]]
 	from = "/students"
   to = "/membership"
   status = 301
   force = false
   query = {path = ":path"}
+
 	[[redirects]]
 	from = "/contact"
   to = "/"
   status = 301
   force = false
   query = {path = ":path"}
+
 	[[redirects]]
 	from = "/personal-training"
   to = "/training"
