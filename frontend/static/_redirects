@@ -3,4 +3,7 @@
 /free-pass          /membership
 /students           /membership
 /contact            /
-personal-training   /training
+/personal-training  /training
+/basket             /membership
+/checkout           /membership
+/my-account         /membership
