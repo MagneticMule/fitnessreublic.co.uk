@@ -33,9 +33,16 @@
   force = false
   query = {path = ":path"}
 	[[redirects]]
-		from = "/contact"
+	from = "/contact"
   to = "/"
   status = 301
   force = false
   query = {path = ":path"}
+		[[redirects]]
+	from = "/personal-training"
+  to = "/training"
+  status = 301
+  force = false
+  query = {path = ":path"}
+
 
