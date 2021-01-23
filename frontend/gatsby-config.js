@@ -1,3 +1,8 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+
 const path = require('path')
 
 module.exports = {
@@ -8,6 +13,15 @@ module.exports = {
     description: 'Fitness Republic is the premiere family run gym in Ashby De La Zouch, England',
   },
   plugins: [
+     {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `s1k3b826`,
+        dataset: `production`,
+        watchMode: `true`,
+        token: process.env.SANITY_TOKEN,
+      },
+    },
     `gatsby-plugin-advanced-sitemap`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
