@@ -7,3 +7,7 @@
 /basket             /membership
 /checkout           /membership
 /my-account         /membership
+/terms-conditions   /membership
+/zumba              /classes
+/hiit               /classes
+/yoga               /classes
