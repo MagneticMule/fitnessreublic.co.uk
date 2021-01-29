@@ -1,7 +1,9 @@
+import { GiWeightLiftingUp as icon} from 'react-icons/gi';
 export default {
   title: "Excercise",
   name: "excercise",
   type: "document",
+  icon,
   fields: [
     {
       title:"Active",
@@ -18,19 +20,18 @@ export default {
       validation: Rule => Rule.required().min(2).warning('Excercise names should be longer than 2 characters'),
     },
     {
-      title: "Descriptione",
-      name: "description",
+      title: "Instructions",
+      name: "instructions",
+      description: `Add any tips for doing the excercise here`,
       type: "string",
-      validation: Rule => Rule.required().min(2).warning('Second names should be longer than 2 characters'),
+      validation: Rule => Rule.min(10).warning('Descriptions should be longer than ten characters'),
     },
     {
-      title:"Illustration or Video",
+      title:"Video",
       name:"video",
-      type:"image",
-      description: `Put an image or video here demonstrating to the client how to perform the excercise.`,
-      options: {
-        hotspot: true // Make the image editable
-      },
+      type:"string",
+      description: `Put a link to a YouTube video here demonstrating how to perform the excercise.`,
+      validation: Rule => Rule.required().warning('A video should have a link to a YouTube video'),
     },
     {
       title: 'Repetitions',
@@ -39,6 +40,7 @@ export default {
     }
   ],
   initialValue: {
-    isActive: true
+    isActive: true,
+    repetitions: 1
   }
 }

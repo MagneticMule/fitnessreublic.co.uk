@@ -1,4 +1,4 @@
-// page.js
+import { BsFileRichtext as icon} from 'react-icons/bs';
 
 export default {
 
@@ -6,6 +6,7 @@ export default {
   title: "Page",
   name: "page",
   type: "document",
+  icon,
   fields: [
     {
       title: "Name",
@@ -20,8 +21,8 @@ export default {
       title: 'Page builder',
       of: [
         { type: 'hero' },
-        { type: 'news'},
-        { type: 'staff' }
+        { type: 'video' },
+        { type: 'news'}
       ]
     }
   ]

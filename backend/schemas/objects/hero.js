@@ -1,21 +1,23 @@
+import { GoScreenFull as icon} from 'react-icons/go';
 export default {
   title: "Hero",
   name: "hero",
   type: "document",
+  icon,
   fields: [
     {
       title: "Title",
       name: "title",
       type: "string",
       validation: Rule => Rule.required().min(2).warning('Title should be longer than 2 characters'),
-      descrition: `The title will be displayed in large type in the first setion of the hero box. THis text could be the name of yuour business or a statement or question of some sort e.g. "Are you ready to get fit in 2021?" The idea is you want to capture the visitors attention early on.`
+      description: `The title will be displayed in large type in the first setion of the hero box. THis text could be the name of yuour business or a statement or question of some sort e.g. "Are you ready to get fit in 2021?" The idea is you want to capture the visitors attention early on.`
     },
     {
       title: 'Content',
       name: 'content',
       type: 'array',
       of: [{ type: 'block' }],
-      description: `Put a few lines here`,
+      description: `Introduce the workout.`,
       validation: Rule => [
         Rule.max(200).error('Body text must be shorter than 200 characters')
       ]

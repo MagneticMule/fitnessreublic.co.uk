@@ -1,7 +1,11 @@
+import { BsFillInfoCircleFill as icon} from 'react-icons/bs';
+
 export default {
   title: "Business Details",
   name: "businessDetails",
   type: "document",
+  icon,
+  __experimental_actions: ['create', 'update', /*'delete',*/ 'publish'],
   fields: [
     {
       title: "Name",
@@ -22,7 +26,6 @@ export default {
       title: 'Phone Number',
       name: 'phoneNumber',
       type: 'string',
-      of: [{ type: 'block' }],
       description: `This is the number you want your clients to call.`,
       validation: Rule => [
         Rule.required(),
@@ -49,6 +52,11 @@ export default {
             invert: false, // Boolean to allow any value that does NOT match pattern
           }
         ),
+    },
+    {
+     title: 'Social Media',
+     name: 'businessSocialMedia',
+     type:'social'
     },
   ]
 }

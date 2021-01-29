@@ -14,15 +14,8 @@
     "@sanity/default-login",
     "@sanity/dashboard",
     "@sanity/desk-tool",
-    "mux-input",
-    "asset-source-unsplash",
     "media",
-    "seo-tools",
-    "@sanity/color-input",
-    "dashboard-widget-netlify",
-    "tabs",
-    "dashboard-widget-document-chart",
-    "table"
+    "asset-source-unsplash"
   ],
   "env": {
     "development": {
@@ -39,6 +32,18 @@
     {
       "implements": "part:@sanity/dashboard/config",
       "path": "src/dashboardConfig.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "src/deskStructure.js"
+    },
+    {
+      "name": "part:@sanity/base/new-document-structure",
+      "path": "src/newDocumentStructure.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./parts/assetSources.js"
     }
   ]
 }

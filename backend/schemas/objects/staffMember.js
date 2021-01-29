@@ -1,7 +1,9 @@
+import { BsFillPeopleFill as icon} from 'react-icons/bs';
 export default {
-  title: "Staff Member",
+  title: "Staff",
   name: "staffMember",
   type: "document",
+  icon,
   fields: [
     {
       title:"Active",
@@ -42,6 +44,12 @@ export default {
       validation: Rule => Rule.min(50).warning('Biographies should be longer than 50 characters'),
     }
   ],
+    preview: {
+    select: {
+      title: 'firstName',
+      subtitle: 'secondName'
+    }
+  },
   initialValue: {
     isActive: true
   }

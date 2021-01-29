@@ -5,16 +5,21 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // object schemas
+import businessDetails from './objects/businessDetails.js';
 import hero from './objects/hero.js';
 import news from './objects/news.js';
 import excercise from './objects/excercise.js';
+import set from './objects/set.js';
+import social from './objects/social.js';
 import staffMember from './objects/staffMember.js';
-import staff from './objects/staff.js';
-import businessDetails from './objects/businessDetails.js';
+import video from './objects/video.js';
+
+
+
 
 // document schemas
 import page from './documents/page.js';
-import shop from './documents/shop.js';
+// import shop from './documents/shop.js';
 import workout from './documents/workout.js';
 
 
@@ -27,12 +32,14 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     staffMember,
-    staff,
     page,
     businessDetails,
     hero,
     news,
     workout,
+    set,
     excercise,
+    video,
+    social
   ]),
 })

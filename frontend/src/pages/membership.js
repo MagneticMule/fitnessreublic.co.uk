@@ -18,9 +18,7 @@ const Membership = (props) => (
         </Helmet>
 
         <BannerMembership />
-        <div className="inner">
 
-        </div>
 
         <div id="main">
             <section id="freepass" className="alt">
