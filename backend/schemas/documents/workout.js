@@ -8,24 +8,37 @@ export default {
   icon,
   fields: [
     {
-      title: "Title",
-      name: "title",
+      title: "Name",
+      name: "name",
       type: "string",
       validation: Rule => Rule.required().min(2).warning('Title should be longer than 2 characters'),
       description: `The title will be displayed in large type at the top of the page`
     },
     {
-      title: "Background",
-      name: "background",
+      title: "Image",
+      name: "image",
       type: "image",
-      description: `You can put an image here as the background to the title. If you don't put an image here the news will be displayed on a plain, coloured background.`,
+      description: `This will appear at the top of the page`,
       options: {
         hotspot: true // Make the image editable
       },
     },
     {
-      title: 'Content',
-      name: 'content',
+      title: 'Slug',
+      name: 'slug',
+      type:'slug',
+      options: {
+        source: 'name',
+        maxLength: 200, // will be ignored if slugify is set
+        slugify: input => input
+                            .toLowerCase()
+                            .replace(/\s+/g, '-')
+                            .slice(0, 200)
+      }
+    },
+    {
+      title: 'Description',
+      name: 'description',
       type: 'array',
       of: [{ type: 'block' }],
       description: `You can introduce the workout here and describe some of the excercises and benefits of the workout.`,

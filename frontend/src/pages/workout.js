@@ -3,33 +3,37 @@ import { Link} from 'gatsby';
 import Img from 'gatsby-image'
 import Layout from '../components/layout';
 
+import Video from '../components/Video';
+import WorkoutList from '../components/WorkoutList';
+
 export const query = graphql`
 {
-  allSanityWorkout {
+ workouts: allSanityWorkout {
     edges {
       node {
         id
-        title
-        content {
+        name
+        slug {
+          current
+        }
+        description {
           children {
             text
             marks
           }
         }
-        background {
+        image {
           asset {
-            fluid {
-              src
+            fluid(maxWidth: 700) {
+              ...GatsbySanityImageFluid
             }
           }
         }
         workoutBuilder {
-          _type
           isActive
           setName
           description
           repetitions
-          _rawExcercise
           excercise {
             video
             repetitions
@@ -41,21 +45,33 @@ export const query = graphql`
     }
   }
 }
+
 `;
 
-const Workout = ({data}) => (
-  <Layout>
-    <ul>
-      {data.allSanityWorkout.edges.map(({ node: workout })=>(
-        <li key={workout.id}>
-          <h2>{workout.title}</h2>
-          <p>{workout.workoutBuilder.map(({}))}</p>
-          </li>
-      ))}
-    </ul>
-  </Layout>
-);
-export default Workout;
+export default function Workout({data}) {
+  const workouts = data.workouts.edges;
+  return (
+    <Layout>
+      <div id="main" className="alt">
+        <section className="inner" alt="workout">
+        <header className="major">
+            <h2>Workouts</h2>
+        </header>
+        <p><strong>There are {workouts.length} workouts available.</strong></p>
+        <WorkoutList workouts={workouts}/>
+        {/* <ul>
+          {data.workouts.edges.map(({ node: workout })=>(
+            <li key={workout.id}>
+              <h2>{workout.title}</h2>
+
+            </li>
+          ))}
+        </ul> */}
+        </section>
+      </div>
+    </Layout>
+  );
+};
 
 
 
