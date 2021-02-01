@@ -3,8 +3,36 @@ import { Link} from 'gatsby';
 import Img from 'gatsby-image'
 import Layout from '../components/layout';
 
+import styled from 'styled-components';
 import Video from '../components/Video';
 import WorkoutList from '../components/WorkoutList';
+
+const Title = styled.h1`
+  font-size: 3rem;
+
+`;
+
+const Subtitle = styled.p`
+  font-size: 2rem;
+`;
+
+export default function Workout({data}) {
+  const workouts = data.workouts.edges;
+  return (
+    <Layout>
+      <div id="main" className="alt">
+        <section className="inner" alt="workout">
+        <header className="major">
+            <Title>Workouts</Title>
+        </header>
+        <Subtitle>There are {workouts.length} workouts available.</Subtitle>
+        <WorkoutList workouts={workouts}/>
+        </section>
+      </div>
+    </Layout>
+  );
+};
+
 
 export const query = graphql`
 {
@@ -48,30 +76,7 @@ export const query = graphql`
 
 `;
 
-export default function Workout({data}) {
-  const workouts = data.workouts.edges;
-  return (
-    <Layout>
-      <div id="main" className="alt">
-        <section className="inner" alt="workout">
-        <header className="major">
-            <h2>Workouts</h2>
-        </header>
-        <p><strong>There are {workouts.length} workouts available.</strong></p>
-        <WorkoutList workouts={workouts}/>
-        {/* <ul>
-          {data.workouts.edges.map(({ node: workout })=>(
-            <li key={workout.id}>
-              <h2>{workout.title}</h2>
 
-            </li>
-          ))}
-        </ul> */}
-        </section>
-      </div>
-    </Layout>
-  );
-};
 
 
 

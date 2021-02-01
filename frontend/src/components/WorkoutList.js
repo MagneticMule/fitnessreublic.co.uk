@@ -2,7 +2,14 @@ import { Link } from 'gatsby';
 import React from 'react';
 import Video from './Video.js';
 import Img from 'gatsby-image';
+import styled from 'styled-components';
 
+
+const Workouts=styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+`;
 
 function SingleExcercise ( {excercise} ){
   return(
@@ -15,13 +22,13 @@ function SingleExcercise ( {excercise} ){
       videoTitle={excercise.excersiseName}/>
       <hr/>
 
-      <div className="field half first">
+      <div className="field">
         <label htmlFor="reps">Repetitions</label>
         <input type="number" name="reps" id="reps" />
       </div>
-      <div className="field half">
+      <div className="field">
         <label htmlFor="weight">Weight</label>
-        <input type="number" name="weight" id="weight" />
+        <input type="number" name="weight" id="weight"/> Kilograms
       </div>
 
     </div>
@@ -86,9 +93,9 @@ export default function WorkoutList({workouts}) {
   return (
     <>
     {workouts.map((workout)=>(
-      <ul>
+      <Workouts>
         <li><SingleWorkout key={workout.node.id} workout={workout}/></li>
-      </ul>
+      </Workouts>
 
     ))}
     </>
