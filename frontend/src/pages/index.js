@@ -44,7 +44,7 @@ class HomeIndex extends React.Component {
             <div className="inner">
               <h1>The Latest from Fitness Republic TV</h1>
               <Video
-                  videoSrcURL="https://www.youtube.com/embed/NiUYGQEagP0"
+                  videoSrcURL="https://www.youtube.com/embed/-CoiIKp6lM8"
                   videoTitle="Latest Video from FItness Republic TV"
               />
             </div>
