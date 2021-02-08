@@ -1,38 +1,57 @@
 import React from 'react';
-import { Link} from 'gatsby';
-import Img from 'gatsby-image'
-import Layout from '../components/layout';
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
+import Chart from '../components/workout/Chart.js';
+import { useAuth0, withAuthenticationRequired } from '@auth0/auth0-react';
+
 
 import styled from 'styled-components';
-import Video from '../components/Video';
-import WorkoutList from '../components/WorkoutList';
+import WorkoutLayout from '../components/workout/WorkoutLayout.js';
+import WorkoutList from '../components/workout/WorkoutList';
+
+
+const Header = styled.section`
+  text-align:center;
+  color: var(--white);
+  padding: 1rem;
+`;
 
 const Title = styled.h1`
-  font-size: 3rem;
-
+  font-size: 2rem;
+  font-weight: 100;
 `;
 
 const Subtitle = styled.p`
-  font-size: 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
 `;
 
-export default function Workout({data}) {
+const Container = styled.div`
+  background: linear-gradient(107.69deg, #2A292E 0.39%, #312746 99.31%);
+  padding: 2rem;
+`;
+
+
+const Workout = ({data})=> {
+  const { user } = useAuth0();
   const workouts = data.workouts.edges;
   return (
-    <Layout>
-      <div id="main" className="alt">
-        <section className="inner" alt="workout">
-        <header className="major">
-            <Title>Workouts</Title>
-        </header>
-        <Subtitle>There are {workouts.length} workouts available.</Subtitle>
+    <WorkoutLayout>
+      <Container>
+        <Header>
+        {/* <Title>Good Morning {user.name.split(' ')[0]}</Title> */}
+        <Title>Good Morning Thomas</Title>
+        <Subtitle>There are {workouts.length} workouts available</Subtitle>
+        </Header>
+        <Chart/>
         <WorkoutList workouts={workouts}/>
-        </section>
-      </div>
-    </Layout>
+      </Container>
+    </WorkoutLayout>
   );
-};
+  };
 
+//export default withAuthenticationRequired(Workout);
+export default Workout;
 
 export const query = graphql`
 {
@@ -41,6 +60,10 @@ export const query = graphql`
       node {
         id
         name
+        target{
+					upper_body
+          lower_body
+        }
         slug {
           current
         }

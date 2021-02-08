@@ -13,6 +13,16 @@ module.exports = {
     description: 'Fitness Republic is the premiere family run gym in Ashby De La Zouch, England',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+
+            'Roboto\:100,200,300,500,700,900'
+
+        ],
+      },
+    },
      {
       resolve: `gatsby-source-sanity`,
       options: {
