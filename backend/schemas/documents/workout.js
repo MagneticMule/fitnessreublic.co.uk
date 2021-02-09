@@ -15,6 +15,11 @@ export default {
       description: `The title will be displayed in large type at the top of the page`
     },
     {
+      title: 'Target',
+      name: 'target',
+      type: 'target'
+    },
+    {
       title: "Image",
       name: "image",
       type: "image",

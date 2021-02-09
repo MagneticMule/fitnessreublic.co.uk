@@ -11,7 +11,6 @@ const WorkoutListStyles = styled.div`
 `;
 
 
-
 function SingleExcercise ( {excercise} ){
   return(
     <div className="">
@@ -90,9 +89,8 @@ const Card = styled.div`
   }
 
   h2.card__title {
-    font-size: 1.6rem;
-    font-weight: 500;
-    letter-spacing:.03rem;
+    font-size: 1.2rem;
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--white);
     margin: 0;
@@ -133,7 +131,9 @@ const Card = styled.div`
     > .icon{
       font-size: 1rem;
       color: orange;
-      vertical-align: middle
+      margin-right: 2px;
+      vertical-align: middle;
+      bottom: 1px;
       }
     > span {
       font-weight: bold;
@@ -144,8 +144,9 @@ const Card = styled.div`
     > .icon {
       font-size: 1rem;
       color: cornflowerblue;
-      margin-right: 2px;
-      vertical-align: middle
+      margin-right: 5px;
+      vertical-align: middle;
+      bottom: 2px;
     }
     > span {font-weight: bold;}
   }
@@ -161,7 +162,7 @@ function SingleWorkout({ workout }) {
         <div className="card__content">
           <h2 className="card__title">{workout.node.name}</h2>
           <ul className="card__content__excercise-list">
-            <li>Lorem ipsum</li>
+            <li>Burpees</li>
             <li>Laboriosam hic</li>
             <li>Doloremque error</li>
             <li>Quaerat ipsam</li>

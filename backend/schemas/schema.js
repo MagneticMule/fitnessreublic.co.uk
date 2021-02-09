@@ -13,6 +13,13 @@ import set from './objects/set.js';
 import social from './objects/social.js';
 import staffMember from './objects/staffMember.js';
 import video from './objects/video.js';
+import target from './objects/target.js';
+// => blog
+import bodyPortableText from './objects/blog/bodyPortableText.js';
+import bioPortableText from './objects/blog/bioPortableText.js';
+import excerptPortableText from './objects/blog/excerptPortableText.js';
+import mainImage from './objects/blog/mainImage.js';
+import authorReference from './objects/blog/authorReference.js';
 
 
 
@@ -21,7 +28,11 @@ import video from './objects/video.js';
 import page from './documents/page.js';
 // import shop from './documents/shop.js';
 import workout from './documents/workout.js';
-
+// => blog
+import author from './documents/blog/author';
+import category from './documents/blog/category';
+import post from './documents/blog/post';
+import blogSettings from './documents/blog/blogSettings';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -40,6 +51,17 @@ export default createSchema({
     set,
     excercise,
     video,
-    social
+    social,
+    target,
+    // blog
+    blogSettings,
+    post,
+    category,
+    author,
+    mainImage,
+    authorReference,
+    bodyPortableText,
+    bioPortableText,
+    excerptPortableText
   ]),
 })

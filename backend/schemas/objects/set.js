@@ -32,7 +32,7 @@ export default {
       title: "Description",
       name: "description",
       type: "string",
-      validation: Rule => Rule.min(10).warning('Descriptions should be longer than ten characters'),
+      validation: Rule => Rule.min(5).warning('Descriptions should be longer than five characters'),
     },
     {
       title: 'Repetitions',
