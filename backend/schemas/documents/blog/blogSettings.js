@@ -1,7 +1,7 @@
 export default {
   name: 'blogSettings',
   type: 'document',
-  title: 'Site Settings',
+  title: 'Blog Settings',
   __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {

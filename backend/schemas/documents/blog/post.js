@@ -34,7 +34,7 @@ export default {
     },
     {
       name: 'excerpt',
-      type: 'excerptPortableText',
+      type: 'text',
       title: 'Excerpt',
       description:
         'This goes summary pages on Google, when people share your post in social media'
@@ -53,14 +53,11 @@ export default {
       name: 'categories',
       type: 'array',
       title: 'Categories',
-      of: [
-        {
-          type: 'reference',
-          to: {
-            type: 'category'
-          }
-        }
-      ]
+      description: 'Select the categories that desctibe your post',
+      of: [{type: 'category'}],
+      options: {
+        layout: 'tags'
+      }
     },
     {
       name: 'body',

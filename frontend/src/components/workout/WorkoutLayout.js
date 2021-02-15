@@ -7,7 +7,6 @@ import Typography from '../../styles/Typography.js';
 
 
 export default function WorkoutLayout( { children }){
-
   return(
     <>
       <GlobalStyles/>

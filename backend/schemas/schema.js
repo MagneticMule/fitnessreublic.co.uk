@@ -29,10 +29,10 @@ import page from './documents/page.js';
 // import shop from './documents/shop.js';
 import workout from './documents/workout.js';
 // => blog
-import author from './documents/blog/author';
-import category from './documents/blog/category';
-import post from './documents/blog/post';
-import blogSettings from './documents/blog/blogSettings';
+import author from './documents/blog/author.js';
+import category from './documents/blog/category.js';
+import post from './documents/blog/post.js';
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -54,7 +54,6 @@ export default createSchema({
     social,
     target,
     // blog
-    blogSettings,
     post,
     category,
     author,

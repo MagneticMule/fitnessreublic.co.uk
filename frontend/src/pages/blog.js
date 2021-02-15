@@ -1,73 +1,52 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+
+import BlogPostList from '../components/blog/BlogPostList.js';
+
 import Layout from '../components/layout';
-
-
-
-export const query = graphql`
-  fragment SanityImage on SanityMainImage {
-    crop {
-      _key
-      _type
-      top
-      bottom
-      left
-      right
-    }
-    hotspot {
-      _key
-      _type
-      x
-      y
-      height
-      width
-    }
-    asset {
-      _id
-    }
-  }
-  query IndexPageQuery {
-    site: sanityBlogSettings(_id: { regex: "/(drafts.|)blogSettings/" }) {
-      title
-      description
-      keywords
-    }
-    posts: allSanityPost(
-      limit: 6
-      sort: { fields: [publishedAt], order: DESC }
-      filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
-    ) {
-      edges {
-        node {
-          id
-          publishedAt
-          mainImage {
-            ...SanityImage
-            alt
-          }
-          title
-          _rawExcerpt
-          slug {
-            current
-          }
-        }
-      }
-    }
-  }
-`;
-
-
-const Blog = (props) => {
-
+const Blog = ( {data} ) =>{
+  const posts = data.posts.nodes;
   return(
     <Layout>
-        <Helmet>
-            <title>The Fitness Republic Blog</title>
-            <meta name="description" content="Articles on training, weight loss and maintenance" />
-        </Helmet>
+      <div id="main">
+                   <section id="one">
+                <div className="inner">
+                    <header className="major">
+                        <h2>Articles</h2>
+                    </header>
+                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+                </div>
+            </section>
+        <BlogPostList posts={posts}/>
+      </div>
     </Layout>
   );
 }
 
+
 export default Blog;
+
+
+export const query = graphql`
+ query BlogQuery {
+    posts: allSanityPost {
+      nodes {
+        id
+        title
+        slug {
+          current
+        }
+        excerpt
+        mainImage {
+          asset {
+		        fixed(height: 400, width: 500) {
+			        ...GatsbySanityImageFixed
+              }
+            }
+          }
+
+      }
+    }
+  }
+
+`

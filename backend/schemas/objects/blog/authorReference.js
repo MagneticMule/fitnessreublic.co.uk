@@ -9,15 +9,15 @@ export default {
       type: 'reference',
       to: [
         {
-          type: 'author'
+          type: 'staffMember'
         }
       ]
     }
   ],
   preview: {
     select: {
-      title: 'author.name',
-      media: 'author.image.asset'
+      title: 'staffMember.firstName',
+      media: 'staffMember.avitar.asset'
     }
   }
 }
