@@ -50,16 +50,6 @@ export default {
       ]
     },
     {
-      name: 'categories',
-      type: 'array',
-      title: 'Categories',
-      description: 'Select the categories that desctibe your post',
-      of: [{type: 'category'}],
-      options: {
-        layout: 'tags'
-      }
-    },
-    {
       name: 'body',
       type: 'bodyPortableText',
       title: 'Body'

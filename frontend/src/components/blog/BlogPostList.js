@@ -7,7 +7,7 @@ import Img from 'gatsby-image';
 const SinglePost = ({post}) => {
   return(
     <section>
-      <Img className="image" fixed={post.mainImage.asset.fixed} />
+      <Img className="image" fluid={post.mainImage.asset.fluid} />
       <div className="content">
         <div className="inner">
             <header className="major">

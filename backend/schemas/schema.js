@@ -30,7 +30,6 @@ import page from './documents/page.js';
 import workout from './documents/workout.js';
 // => blog
 import author from './documents/blog/author.js';
-import category from './documents/blog/category.js';
 import post from './documents/blog/post.js';
 
 
@@ -55,12 +54,10 @@ export default createSchema({
     target,
     // blog
     post,
-    category,
     author,
     mainImage,
     authorReference,
     bodyPortableText,
     bioPortableText,
-    excerptPortableText
   ]),
 })
