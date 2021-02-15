@@ -1,6 +1,6 @@
 {
   "name": "fitness-republic",
-  "description": "Fitness Republic Gym in Ashby De La Zouch",
+  "description": "Fitness Republic Gym - Ashby De La Zouch",
   "version": "1.0.4",
   "author": "Thomas Sweeney",
   "dependencies": {
@@ -58,6 +58,6 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/MagneticMule/fitnessreublic.co.uk"
   }
 }

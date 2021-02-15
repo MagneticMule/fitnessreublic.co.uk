@@ -17,7 +17,6 @@ const {data} = await graphql(`
           current
         }
         excerpt
-        _rawBody
       }
     }
   }
@@ -37,7 +36,39 @@ const {data} = await graphql(`
   });
 }
 
+const turnWorkoutsIntoPages = async ({ graphql, actions }) => {
+ // grab the page template for the blog posts
+  const workoutTemplate = path.resolve('./src/templates/workout/Workout.js');
+
+  const {data} = await graphql(`
+  query{
+    workouts: allSanityWorkout {
+			nodes {
+        id
+				name
+        slug {
+          current
+        }
+      }
+    }
+  }`);
+
+    data.workouts.nodes.forEach(workout=> {
+    console.log('Creating a page for the workout: ', workout.slug.current);
+    actions.createPage({
+      // create the url of the individual page
+      path: `/workout/${workout.slug.current}`,
+      component: workoutTemplate,
+      context: {
+        title: workout.name,
+        slug: workout.slug.current,
+      }
+    });
+  });
+}
+
 exports.createPages = async (params) => {
   console.log('--- Creating Blog Pages ---');
   await turnPostsIntoPages(params);
+  await turnWorkoutsIntoPages(params);
 }
