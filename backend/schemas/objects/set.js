@@ -31,7 +31,7 @@ export default {
     {
       title: "Description",
       name: "description",
-      type: "string",
+      type: "text",
       validation: Rule => Rule.min(5).warning('Descriptions should be longer than five characters'),
     },
     {

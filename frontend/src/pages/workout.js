@@ -67,12 +67,7 @@ export const query = graphql`
         slug {
           current
         }
-        description {
-          children {
-            text
-            marks
-          }
-        }
+        description
         image {
           asset {
             fluid(maxWidth: 700) {

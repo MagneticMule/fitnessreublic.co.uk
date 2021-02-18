@@ -20,7 +20,7 @@ export default {
     {
       title: "Instructions",
       name: "instructions",
-      type: "string",
+      type: "text",
       validation: Rule => Rule.required().min(2).warning('Excercise instructions should be longer than 5 characters')
     },
     {

@@ -54,7 +54,7 @@ const turnWorkoutsIntoPages = async ({ graphql, actions }) => {
   }`);
 
     data.workouts.nodes.forEach(workout=> {
-    console.log('Creating a page for the workout: ', workout.slug.current);
+    console.log('Creating a page for the workout: ', workout.name);
     actions.createPage({
       // create the url of the individual page
       path: `/workout/${workout.slug.current}`,
@@ -68,7 +68,7 @@ const turnWorkoutsIntoPages = async ({ graphql, actions }) => {
 }
 
 exports.createPages = async (params) => {
-  console.log('--- Creating Blog Pages ---');
+  console.log('--- Creating Pages ---');
   await turnPostsIntoPages(params);
   await turnWorkoutsIntoPages(params);
 }

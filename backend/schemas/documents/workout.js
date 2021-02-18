@@ -44,11 +44,10 @@ export default {
     {
       title: 'Description',
       name: 'description',
-      type: 'array',
-      of: [{ type: 'block' }],
+      type: 'text',
       description: `You can introduce the workout here and describe some of the excercises and benefits of the workout.`,
       validation: Rule => [
-        Rule.max(200).error('Body text must be shorter than 200 characters')
+        Rule.max(200).error('Description should be shorter than 200 characters')
       ]
     },
     {
