@@ -4,7 +4,7 @@ const isFuture = require('date-fns');
 
 const turnPostsIntoPages = async ({ graphql, actions }) => {
  // grab the page template for the blog posts
-  const blogPostTemplate = path.resolve('./src/templates/blog/BlogPost.js');
+  const blogPostTemplate = path.resolve('./src/templates/blog/post-template.js');
 
  // query all the posts
 const {data} = await graphql(`
@@ -38,7 +38,7 @@ const {data} = await graphql(`
 
 const turnWorkoutsIntoPages = async ({ graphql, actions }) => {
  // grab the page template for the blog posts
-  const workoutTemplate = path.resolve('./src/templates/workout/Workout.js');
+  const workoutTemplate = path.resolve('./src/templates/workout/workout-template.js');
 
   const {data} = await graphql(`
   query{

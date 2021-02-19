@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Chart from '../components/workout/Chart.js';
+import Chart2 from '../components/workout/Chart2.js';
 import { useAuth0, withAuthenticationRequired } from '@auth0/auth0-react';
 
 
@@ -31,6 +32,12 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
+const ChartContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 
 const Workout = ({data})=> {
   const { user } = useAuth0();
@@ -43,15 +50,18 @@ const Workout = ({data})=> {
         <Title>Good Morning Thomas</Title>
         <Subtitle>There are {workouts.length} workouts available</Subtitle>
         </Header>
-        <Chart/>
+        <ChartContainer>
+          <Chart/>
+          <Chart2/>
+        </ChartContainer>
         <WorkoutList workouts={workouts}/>
       </Container>
     </WorkoutLayout>
   );
   };
 
-//export default withAuthenticationRequired(Workout);
-export default Workout;
+export default withAuthenticationRequired(Workout);
+// export default Workout;
 
 export const query = graphql`
 {

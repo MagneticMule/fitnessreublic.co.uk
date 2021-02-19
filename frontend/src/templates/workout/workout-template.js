@@ -1,12 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import Helmet from 'react-helmet';
 
 import Layout from '../../components/layout';
 
-const WorkoutTemplate = ({ data }) => {
+import WorkoutHeader from '../../components/workout/WorkoutHeader.js';
+import SetList from '../../components/workout/SetList.js';
+
+const Workout = ({ data }) => {
   const { workout } = data;
   return(
     <Layout>
@@ -16,11 +18,9 @@ const WorkoutTemplate = ({ data }) => {
       </Helmet>
       <div id="main">
         <section>
-          <Img fluid={workout.image.asset.fluid} />
+          <WorkoutHeader image={workout.image.asset.fluid} title={workout.name} description={workout.description}/>
           <div className="inner">
-            <header className="major">
-              <h1>{workout.name}</h1>
-            </header>
+            <SetList sets={workout.workoutBuilder} />
           </div>
         </section>
       </div>
@@ -39,15 +39,28 @@ export const query = graphql`
     }) {
       id
       name
+      description
       image {
           asset {
-		        fluid(maxHeight: 200) {
+		        fluid(maxHeight: 400) {
 			        ...GatsbySanityImageFluid
               }
             }
           }
+      workoutBuilder {
+          isActive
+          setName
+          description
+          repetitions
+          excercise {
+            video
+            repetitions
+            instructions
+            excerciseName
+          }
         }
+      }
     }
 `;
 
-export default WorkoutTemplate;
+export default Workout;
