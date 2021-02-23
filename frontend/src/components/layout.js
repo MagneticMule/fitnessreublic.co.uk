@@ -52,13 +52,11 @@ class Layout extends React.Component {
                     <Menu onToggleMenu={this.handleToggleMenu} />
 
                     <CookieConsent
-                        enableDeclineButton
-
                         buttonClasses="button special"
                         containerClasses="alert alert-warning col-lg-12"
                         contentClasses="text-capitalize"
                         location="bottom"
-                        buttonText="Accept"
+                        buttonText="X"
                         declineButtonText="Decline"
                         cookieName="gatsby-gdpr-google-analytics">
                             <div className="inner">

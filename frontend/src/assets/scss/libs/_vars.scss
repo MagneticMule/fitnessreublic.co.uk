@@ -5,9 +5,9 @@ $misc: (
 
 // Duration.
 $duration: (
-  menu: 0.35s,
-  transition: 0.2s,
-  banner: 2.5s,
+  menu: 0.33s,
+  transition: 0.33s,
+  banner: 1.33s,
 );
 
 // Size.
@@ -31,7 +31,7 @@ $font: (
     monospace,
   ),
   weight: 300,
-  weight-bold: 600,
+  weight-bold: 900,
   letter-spacing: 0.025em,
   letter-spacing-alt: 0.25em,
 );
@@ -42,7 +42,7 @@ $palette: (
   bg-alt: #f1f1f1,
   fg: #242943,
   fg-bold: #242943,
-  fg-light: rgba(244, 244, 255, 0),
+  fg-light: rgba(244, 244, 255, 1),
   border: rgba(20, 20, 20, 0.07),
   border-bg: rgba(212, 212, 255, 0.095),
   highlight: #010101,
@@ -53,7 +53,7 @@ $palette: (
   accent5: #8ea9e8,
   accent6: #87c5a4,
   white: #ffffff,
-  home-title: rgba(212, 212, 255, 0.035),
+  home-title: rgba(255, 255, 255, 0.035),
 );
 
 // $palette: (
