@@ -7,6 +7,9 @@ import Menu from './Menu'
 import Contact from './Contact'
 import Footer from './Footer'
 
+import WhatsAppWidget from 'react-whatsapp-widget';
+import 'react-whatsapp-widget/dist/index.css';
+
 class Layout extends React.Component {
     constructor(props) {
         super(props)
@@ -64,6 +67,11 @@ class Layout extends React.Component {
                             <p>By using this website you agree for us to store cookies on your local computer.</p>
                             </div>
                         </CookieConsent>
+                        <WhatsAppWidget
+                            companyName='Fitness Republic Ashby'
+                            phoneNumber='+447973874750' textReplyTime='Typically replies within an hour or two'
+                            message="Hi there! Ready to increase your health and fitness in 2021? Let's chat about it"
+                        />
             </div>
         )
     }
