@@ -69,7 +69,7 @@ class Layout extends React.Component {
                         </CookieConsent>
                         <WhatsAppWidget
                             companyName='Fitness Republic Ashby'
-                            phoneNumber='+447973874750' textReplyTime='Typically replies within an hour or two'
+                            phoneNumber='+447980264894' textReplyTime='Typically replies within an hour or two'
                             message="Hi there! Ready to increase your health and fitness in 2021? Let's chat about it"
                         />
             </div>
