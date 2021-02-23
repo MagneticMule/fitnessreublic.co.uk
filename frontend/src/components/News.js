@@ -4,18 +4,32 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const NewsSection = styled.section`
-
-border: 1rem solid purple;
+border-bottom: 2px solid purple;
+margin: -2rem;
+border: 2px 0 solid purple;
 padding: 4rem;
 background: rgb(255,179,0);
 background: linear-gradient(315deg, rgba(255,179,0,1) 0%, rgba(189,0,255,1) 100%);
 
 color: white;
     h1 {
+      color: white;
+      transform: rotate(-2deg);
       text-shadow: 0 1px 0 rgba(0,0,0,.2),0 2px 8px rgba(0,0,0,.7);
       font-size: 4rem;
       font-weight: 900;
       letter-spacing: 0;
+      line-height:1;
+      margin: -2rem 0 1.6rem;
+
+      span {
+          text-transform: uppercase;
+          color: white;
+          font-weight: 900;
+          background: orange;
+          padding: .2rem .6rem;
+          box-shadow: 8px 8px 8px rgba(0,0,0,0.3);
+      }
     }
 
     h2 {
@@ -42,10 +56,7 @@ color: white;
 
     a {
       font-weight: 900;
-      border-radius: 8px;
       list-style:none;
-      font-size: 1rem;
-
     }
 `;
 
@@ -54,7 +65,7 @@ const News = () => {
   return (
     <NewsSection>
        <section id="news" className="news" >
-              <h1>WE ARE ALMOST THERE!</h1>
+              <h1><span>WE ARE ALMOST THERE!!!</span></h1>
               <h2>With an end date now firmly in sight, we are ready to help you get back into our gym</h2>
               <strong>We hope you are still enjoying our online classes!?</strong>
               <p>
