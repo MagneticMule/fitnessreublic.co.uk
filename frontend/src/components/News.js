@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'gatsby';
-
+import countDownTimer from '../utils/countdown.js';
 import styled from 'styled-components';
+
+
 
 const NewsSection = styled.section`
 border-bottom: 2px solid purple;
@@ -62,9 +64,12 @@ color: white;
 
 
 const News = () => {
+
   return (
+
     <NewsSection>
        <section id="news" className="news" >
+           <div className="inner">
               <h1><span>WE ARE ALMOST THERE!!!</span></h1>
               <h2>With an end date now firmly in sight, we are ready to help you get back into our gym</h2>
               <strong>We hope you are still enjoying our online classes!?</strong>
@@ -86,6 +91,7 @@ const News = () => {
                   </Link>
                 </li>
               </ul>
+   </div>
 
 
           </section>
