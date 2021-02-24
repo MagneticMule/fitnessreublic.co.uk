@@ -18,7 +18,8 @@ module.exports = {
       options: {
         fonts: [
 
-            'Roboto\:100,200,300,500,700,900'
+            'Roboto\:100,200,300,500,700,900',
+            'Source Sans Pro\:100,200,300,500,700,900'
 
         ],
       },
