@@ -4,14 +4,13 @@ import countDownTimer from '../utils/countdown.js';
 import styled from 'styled-components';
 
 
-
 const NewsSection = styled.section`
 border-bottom: 2px solid purple;
 margin: -2rem;
 border: 2px 0 solid purple;
 padding: 4rem;
 background: rgb(255,179,0);
-background: linear-gradient(315deg, rgba(255,179,0,1) 0%, rgba(189,0,255,1) 100%);
+background: linear-gradient(315deg, rgba(255,179,0,1) 0%, rgba(100,0,100,1) 100%);
 
 color: white;
     h1 {

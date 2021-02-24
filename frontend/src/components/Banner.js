@@ -3,11 +3,12 @@ import { Link } from 'gatsby'
 import styled from 'styled-components';
 import countDownTimer from '../utils/countdown.js';
 const Header = styled.div`
-color: white;
+
   h1 {
     font-size: 4rem;
     text-shadow: 0 1px 0 rgba(0,0,0,.2),0 2px 8px rgba(0,0,0,.7);
     color: white;
+    text-transform: uppercase;
   }
 
   h2 {
@@ -17,7 +18,6 @@ color: white;
     span {
       background: orange;
       padding: .4rem;
-
     }
   }
 
