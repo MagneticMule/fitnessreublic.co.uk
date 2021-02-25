@@ -66,13 +66,13 @@ class Layout extends React.Component {
                             </div>
                         </CookieConsent>
 
-                        {/*
+
                         <WhatsAppWidget
                             companyName='Fitness Republic Ashby'
-                            phoneNumber='+447980264894' textReplyTime='Typically replies within an hour or two'
+                            phoneNumber='+441530413330' textReplyTime='Typically replies within an hour or two'
                             message="Hi there! Ready to increase your health and fitness in 2021? Let's chat about it"
                         />
-                        */}
+
             </div>
         )
     }
