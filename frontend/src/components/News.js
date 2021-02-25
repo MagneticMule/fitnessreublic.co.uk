@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const NewsSection = styled.section`
 border-bottom: 2px solid purple;
-margin: -2rem;
+
 border: 2px 0 solid purple;
 padding: 4rem;
 background: rgb(255,179,0);
@@ -20,8 +20,8 @@ color: white;
       font-size: 4rem;
       font-weight: 600;
       letter-spacing: 0;
-      line-height:1;
-      margin: -2rem 0 1.6rem;
+      line-height: 1;
+      margin: -2rem 0 1.6rem 0;
 
       span {
           text-transform: uppercase;
