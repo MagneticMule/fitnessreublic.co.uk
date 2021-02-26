@@ -5,10 +5,10 @@ const Contact = (props) => (
     <section id="contact">
         <div className="inner">
             <section>
-                <form name="Contact" method="post" data-netlify="true"  data-netlify-honeypot="bot-field" action="#">
+                <form name="Enquiry" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="#">
 
                 <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="General Question" />
+                <input type="hidden" name="form-name" value="Enquiry" />
 
                 <div className="field half first">
                     <label htmlFor="name">Name</label>
@@ -21,19 +21,18 @@ const Contact = (props) => (
                 </div>
 
                 <div className="field">
-                    <label htmlFor="phone">Telephone Number (optional)</label>
-                    <input type="tel" name="phone" id="phone" />
-                </div>
-
+                                        <label htmlFor="phone">Telephone Number</label>
+                                        <input type="tel" name="phone" id="phone" />
+                                    </div>
                 <div className="field">
-                    <label htmlFor="message">Message</label>
-                    <textarea name="message" id="message" rows="6"></textarea>
-                </div>
+                                        <label htmlFor="message">Message</label>
+                                        <textarea name="message" id="message" rows="6"></textarea>
+                                    </div>
 
                 <ul className="actions">
                     <li>
-                        <input type="submit" value="Send Message" className="special" /></li>
-
+                    <input type="submit" value="Send Message" className="button" />
+                    </li>
                 </ul>
                 </form>
             </section>
