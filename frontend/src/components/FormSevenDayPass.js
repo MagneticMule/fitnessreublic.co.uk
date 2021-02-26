@@ -1,10 +1,10 @@
-import React from 'react'
-import { navigate } from 'gatsby-link'
+import React from 'react';
+import { navigate } from 'gatsby-link';
 
 
 
 const FormSevenDayPass = (props)=> (
-    <>
+<>
  <form name="SevenDayPass" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="#">
 
  <input type="hidden" name="bot-field" />
@@ -33,7 +33,7 @@ const FormSevenDayPass = (props)=> (
     </li>
   </ul>
 </form>
-    </>
+</>
   )
 
   export default FormSevenDayPass;
