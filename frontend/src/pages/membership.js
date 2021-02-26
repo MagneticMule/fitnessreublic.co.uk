@@ -6,8 +6,6 @@ import BannerMembership from '../components/BannerMembership'
 import FormSevenDayPass from '../components/FormSevenDayPass'
 
 //images
-import girl from '../assets/images/fitness-republic-girl-drinking.jpg';
-
 
 
 const Membership = (props) => (
@@ -18,25 +16,7 @@ const Membership = (props) => (
         </Helmet>
 
         <BannerMembership />
-
-
         <div id="main">
-            <section id="freepass" className="alt">
-                <div className="inner">
-                    <header className="major">
-                        <h2>Free Seven Day Pass</h2>
-                    </header>
-                    <p>
-                        Our Free Pass to gives you the opportunity to try out our facility before you commit. You can try the Gym, Classes, and our Personal Training service all FREE. If you feel comfortable to train on your own please feel free to pop in at anytime, we will just ask you to fill in a medical questionnaire before you start training.
-
-                        To get started with your seven day pass just fill out the form below with your Name, Email and Phone Number so we can get back in contact with you as soon as possible.
-                    </p>
-                    <p>
-                        The free pass is available to people local to Ashby de la Zouch and surrounding areas.
-                        If you are only working in Ashby de la Zouch for a short period of time please let us know in the form below and we can chat about what we can do for you.</p>
-                    <FormSevenDayPass />
-                </div>
-            </section>
             <section id="standard inverted">
                 <div className="inner">
                     <header className="major">
@@ -51,7 +31,6 @@ const Membership = (props) => (
 
                 <div className="inner">
                 <div className="grid-wrapper">
-
                     <div className="col-4">
                     <div className="content box align-center alt">
                             <header>
@@ -71,7 +50,7 @@ const Membership = (props) => (
                             <header>
                                 <h3>Joint Adult Monthly</h3>
                             </header>
-                                                     <p>Full access to the Gym facilities and fitness classes for two people.</p>
+                            <p>Full access to the Gym facilities and fitness classes for two people.</p>
                             <p><strong>£55.00</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
@@ -107,8 +86,6 @@ const Membership = (props) => (
                             </ul>
                         </div>
                     </div>
-
-
                     </div>
                 </div>
             </section>
@@ -122,7 +99,6 @@ const Membership = (props) => (
                     Fitness Republic is a very supportive of encouraging the whole family to exercise. This is why we support training from the age of 14 with our Student Membership. Getting started at an early age is found to be extremely beneficial to the success of keeping fit for life. We help and guide our younger members in the gym and class facility with expert advice and continued guidance and supervision. Correct form and technique is encouraged and shown on a continued basis, helping you get the best out of your training, safely and effectivly.
                     </p>
                     <p>If you are under 16 years of age we will require a written consent form to be signed by your guardian and brought into us at the gym. Download the print consent form here.</p>
-
 
                 <div className="grid-wrapper">
                 <div className="col-4">
@@ -138,56 +114,35 @@ const Membership = (props) => (
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
                             </ul>
                         </div>
-</div>
-                        <div className="col-4">
-                            <div className="content box align-center alt">
-                            <img src={girl}
-                                objectFit="cover"
-                                width="400px"
-                                objectPosition="50% 50%"
-                                alt="Girl drinking water" />
-                        </div>
-                        </div>
+                    </div>
 
                     </div>
                 </div>
             </section>
-            <section id="online">
 
-                    <div className="inner">
+            <section id="freepass" className="alt">
+                <div className="inner">
                     <header className="major">
-                        <h2>Online Membership</h2>
+                        <h2>Free Seven Day Pass</h2>
                     </header>
-                    <p>Join us for our very own online class schedule via Fitness Republic TV. Lots of live workouts daily, easily accessible for working out in your own home. Lots of training tips too!</p>
+                    <p>
+                        Our Free Pass to gives you the opportunity to try out our facility before you commit. You can try the Gym, Classes, and our Personal Training service all FREE. If you feel comfortable to train on your own please feel free to pop in at anytime, we will just ask you to fill in a medical questionnaire before you start training.
 
-
-                <div className="grid-wrapper">
-                <div className="col-4">
-                    <div className="content box align-center alt">
-                            <header>
-                                <h3>Fitness Republic TV</h3>
-                            </header>
-                            <p>Full access to our online classes and private Facebook group.</p>
-                            <hr/>
-                            <p><strong>£12.99</strong> Per Month</p>
-                            <p>Payable via Monthly Direct Debit</p>
-                            <ul className="actions">
-                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
+                        To get started with your seven day pass just fill out the form below with your Name, Email and Phone Number so we can get back in contact with you as soon as possible.
+                    </p>
+                    <p>
+                        The free pass is available to people local to Ashby de la Zouch and surrounding areas.
+                        If you are only working in Ashby de la Zouch for a short period of time please let us know in the form below and we can chat about what we can do for you.</p>
+                    <FormSevenDayPass />
                 </div>
             </section>
 
             <section id="training">
-
                     <div className="inner">
                     <header className="major">
                         <h2>With Personal Training</h2>
                     </header>
                     <p>Personal Training can help you gain the most from your time at Fitness Republic. We offer three packages with combine the benefits of free gym access, classes and one on one personal training sessions.</p>
-
 
                <div className="grid-wrapper">
                 <div className="col-4">

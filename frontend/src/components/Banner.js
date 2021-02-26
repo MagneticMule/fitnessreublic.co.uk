@@ -52,7 +52,7 @@ const Banner = () => {
         <h3><span>We open our doors again in ⏱ {time}.</span></h3>
         <ul className="actions">
           <li>
-            <Link to="/membership#freepass" name="Get Started" className="special button next scrolly">
+            <Link to="/membership" name="Get Started" className="special button next scrolly">
               JOIN US NOW
             </Link>
           </li>

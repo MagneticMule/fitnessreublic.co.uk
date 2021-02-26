@@ -18,7 +18,7 @@ class HomeIndex extends React.Component {
         <Helmet
           title="Fitness Republic - Fitness Gym in Ashby"
           meta={[
-            { name: 'description', content: 'A family run gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within a fun and friendly environment.' },
+            { name: 'description', content: 'The premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within an clean and covid safe friendly environment.' },
             { name: 'keywords', content: 'gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, student membership, local, near me' },
           ]}>
               <script type="application/ld+json">
@@ -58,8 +58,7 @@ class HomeIndex extends React.Component {
               <Link
                 aria-label="Link to Personal Training Page"
                 to="/training"
-                className="link primary"
-              >
+                className="link primary">
                 <header className="major">
                   <h3>Personal Training</h3>
                   <p>Different plans available</p>
@@ -83,8 +82,7 @@ class HomeIndex extends React.Component {
               <Link
                 aria-label="Link to Team Page"
                 to="/team"
-                className="link primary"
-              >
+                className="link primary">
                 <header className="major">
                   <h3>Our Team</h3>
                   <p>All About Us</p>
@@ -93,35 +91,28 @@ class HomeIndex extends React.Component {
             </article>
           </section>
 
-
         <section id="covid" className="inverted">
             <div className="inner">
-
-
               <h2 className="align-center">Covid 19 and Safe Training</h2>
-
               <p>
-                    Fitness Republic is working within tight Covid19 restrictions, keeping you fit, healthy, motivated and safe.
-                    <br/>
-                    As such we have implimented some basic guidlines that we ask that you follow when training at the gym.
-                    <br/>
-                    This is a trying time for all of us but hopefully we can pull through this together.
+                Fitness Republic is working within tight Covid19 restrictions, keeping you fit, healthy, motivated and safe.
+                <br/>
+                As such we have implimented some basic guidlines that we ask that you follow when training at the gym.
+                <br/>
+                This is a trying time for all of us but hopefully we can pull through this together.
               </p>
               <ul className="actions">
                 <li>
                   <Link
                     aria-label="Link to Fitness Republic Policies on Covid"
                     to="/covid"
-                    className="button"
-                  >
+                    className="button">
                     OUR COVID ACTION PLAN
                   </Link>
                 </li>
               </ul>
             </div>
           </section>
-
-
         </div>
       </Layout>
     )
