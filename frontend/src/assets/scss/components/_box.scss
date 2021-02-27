@@ -23,4 +23,36 @@
     box-shadow: 0px 2px 96px -33px rgba(0, 0, 0, 0.11),
       0px 2px 1px 0px rgba(0, 0, 0, 0.09);
   }
+
+    &.alt {
+      border: 4px solid white;
+      background: linear-gradient(180.14deg, #FF7121 -1.96%, #FF2E00 96.02%);
+      box-shadow: 1px 92px 70px rgba(0, 0, 0, 0.2),
+      0px 4px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 48px;
+      color: white;
+
+          h3 {
+                 color: white;
+                 transform: rotate(-4deg);
+                 text-shadow: 0 1px 0 rgba(0, 0, 0, .2),
+                 0 2px 8px rgba(0, 0, 0, .7);
+                 font-size: 2rem;
+                 font-weight: 600;
+                 letter-spacing: 0;
+                 line-height: 1;
+
+          }
+
+          >p>strong {
+              display:inine-block;
+              font-size: 1.4rem;
+              text-transform: uppercase;
+              border: 1px solid black;
+              color: black;
+              background: orange;
+              padding: .4rem .6rem;
+              border-radius: 4px;
+            }
+    }
 }

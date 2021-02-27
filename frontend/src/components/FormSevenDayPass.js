@@ -14,10 +14,12 @@ const FormSevenDayPass = (props)=> (
     <label htmlFor="name">Name</label>
     <input type="text" name="name" id="name" />
   </div>
+
   <div className="field half">
     <label htmlFor="email">Email</label>
     <input type="text" name="email" id="email" />
   </div>
+
   <div className="field">
                         <label htmlFor="phone">Telephone Number</label>
                         <input type="tel" name="phone" id="phone" />

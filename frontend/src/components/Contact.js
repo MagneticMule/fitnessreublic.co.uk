@@ -34,14 +34,14 @@ const Contact = (props) => (
                     <input type="submit" value="Send Message" className="button" />
                     </li>
                 </ul>
-                </form>
+            </form>
             </section>
             <section className="split">
                 <section>
                 </section>
                 <section>
                     <div className="contact-method">
-                        <span className="icon alt fa-mail"></span>
+                        <span className="icon alt fa-envelope"></span>
                         <h3>Email</h3>
                         <span><a href="mailto:info@fitnessrepublic.co.uk">info@fitnessrepublic.co.uk</a></span>
                     </div>

@@ -23,7 +23,9 @@ const Membership = (props) => (
                         <h2>Gym and Class Memberships</h2>
                     </header>
                     <p>We have a mission to help as many people as possible achieve a healthy and strong body. Being fit and healthy has been proven to make all areas of life better, with a healthier body comes a healthier mind and a happier life.
-                    These are our most popular monthly Direct Debit membership packages, by clicking Choose Plan, you will be directed to our registration page, and here, once registered, you will be able to see all of our options.</p>
+                    We have a range of membersip options to suit everyone. Select one that suits you!
+
+                    Once you have  clicking Choose Plan, you will be directed to our registration page, and here, once registered, you will be able to see all of our options.</p>
                     <p>Once on the membership page scroll down to the bottom, and input the code <strong>10OFF</strong> into the promo code box to reveal the 10% off options.</p>
 
                     <h4>Remember, this month we have 10% off our Direct Debit Memberships.</h4>
@@ -33,10 +35,11 @@ const Membership = (props) => (
                 <div className="grid-wrapper">
                     <div className="col-4">
                     <div className="content box align-center alt">
-                            <header>
-                                <h3>Single Adult Monthly</h3>
-                            </header>
+
+                            <h3>Single Adult Monthly</h3>
+                            <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <hr/>
                             <p><strong>£32.99</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
@@ -47,10 +50,10 @@ const Membership = (props) => (
 
                    <div className="col-4">
                     <div className="content box align-center alt">
-                            <header>
-                                <h3>Joint Adult Monthly</h3>
-                            </header>
+                            <h3>Joint Adult Monthly</h3>
+                            <hr/>
                             <p>Full access to the Gym facilities and fitness classes for two people.</p>
+                            <hr/>
                             <p><strong>£55.00</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
@@ -61,26 +64,13 @@ const Membership = (props) => (
 
                    <div className="col-4">
                     <div className="content box align-center alt">
-                            <header>
-                                <h3>Single Adult Annual</h3>
-                            </header>
+
+                            <h3>Single Adult Annual</h3>
+                            <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
+                            <hr/>
                             <p><strong>£299</strong> Per Year</p>
                             <p>Payable either In Person or Online</p>
-                            <ul className="actions">
-                                <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="col-4">
-                    <div className="content box align-center alt">
-                            <header>
-                                <h3>Single Adult Class Only</h3>
-                            </header>
-                            <p>Full access to fitness classes only. No gym access.</p>
-                            <p><strong>£25.99</strong> Per Year</p>
-                            <p>Payable via Monthly Direct Debit</p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
                             </ul>
@@ -103,9 +93,9 @@ const Membership = (props) => (
                 <div className="grid-wrapper">
                 <div className="col-4">
                     <div className="content box align-center alt">
-                            <header>
-                                <h3>Student Monthly</h3>
-                            </header>
+
+                            <h3>Student Monthly</h3>
+                            <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <hr/>
                             <p><strong>£25.99</strong> Per Month</p>
@@ -115,7 +105,6 @@ const Membership = (props) => (
                             </ul>
                         </div>
                     </div>
-
                     </div>
                 </div>
             </section>
@@ -147,9 +136,9 @@ const Membership = (props) => (
                <div className="grid-wrapper">
                 <div className="col-4">
                     <div className="content box align-center alt">
-                            <header>
-                                <h3>Bronze Package</h3>
-                            </header>
+
+                            <h3>Bronze Package</h3>
+                            <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <p>One personal training session per month.</p>
                             <hr/>
@@ -162,9 +151,9 @@ const Membership = (props) => (
                     </div>
                 <div className="col-4">
                     <div className="content box align-center alt">
-                            <header>
-                                <h3>Silver Package</h3>
-                            </header>
+
+                            <h3>Silver Package</h3>
+                            <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <p>Two personal training session per month.</p>
                             <hr/>
@@ -177,9 +166,9 @@ const Membership = (props) => (
                     </div>
                 <div className="col-4">
                     <div className="content box align-center alt">
-                            <header>
-                                <h3>Gold Package</h3>
-                            </header>
+
+                            <h3>Gold Package</h3>
+                            <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <p>Four personal training session per month.</p>
                             <hr/>
