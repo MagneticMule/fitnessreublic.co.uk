@@ -50,6 +50,7 @@ const Banner = () => {
         <Header>
         <h1>We are Fitness Republic</h1>
         <h3><span>We open our doors again in ⏱ {time}.</span></h3>
+        <h3><span>To celebrate, we are offering 10% OFF all membership plans until the end MARCH 💪</span></h3>
         <ul className="actions">
           <li>
             <Link to="/membership" name="Get Started" className="special button next scrolly">

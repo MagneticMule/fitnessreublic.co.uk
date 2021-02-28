@@ -5,6 +5,8 @@ import Layout from '../components/layout'
 import BannerMembership from '../components/BannerMembership'
 import FormSevenDayPass from '../components/FormSevenDayPass'
 
+import MembershipNews from '../components/MembershipNews';
+
 //images
 
 
@@ -17,7 +19,8 @@ const Membership = (props) => (
 
         <BannerMembership />
         <div id="main">
-            <section id="standard inverted">
+        <MembershipNews/>
+            <section id="plans">
                 <div className="inner">
                     <header className="major">
                         <h2>Gym and Class Memberships</h2>
@@ -25,17 +28,15 @@ const Membership = (props) => (
                     <p>We have a mission to help as many people as possible achieve a healthy and strong body. Being fit and healthy has been proven to make all areas of life better, with a healthier body comes a healthier mind and a happier life.
                     We have a range of membersip options to suit everyone. Select one that suits you!
 
-                    Once you have  clicking Choose Plan, you will be directed to our registration page, and here, once registered, you will be able to see all of our options.</p>
+                    Once you select your plan you will be taken over to our registration page. Registration only takes a few minutes and allows us to offer you the easiest and simplest method for your membership mangament.</p>
                     <p>Once on the membership page scroll down to the bottom, and input the code <strong>10OFF</strong> into the promo code box to reveal the 10% off options.</p>
 
-                    <h4>Remember, this month we have 10% off our Direct Debit Memberships.</h4>
+                    <h4>Remember, we are offering 10 PERCENT OFF all our membership plans if you regster before the end of MArch 2021.</h4>
                 </div>
-
                 <div className="inner">
                 <div className="grid-wrapper">
                     <div className="col-4">
                     <div className="content box align-center alt">
-
                             <h3>Single Adult Monthly</h3>
                             <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>

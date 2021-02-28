@@ -18,7 +18,7 @@ let countDownTimer = (td) => {
         if (!parts[part]) return;
         return `${parts[part]} ${part}`;
       })
-      .join(' '));
+      .join(' - '));
   }
 }
 
