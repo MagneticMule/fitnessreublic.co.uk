@@ -6,8 +6,6 @@ import styled from 'styled-components';
 
 const MembershipNewsSection = styled.section`
 border-bottom: 2px solid purple;
-
-border: 2px 0 solid purple;
 padding: 8rem 4rem 4rem;
 background: rgb(255,179,0);
 background: linear-gradient(315deg, rgba(255,179,0,1) 0%, rgba(220,0,100,1) 100%);
