@@ -4,7 +4,7 @@ import countDownTimer from '../utils/countdown.js';
 import styled from 'styled-components';
 
 
-const NewsSection = styled.section`
+const MembershipNewsSection = styled.section`
 border-bottom: 2px solid purple;
 
 border: 2px 0 solid purple;
@@ -64,7 +64,7 @@ const MembershipNews = () => {
 
   return (
 
-    <NewsSection>
+    <MembershipNewsSection>
        <section id="news" className="news" >
            <div className="inner">
               <h1><span>10% OFF all membership plans!!!</span></h1>
@@ -86,7 +86,7 @@ const MembershipNews = () => {
               </ul>
             </div>
           </section>
-          </NewsSection>
+          </MembershipNewsSection>
   );
 }
 

@@ -31,7 +31,7 @@ const Membership = (props) => (
                     Once you select your plan you will be taken over to our registration page. Registration only takes a few minutes and allows us to offer you the easiest and simplest method for your membership mangament.</p>
                     <p>Once on the membership page scroll down to the bottom, and input the code <strong>10OFF</strong> into the promo code box to reveal the 10% off options.</p>
 
-                    <h4>Remember, we are offering 10 PERCENT OFF all our membership plans if you regster before the end of MArch 2021.</h4>
+                    <h4>Remember, we are offering <strong>10 PERCENT OFF</strong> all our membership plans if you regster before the end of March 2021.</h4>
                 </div>
                 <div className="inner">
                 <div className="grid-wrapper">
@@ -41,7 +41,8 @@ const Membership = (props) => (
                             <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <hr/>
-                            <p><strong>£32.99</strong> Per Month</p>
+                            <div className="sale">£32.99</div>
+                            <p><strong>£29.69</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
@@ -55,7 +56,8 @@ const Membership = (props) => (
                             <hr/>
                             <p>Full access to the Gym facilities and fitness classes for two people.</p>
                             <hr/>
-                            <p><strong>£55.00</strong> Per Month</p>
+                            <div className="sale">£55.00</div>
+                            <p><strong>£49.50</strong> Per Month</p>
                             <p>Payable Via Direct Debit</p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
@@ -65,12 +67,12 @@ const Membership = (props) => (
 
                    <div className="col-4">
                     <div className="content box align-center alt">
-
                             <h3>Single Adult Annual</h3>
                             <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <hr/>
-                            <p><strong>£299</strong> Per Year</p>
+                            <div className="sale">£299.00</div>
+                            <p><strong>£269.50</strong> Per Year</p>
                             <p>Payable either In Person or Online</p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
@@ -99,7 +101,8 @@ const Membership = (props) => (
                             <hr/>
                             <p>Full access to the Gym facilities and fitness classes for one person.</p>
                             <hr/>
-                            <p><strong>£25.99</strong> Per Month</p>
+                            <div className="sale">£25.99</div>
+                            <p><strong>£23.39</strong> Per Month</p>
                             <p>Payable via Monthly Direct Debit</p>
                             <ul className="actions">
                                 <li><a href="https://fitnessrepublic.clubright.co.uk/Account/Login"  className="button special">Choose Plan</a></li>
