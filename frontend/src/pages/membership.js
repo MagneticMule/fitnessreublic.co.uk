@@ -19,7 +19,6 @@ const Membership = (props) => (
 
         <BannerMembership />
         <div id="main">
-        <MembershipNews/>
             <section id="plans">
                 <div className="inner">
                     <header className="major">
