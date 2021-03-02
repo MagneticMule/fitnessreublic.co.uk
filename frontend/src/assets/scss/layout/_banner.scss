@@ -102,11 +102,13 @@
   }
 
   &.style1 {
+    @include vendor('background-image', 'url("../images/banner.jpg")');
     &:after {
       background-color: _palette(accent1);
     }
   }
   &.style2 {
+    @include vendor('background-image', 'url("../images/banner.jpg")');
     &:after {
       background-color: _palette(accent2);
     }

@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components';
 import countDownTimer from '../utils/countdown.js';
+
+
 const Header = styled.div`
 
   h1 {

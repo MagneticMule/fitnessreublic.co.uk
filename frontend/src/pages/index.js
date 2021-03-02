@@ -4,7 +4,10 @@ import Helmet from 'react-helmet'
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import ladiesboxfit from '../assets/images/ladies-boxfit-class.jpg'
-import pic04 from '../assets/images/pic04.jpg'
+import pic04 from '../assets/images/pic04.jpg';
+
+import intro from '../assets/images/intro.mp4';
+
 import Banner from '../components/Banner';
 import Layout from '../components/layout';
 import Form from '../components/Form';
@@ -41,6 +44,7 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div id="main">
+
           <News/>
           <section id="one" className="tiles">
             <article style={{ backgroundImage: `url(${pic01})` }}>
@@ -92,6 +96,19 @@ class HomeIndex extends React.Component {
           </section>
 
         <section id="covid" className="inverted">
+        <video
+        className="intro-video"
+        height="100%"
+        width="100%"
+        loop
+        muted
+        autoPlay
+      >
+        <source
+          src={intro}
+          type="video/mp4"
+        />
+      </video>
             <div className="inner">
               <h2 className="align-center">Covid 19 and Safe Training</h2>
               <p>
