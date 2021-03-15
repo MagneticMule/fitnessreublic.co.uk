@@ -40,7 +40,7 @@ const Banner = () => {
   const [time, setTime] = useState(countDownTimer('2021-04-12'));
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTime(countDownTimer('2021-04-15'));
+      setTime(countDownTimer('2021-04-12'));
     }, 1000);
     return()=>clearTimeout(timer);
   });
