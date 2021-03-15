@@ -37,7 +37,7 @@ const Header = styled.div`
 `;
 
 const Banner = () => {
-  const [time, setTime] = useState(countDownTimer('2021-04-15'));
+  const [time, setTime] = useState(countDownTimer('2021-04-12'));
   useEffect(() => {
     const timer = setTimeout(() => {
       setTime(countDownTimer('2021-04-15'));
