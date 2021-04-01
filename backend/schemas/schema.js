@@ -4,9 +4,11 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
-// object schemas
+// => object schemas
 import businessDetails from './objects/businessDetails.js';
 import hero from './objects/hero.js';
+import cta from './objects/cta.js';
+import heroTitle from './objects/heroTitle.js';
 import news from './objects/news.js';
 import excercise from './objects/excercise.js';
 import set from './objects/set.js';
@@ -14,6 +16,8 @@ import social from './objects/social.js';
 import staffMember from './objects/staffMember.js';
 import video from './objects/video.js';
 import target from './objects/target.js';
+
+
 // => blog
 import bodyPortableText from './objects/blog/bodyPortableText.js';
 import bioPortableText from './objects/blog/bioPortableText.js';
@@ -45,6 +49,8 @@ export default createSchema({
     page,
     businessDetails,
     hero,
+    heroTitle,
+    cta,
     news,
     workout,
     set,

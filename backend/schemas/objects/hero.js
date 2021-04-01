@@ -1,36 +1,36 @@
-import { GoScreenFull as icon} from 'react-icons/go';
+import { GoScreenFull as icon } from 'react-icons/go';
 export default {
-  title: "Hero",
-  name: "hero",
-  type: "document",
+  title: 'Hero',
+  name: 'hero',
+  type: 'document',
   icon,
   fields: [
     {
-      title: "Title",
-      name: "title",
-      type: "string",
-      validation: Rule => Rule.required().min(2).warning('Title should be longer than 2 characters'),
-      description: `The title will be displayed in large type in the first setion of the hero box. THis text could be the name of yuour business or a statement or question of some sort e.g. "Are you ready to get fit in 2021?" The idea is you want to capture the visitors attention early on.`
+      title: 'Title',
+      name: 'title',
+      type: 'heroTitle',
+      description: `The title will be displayed in large type in the first setion of the hero box. This will generally be the name of the page made into a statement e.g. We are Fitness Republic || Your Own Fitness Trainer`,
     },
     {
-      title: 'Content',
-      name: 'content',
-      type: 'array',
-      of: [{ type: 'block' }],
-      description: `Introduce the workout.`,
-      validation: Rule => [
-        Rule.max(200).error('Body text must be shorter than 200 characters')
-      ]
+      title: 'Sub Title',
+      name: 'subtitle',
+      type: 'string',
+      description: `A very short one sentence description of the page content`,
+      validation: (Rule) => [Rule.max(80).error('Body text must be shorter than 80 characters')],
     },
     {
-      title: "Background",
-      name: "background",
-      type: "image",
+      title: 'Background',
+      name: 'background',
+      type: 'image',
       description: `You can put an image here as the background to the hero item. It will be dimmed so that the text is easily readable. If you don't put an image here the news will be displayed on a plain, coloured background.`,
       options: {
-        hotspot: true // Make the image editable
+        hotspot: true, // Make the image editable
       },
     },
-
+    {
+      title: 'Call to Action',
+      name: 'callToActionButton',
+      type: 'cta',
+    },
   ],
-}
+};
