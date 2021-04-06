@@ -26,10 +26,18 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-            'Lato\:100,200,300,500,700,900'
+            'Lato\:100,300,400,700,900'
 
         ],
       },
+    },
+    {
+    resolve: "gatsby-plugin-react-svg",
+    options: {
+      rule: {
+        include: /svg/
+      }
+    }
     },
      {
       resolve: `gatsby-source-sanity`,

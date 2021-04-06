@@ -13,6 +13,8 @@ import {
 
 import Container from '../styles/ContainerStyle.js';
 
+import FRlogoStacked from '../assets/images/svg/fitness-republic-logo-stacked.svg';
+
 
 const SiteFooter = styled.footer`
   padding-top: 4em;
@@ -58,6 +60,7 @@ const SocialIcons = styled.ul`
   const Map = styled.div``;
 
   const Flex = styled.div`
+    margin:8em 0;
     display:flex;
     align-items: flex-start;
     justify-content:space-between;
@@ -79,6 +82,7 @@ const Bio = styled.div`
 const Footer = props => (
   <SiteFooter>
     <Container>
+      <FRlogoStacked />
       <Flex>
         <section>
           <SectionHeader>
@@ -90,11 +94,15 @@ const Footer = props => (
             <li>Ashby De La Zouch</li>
             <li>Leicestershire</li>
             <li>LE65 1AH</li>
-            <li><FaPhoneSquareAlt/>
+            <li>
+              <FaPhoneSquareAlt />
               <a href="tel:+4401530413330"> 01530 413330</a>
             </li>
             <li>
-              <a href="#"><FaAddressCard />{' Download vCard  >>'}</a>
+              <a href="#">
+                <FaAddressCard />
+                {' Download vCard  >>'}
+              </a>
             </li>
           </Address>
         </section>

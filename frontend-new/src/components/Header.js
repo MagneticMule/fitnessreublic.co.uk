@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Container from '../styles/ContainerStyle.js';
-import Menu from './Menu.js'
+import Menu from './Menu.js';
 
 const Head = styled.head`
   display: grid;
@@ -19,7 +19,7 @@ const Head = styled.head`
     ),
     #f0e1e1;
   box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.25);
-`
+`;
 
 const Title = styled.h1`
 
@@ -49,7 +49,7 @@ const Title = styled.h1`
   span {
     font-weight: 900;
   }
-`
+`;
 
 const Subtitle = styled.p`
   width: fit-content;
@@ -65,18 +65,18 @@ const Subtitle = styled.p`
   font-weight: bold;
   font-size: 1.1rem;
   text-transform: uppercase;
-`
+`;
 
-const TextSection = () => {
+const TextSection = (props) => {
   return (
     <Head>
       <Menu />
       <Container>
         <Title>
-          Your own <span>personal trainer</span>
+          {props.title}
         </Title>
         <Subtitle>
-          personalized training and guidance to support your fitness journey
+          {props.subtitle}
         </Subtitle>
       </Container>
     </Head>

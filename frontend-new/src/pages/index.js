@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 
 import Layout from '../components/Layout.js';
 
+import Header from '../components/Header.js';
 import Container from '../styles/ContainerStyle.js';
 import TextSection from '../components/TextSection.js';
 import Image from '../components/widgets/Image.js';
@@ -43,6 +44,8 @@ class Index extends React.Component {
                 `}
           </script>
         </Helmet>
+        <Header title={<>We are <span>Fitness Republic</span></>}
+                subtitle={"A Family run gym with a focus on inclusive fitness and wellbeing"}/>
         <Container>
           <TextSection />
         </Container>

@@ -6,7 +6,7 @@ import 'normalize.css';
 
 import GlobalStyles from '../styles/GlobalStyles.js';
 import Typography from '../styles/Typography.js';
-import Header from './Header.js';
+
 import Footer from './Footer.js';
 
 import WhatsAppWidget from 'react-whatsapp-widget';
@@ -20,13 +20,12 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     return (
       <>
         <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
           <GlobalStyles />
           <Typography />
-          <Header />
           {children}
           <Footer />
           <WhatsAppWidget

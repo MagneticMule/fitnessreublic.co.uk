@@ -5,45 +5,33 @@ import styled from 'styled-components';
 
 
 const PicContainer = styled.div`
-
-`;
+  grid-column: 1/7;
+  `;
 
 const ImageContainer = styled.div`
+
   `;
 
 const Blurb = styled.p`
 color: var(--dark-grey);
   font-style:italic;
-
-
   > strong {
     font-weight:bold;
   }
 `;
 
 
-const Image = () => {
-    const data = useStaticQuery(graphql`
-    query {
-    file(relativePath: { eq: "simon-with-client.jpg" }) {
-      childImageSharp {
-        fluid(maxHeight: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-  `);
+const Image = (props) => {
 return (
   <PicContainer>
     <ImageContainer>
       <Img
-        fluid={data.file.childImageSharp.fluid}
-        alt="Simon explaining how to use a machine in the gym to a client"
+        fluid={props.pic}
+        alt={props.alt}
       />
     </ImageContainer>
     <Blurb>
-      Simon explaining how to use a machine in the <strong>Fitness Republic</strong> gym to a client
+      {props.blurb}
     </Blurb>
   </PicContainer>
 )

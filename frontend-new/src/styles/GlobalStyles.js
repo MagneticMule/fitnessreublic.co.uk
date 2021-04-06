@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --red: #FF4949;
     --black: #2E2E2E;
+    --deep-wine: #240519;
     --yellow: #ffc600;
     --orange: #ffa61a;
     --maroon: #ff6b00;
@@ -15,6 +16,10 @@ const GlobalStyles = createGlobalStyle`
     --deep-purple: #770264;
     --deeper-purple: #86259e;
 
+    --semi-transparent-orange: rgba(255, 166, 26,.5);
+
+      --lin-grad-smooth-orange: linear-gradient(180.14deg, #FF7121 -1.96%, #FF2E00 96.02%);
+
     --background-gradient: linear-gradient(107.69deg, #2A292E 0.39%, #312746 100%);
 
     --dark-grad: linear-gradient(262.16deg, rgba(255, 107, 0, 0.2) 0.74%, rgba(255, 255, 255, 0) 99.73%), linear-gradient(98deg, rgba(0, 13, 129, 0.2) 0%, rgba(255, 255, 255, 0) 99.66%), #410E23;
@@ -23,6 +28,14 @@ const GlobalStyles = createGlobalStyle`
     --lightsripe-grad: linear-gradient(262.04deg, rgba(255, 107, 0, 0.2) 48.53%, rgba(255, 255, 255, 0) 99.73%), linear-gradient(97.96deg, rgba(219, 0, 255, 0.3) 0.9%, rgba(255, 247, 248, 0) 100%);
 
     --rainbow-overlay: background: linear-gradient(89.95deg, rgba(255, 168, 0, 0.7) 0.91%, rgba(134, 37, 158, 0.7) 99.01%);
+
+
+    /* shadows */
+    --close-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); //refactor this
+
+
+    --shadow-low: box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    --shadow-high: box-shadow: 1px 92px 70px 0px rgba(0, 0, 0, 0.2);
 
 }
 

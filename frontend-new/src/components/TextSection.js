@@ -1,30 +1,12 @@
-import React from 'react'
-import styled, { withTheme } from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import GlobalStyles from '../styles/GlobalStyles.js';
-import Typography from '../styles/Typography.js';
-
-
-
-const DualSection = styled.section`
-  margin-top: 6em;
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: 2fr 4fr 1fr;
-  grid-template-areas:
-    'sidebar content content
-     image   image   image';
-`;
-
-const Sidebar = styled.section`
-  grid-area:sidebar;
-`;
 
 const TextContent = styled.div`
   padding: 0;
   margin:0;
-  grid-area: content;
-`
+  grid-column: 2/7;
+`;
 
 const Background = styled.div`
   background-color:var(--white);
@@ -82,7 +64,6 @@ const BackStripe = styled.div`
 
 `;
 
-
 const SideBar = styled.div`
  > p {
    color: var(--dark-grey);
@@ -91,12 +72,6 @@ const SideBar = styled.div`
 
 const TextSection = () => {
 return (
-  <Background>
-    <BackStripe>
-      <DualSection>
-        <SideBar>
-          <p>Prefer to talk to a real-life human being?</p>
-        </SideBar>
         <TextContent>
           <IntroText>
             If you really want to kickstart your fitness then a personal trainer
@@ -140,9 +115,6 @@ return (
             molestiae eum ad, nobis voluptate delectus temporibus!
           </BodyText>
         </TextContent>
-      </DualSection>
-    </BackStripe>
-  </Background>
 )
 
 }
