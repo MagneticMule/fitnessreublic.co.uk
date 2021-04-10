@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
 
 
   html {
-    background-color: var(--background-gradient);
+    background: var(--background-gradient);
     background-size: 450px;
     background-attachment: fixed;
     font-size: 20px;
@@ -25,8 +25,8 @@ const GlobalStyles = createGlobalStyle`
   body {
     color: var(--white);
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     line-height: 1.75;
   }
 

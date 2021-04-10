@@ -65,14 +65,11 @@ class Layout extends React.Component {
                             <p>By using this website you agree for us to store cookies on your local computer.</p>
                             </div>
                         </CookieConsent>
-
-
                         <WhatsAppWidget
                             companyName='Fitness Republic Ashby'
-                            phoneNumber='+441530413330' textReplyTime='Typically replies within an hour or two'
+                            phoneNumber='+441530413330' textReplyTime='We Typically get back to you within the hour'
                             message="Hi there! Ready to increase your health and fitness in 2021? Let's chat about it"
                         />
-
             </div>
         )
     }

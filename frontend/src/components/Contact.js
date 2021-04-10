@@ -2,7 +2,7 @@ import React from 'react';
 import { navigate } from 'gatsby-link';
 
 const Contact = (props) => (
-    <section id="contact">
+    <section id="contact" >
         <div className="inner">
             <section>
                 <form name="Enquiry" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="#">

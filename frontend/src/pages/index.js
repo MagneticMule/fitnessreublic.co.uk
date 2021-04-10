@@ -21,7 +21,7 @@ class HomeIndex extends React.Component {
         <Helmet
           title="Fitness Republic - Fitness Gym in Ashby"
           meta={[
-            { name: 'description', content: 'The premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within an clean and covid safe friendly environment.' },
+            { name: 'description', content: 'The premiere family gym at the heart of Ashby de la Zouch in Leicestershire. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within an clean and covid safe friendly environment. Try us now tih out free 7 day pass' },
             { name: 'keywords', content: 'gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, student membership, local, near me' },
           ]}>
               <script type="application/ld+json">
@@ -44,8 +44,6 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div id="main">
-
-          <News/>
           <section id="one" className="tiles">
             <article style={{ backgroundImage: `url(${pic01})` }}>
               <Link
@@ -72,7 +70,7 @@ class HomeIndex extends React.Component {
 
             <article style={{ backgroundImage: `url(${ladiesboxfit})` }}>
               <Link
-                aria-label="Link to Fitness CLasses Page"
+                aria-label="Link to Fitness Classes Page"
                 to="/classes"
                 className="link primary"
               >

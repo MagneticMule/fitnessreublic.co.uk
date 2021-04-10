@@ -10,6 +10,40 @@ section {
   &.timetable {
     background-color: _palette(white);
   }
+
+  &.white {
+    background-color: palette(white);
+  }
+
+  &.light {
+    background: linear-gradient(
+        262.16deg,
+        rgba(255, 107, 0, 0.3) 0.74%,
+        rgba(255, 255, 255, 0) 99.73%
+      ),
+      linear-gradient(
+        98deg,
+        rgba(0, 13, 129, 0.3) 0%,
+        rgba(255, 255, 255, 0) 99.66%
+      ),
+      #f0e1e1;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &.dark {
+    background: linear-gradient(
+        262.16deg,
+        rgba(255, 107, 0, 0.3) 0.74%,
+        rgba(255, 255, 255, 0) 99.73%
+      ),
+      linear-gradient(
+        98deg,
+        rgba(0, 13, 129, 0.3) 0%,
+        rgba(255, 255, 255, 0) 99.66%
+      ),
+      #410e23;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
   &.inverted {
     text-align: center;
     background-color: _palette(bg);

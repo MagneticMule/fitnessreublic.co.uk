@@ -7,6 +7,18 @@
 /* Footer */
 
 #footer {
+  background: linear-gradient(
+      262.16deg,
+      rgba(255, 107, 0, 0.3) 0.74%,
+      rgba(255, 255, 255, 0) 99.73%
+    ),
+    linear-gradient(
+      98deg,
+      rgba(0, 13, 129, 0.3) 0%,
+      rgba(255, 255, 255, 0) 99.66%
+    ),
+    #410e23;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   .copyright {
     font-size: 0.8em;
     list-style: none;

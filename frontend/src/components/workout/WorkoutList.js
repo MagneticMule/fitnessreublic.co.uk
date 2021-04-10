@@ -99,7 +99,7 @@ const Card = styled.div`
   }
 
   .card__content {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     flex-basis: 100%;
     font-size: .8rem;
     padding: 1.6rem;
