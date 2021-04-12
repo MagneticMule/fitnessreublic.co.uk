@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     color: var(--white);
     font-size: 1rem;
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     line-height: 1.75;
   }

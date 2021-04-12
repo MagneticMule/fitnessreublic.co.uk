@@ -134,7 +134,6 @@ const Membership = props => (
           <strong>
             If you are under 16 years of age we will require a written consent
             form to be signed by your guardian and brought into us at the gym.
-            Download the print consent form here.
           </strong>
           <hr />
           <div className="grid-wrapper">
@@ -165,7 +164,27 @@ const Membership = props => (
           </div>
         </div>
       </section>
+      <section id="policy" className="inverted">
+        <div className="inner">
+          <h2>Cancellation</h2>
 
+          <p>
+            Memberships cannot be cancelled prior to the agreed contract length
+            that you have signed up for and the last payment has been made. A
+            contract may be cancelled once the final payment has been made; this
+            requires 30 days notice to Fitness Republic.
+          </p>
+
+          <p>
+            Please email info@fitnessrepublic.co.uk with your cancellation
+            request. Upon receiving your email a cancellation form will be
+            emailed to you to complete and be returned. Cancellations cannot be
+            actioned until receipt of your cancellation form. please note one
+            final payment may be due this will depend on weather your current
+            payment falls within the 30 day cancellation period.
+          </p>
+        </div>
+      </section>
       <section id="freepass" className="alt">
         <div className="inner">
           <header className="major">
@@ -227,11 +246,8 @@ const Membership = props => (
                 <p>Payable via Card or Cash</p>
                 <ul className="actions">
                   <li>
-                    <a
-                      href="https://fitnessrepublic.clubright.co.uk/Account/Login"
-                      className="button special"
-                    >
-                      Choose Plan
+                    <a href="#contact" className="button special">
+                      Contact Us
                     </a>
                   </li>
                 </ul>
@@ -260,11 +276,8 @@ const Membership = props => (
                 <p>Payable via Card or Cash</p>
                 <ul className="actions">
                   <li>
-                    <a
-                      href="https://fitnessrepublic.clubright.co.uk/Account/Login"
-                      className="button special"
-                    >
-                      Choose Plan
+                    <a href="#contact" className="button special">
+                      Contact Us
                     </a>
                   </li>
                 </ul>
@@ -292,38 +305,14 @@ const Membership = props => (
                 <p>Payable via Card or Cash</p>
                 <ul className="actions">
                   <li>
-                    <a
-                      href="https://fitnessrepublic.clubright.co.uk/Account/Login"
-                      className="button special"
-                    >
-                      Choose Plan
+                    <a href="#contact" className="button special">
+                      Contact Us
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="policy" className="inverted">
-        <div className="inner">
-          <h2>Cancellation</h2>
-
-          <p>
-            Memberships cannot be cancelled prior to the agreed contract length
-            that you have signed up for and the last payment has been made. A
-            contract may be cancelled once the final payment has been made; this
-            requires 30 days notice to Fitness Republic.
-          </p>
-
-          <p>
-            Please email info@fitnessrepublic.co.uk with your cancellation
-            request. Upon receiving your email a cancellation form will be
-            emailed to you to complete and be returned. Cancellations cannot be
-            actioned until receipt of your cancellation form. please note one
-            final payment may be due this will depend on weather your current
-            payment falls within the 30 day cancellation period.
-          </p>
         </div>
       </section>
     </div>
