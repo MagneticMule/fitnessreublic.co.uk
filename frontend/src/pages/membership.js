@@ -243,7 +243,11 @@ const Membership = props => (
                 <p>
                   <strong>£37.50</strong> Per week for 6 weeks
                 </p>
-                <p>Payable via Card or Cash</p>
+                <p>
+                  Payable via Card or Cash in one installment of £225
+                  <hr />
+                  Total cost: £225
+                </p>
                 <ul className="actions">
                   <li>
                     <a href="#contact" className="button special">
@@ -271,9 +275,13 @@ const Membership = props => (
                 </ul>
                 <hr />
                 <p>
-                  <strong>£59.00</strong> Per Week for 8 weeks
+                  <strong>£60.00</strong> Per Week for 8 weeks
                 </p>
-                <p>Payable via Card or Cash</p>
+                <p>
+                  Payable via Card or Cash in two installments of £240
+                  <hr />
+                  Total cost: £480
+                </p>
                 <ul className="actions">
                   <li>
                     <a href="#contact" className="button special">
@@ -300,9 +308,13 @@ const Membership = props => (
                 </ul>
                 <hr />
                 <p>
-                  <strong>£57.00</strong> Per Week for 12 weeks
+                  <strong>£66.00</strong> Per Week for 12 weeks
                 </p>
-                <p>Payable via Card or Cash</p>
+                <p>
+                  Payable via Card or Cash in four installments of £200
+                  <hr/>
+                  Total cost: £800
+                </p>
                 <ul className="actions">
                   <li>
                     <a href="#contact" className="button special">
@@ -319,4 +331,4 @@ const Membership = props => (
   </Layout>
 )
 
-export default Membership
+export default Membership;
