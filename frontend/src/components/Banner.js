@@ -88,7 +88,7 @@ const Banner = () => {
         <ul className="actions">
           <li>
             <Link to="/membership" name="Get Started" className="button scrolly">
-              Join Us Now
+              Get Started Free
             </Link>
           </li>
         </ul>

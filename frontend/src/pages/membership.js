@@ -20,7 +20,7 @@ const Membership = props => (
        <section id="freepass" className="alt">
         <div className="inner">
           <header className="major">
-            <h2>Free Seven Day Pass</h2>
+            <h2>Get Started Absolutely Free</h2>
           </header>
           <p>
             Our Free Pass to gives you the opportunity to try out our facility
