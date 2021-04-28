@@ -50,21 +50,6 @@ class Layout extends React.Component {
                     <Footer />
                 </div>
                     <Menu onToggleMenu={this.handleToggleMenu} />
-
-                    <CookieConsent
-                        buttonClasses="button special"
-                        containerClasses="alert alert-warning col-lg-12"
-                        contentClasses="text-capitalize"
-                        location="bottom"
-                        buttonText="X"
-                        declineButtonText="Decline"
-                        cookieName="gatsby-gdpr-google-analytics">
-                            <div className="inner">
-                            <p>We store cookies on your computer. These cookies are used to collect information about how you interact with this website and allow us to remember you.
-                            We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors on this website.</p>
-                            <p>By using this website you agree for us to store cookies on your local computer.</p>
-                            </div>
-                        </CookieConsent>
                         <WhatsAppWidget
                             companyName='Fitness Republic Ashby'
                             phoneNumber='+441530413330' textReplyTime='We Typically get back to you within the hour'
