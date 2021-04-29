@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const TextContent = styled.div`
-  padding: 0;
-  margin:0;
-  grid-column: 2/7;
+  grid-column: ${props => (props.pos ? props.pos : '2/5')};
 `;
 
 const Background = styled.div`
@@ -13,30 +10,22 @@ const Background = styled.div`
 `;
 
 const SectionTitle = styled.h2`
-  margin:0;
+  margin: -1rem 0 0 0;
   font-size: 4.209rem;
   font-weight: 300;
   letter-spacing: -0.05em;
   text-transform: capitalize;
-  color: var(--deep-purple);
+  color: var(--deeper-purple);
 `;
 
-const Subtitle = styled.h3`
+const SubTitle = styled.h3`
   margin: 0;
+  padding:0;
   color: var(--orange);
   letter-spacing: -1px;
   font-weight: 300;
   text-transform: capitalize;
   color: var(--orange);
-`;
-
-const IntroText = styled.div`
-  font-size: 2rem;
-  letter-spacing: -1px;
-  color: var(--orange);
-  font-style: italic;
-  margin: 0 0 2em 0;
-  line-height: 1.5;
 `;
 
 const BodyText = styled.div`
@@ -70,53 +59,14 @@ const SideBar = styled.div`
  }
 `;
 
-const TextSection = () => {
+const TextSection = (props) => {
 return (
-        <TextContent>
-          <IntroText>
-            If you really want to kickstart your fitness then a personal trainer
-            may be the ideal way. Amet consectetur adipiscing elit pellentesque
-            habitant morbi. Tortor condimentum lacinia quis vel eros donec ac.
-            Quisque sagittis purus sit amet volutpat consequat maurissfds. If
-            you really want to kickstart your fitness then a personal trainer
-            may be the ideal way. Amet consectetur adipiscing elit pellentesque.
-          </IntroText>
-          <SectionTitle>What is Personal Training?</SectionTitle>
-          <Subtitle>A basic overview of what we do</Subtitle>
-          <BodyText>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            eaque dolores reprehenderit, quaerat suscipit debitis labore
-            explicabo recusandae expedita quidem velit quos hic maxime, eius
-            molestias ab, quia nulla? Consequuntur! Accusamus sint alias odio
-          </BodyText>
-          <SectionTitle>Who is personal training for?</SectionTitle>
-          <Subtitle>
-            The Short answer is anyone but there are exceptions
-          </Subtitle>
-          <BodyText>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            eaque dolores reprehenderit, quaerat suscipit debitis labore
-            explicabo recusandae expedita quidem velit quos hic maxime, eius
-            molestias ab, quia nulla? Consequuntur! Accusamus sint alias odio
-          </BodyText>
-          <SectionTitle>What can you expect?</SectionTitle>
-          <Subtitle>Your ambitions and commitment play a key role</Subtitle>
-          <BodyText>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            eaque dolores reprehenderit, quaerat suscipit debitis labore
-            explicabo recusandae expedita quidem velit quos hic maxime, eius
-            molestias ab, quia nulla? Consequuntur! Accusamus sint alias odio
-            eligendi necessitatibus consequatur unde ratione excepturi.
-            Blanditiis recusandae nostrum in iste modi corporis ipsum excepturi
-            aliquam, ratione accusamus ut voluptate eum porro repellat ipsa
-            veniam ipsam. Harum numquam sunt fugiat ipsa suscipit alias tenetur
-            eaque deserunt reprehenderit itaque. Corrupti distinctio sint,
-            officia consequatur ullam assumenda fuga modi numquam molestias
-            molestiae eum ad, nobis voluptate delectus temporibus!
-          </BodyText>
-        </TextContent>
+  <TextContent pos={props.pos}>
+    <SectionTitle>{props.title}</SectionTitle>
+    <SubTitle>{props.subtitle}</SubTitle>
+    <BodyText>{props.body}</BodyText>
+  </TextContent>
 )
-
 }
 
 export default TextSection;

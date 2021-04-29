@@ -5,12 +5,19 @@ import styled from 'styled-components';
 
 
 const PicContainer = styled.div`
-  grid-column: 1/7;
-  `;
+  grid-column: ${props => (props.pos ? props.pos : "1/5")};
+  margin-bottom: 2em;
+`;
 
 const ImageContainer = styled.div`
+  box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: .2em;
+  overflow:hidden;
+`;
 
-  `;
+const StyledImg = styled(Img)`
+  z-index: -1;
+`;
 
 const Blurb = styled.p`
 color: var(--dark-grey);
@@ -23,18 +30,13 @@ color: var(--dark-grey);
 
 const Image = (props) => {
 return (
-  <PicContainer>
+  <PicContainer pos={props.pos}>
     <ImageContainer>
-      <Img
-        fluid={props.pic}
-        alt={props.alt}
-      />
+      <StyledImg fluid={props.pic} alt={props.alt} />
     </ImageContainer>
-    <Blurb>
-      {props.blurb}
-    </Blurb>
+    <Blurb>{props.blurb}</Blurb>
   </PicContainer>
-)
+);
 }
 
 export default Image;

@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
     --black: #2E2E2E;
     --deep-wine: #240519;
     --yellow: #ffc600;
-    --orange: #ffa61a;
+    --orange: #FF7121;
     --maroon: #ff6b00;
     --white: #fff;
     --grey: #F0E1E1;
@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
 
     --semi-transparent-orange: rgba(255, 166, 26,.5);
 
-      --lin-grad-smooth-orange: linear-gradient(180.14deg, #FF7121 -1.96%, #FF2E00 96.02%);
+      --lin-grad-smooth-orange: linear-gradient(180.14deg,#FF7121  -1.96%, #FF2E00 96.02%);
 
     --background-gradient: linear-gradient(107.69deg, #2A292E 0.39%, #312746 100%);
 
@@ -27,15 +27,13 @@ const GlobalStyles = createGlobalStyle`
 
     --lightsripe-grad: linear-gradient(262.04deg, rgba(255, 107, 0, 0.2) 48.53%, rgba(255, 255, 255, 0) 99.73%), linear-gradient(97.96deg, rgba(219, 0, 255, 0.3) 0.9%, rgba(255, 247, 248, 0) 100%);
 
-    --rainbow-overlay: background: linear-gradient(89.95deg, rgba(255, 168, 0, 0.7) 0.91%, rgba(134, 37, 158, 0.7) 99.01%);
+    --rainbow-overlay: linear-gradient(89.95deg, rgba(255, 168, 0, 0.7) 0.91%, rgba(134, 37, 158, 0.7) 99.01%);
 
 
     /* shadows */
     --close-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); //refactor this
-
-
-    --shadow-low: box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-    --shadow-high: box-shadow: 1px 92px 70px 0px rgba(0, 0, 0, 0.2);
+    --shadow-low: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    --shadow-high: 1px 92px 70px 0px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -73,11 +71,11 @@ const GlobalStyles = createGlobalStyle`
     padding:0;
   }
 
-  .gatsby-image-wrapper img[src*=base64\\,] {
+/* .gatsby-image-wrapper img[src*=base64\\,] {
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
   }
-
+*/
   /* Scrollbar Styles */
   body::-webkit-scrollbar {
     width: 24px;
@@ -85,7 +83,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     scrollbar-width: thick;
-    scrollbar-color: var(--yellow) var(--white);
+    scrollbar-color: var(--orange) var(--white);
   }
 
   body::-webkit-scrollbar-track {
@@ -93,7 +91,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: var(--yellow) ;
+    background-color: var(--orange) ;
     border-radius: 6px;
     border: 3px solid var(--white);
   }
@@ -111,11 +109,7 @@ const GlobalStyles = createGlobalStyle`
   li {
     list-style-type: none;
   }
-  .tilt {
-    transform: rotate(-2deg);
-    position: relative;
-    display: inline-block;
-  }
+
 
 p {margin-bottom: 1rem;}
 
@@ -158,6 +152,6 @@ th {
 }
 
 
-`
+`;
 
 export default GlobalStyles;

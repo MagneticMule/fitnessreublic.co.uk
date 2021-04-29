@@ -1,59 +1,63 @@
 import PropTypes from 'prop-types';
-import react from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import {
-  FaFacebook as facebook,
-  FaTwitter as twitter,
-  FaInstagram as instagram,
-  FaYoutube as youtube,
-  FaAddressCard as address,
-  FaPhoneSquareAlt as phone,
-} from 'react-icons/fa'
+  FaFacebook as Facebook,
+  FaTwitter as Twitter,
+  FaInstagram as Instagram,
+  FaYoutube as Youtube,
+  FaAddressCard as Address,
+  FaPhoneSquareAlt as Phone,
+} from 'react-icons/fa';
 
 const CircleIcon = styled.div`
-    display:inline-block;
-    border-radius: 50%;
-    height: 1.5rem;
-    width: 1.5rem;
-    padding: 1rem;
-    background: var(--orange);
-    color: var(--white);
-    border:.5rem solid white;
-`;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 1rem;
+  background: var(--orange);
+  color: var(--white);
+  border: 0.5rem solid white;
+`
 
 const PlainIcon =styled.div`
-
+padding-left: 1em;
+display: inline-block;
+align-self: center;
 
 `;
 
 const Icon = props => {
 
-      if (props.style == 'plain') {
-
+      if (props.style === 'plain') {
         return (
-          <PlainIcon></PlainIcon>
-        );
+          <PlainIcon>
+            <Phone size="2rem" />
+          </PlainIcon>
+        )
       }
 
   return (
-
-
-    <CircleIcon></CircleIcon>
-
+    <CircleIcon>
+      <Phone size="2rem" />
+    </CircleIcon>
   )
 }
 
-Greeting.propTypes = {
+Icon.propTypes = {
   iconName: PropTypes.oneOf([
-    'phone',
-    'information',
-    'question',
-    'facebook',
-    'twitter',
-    'youtube',
-    'instagram',
-    'whatsapp',
+    'Phone',
+    'Information',
+    'Question',
+    'Facebook',
+    'Youtube',
+    'Instagram',
+    'Whatsapp',
   ]),
   style: PropTypes.oneOf([
     'plain', 'circle'

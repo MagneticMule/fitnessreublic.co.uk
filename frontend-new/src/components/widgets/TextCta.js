@@ -6,9 +6,9 @@ import styled from 'styled-components';
 const Cta = styled.aside`
   display: flex;
 
-`;
-const IntroText = styled.p`
+  >p {
 
+  }
 
 `;
 
@@ -16,7 +16,7 @@ const TextCta = (props) => {
 
   return (
     <Cta>
-      <IntroText>{props.introtext}</IntroText>
+      <p>{props.introtext}</p>
       <Link to="{props.link}">{props.linktext}</Link>
     </Cta>
   )

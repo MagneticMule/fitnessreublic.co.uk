@@ -1,34 +1,74 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-
-import HeadShot from './widgets/HeadShot.js';
+import Img from 'gatsby-image';
+import HeadShot from './widgets/HeadShot';
+import Button from './widgets/Button';
 
 const Bubble = styled.div`
+  text-align: center;
+  box-shadow: var(--shadow-high);
   font-weight: 500;
   display: flex;
   flex-direction: column;
-  border-radius: 48px;
+  border-radius: 3rem;
   background: var(--lin-grad-smooth-orange);
   color: var(--deep-wine);
-  font-size: 1.2rem;
-  padding: 3em;
+  font-size: 1rem;
+  text-transform:uppercase;
+  font-weight: 500;
+  padding: 0 4em 2em 4em;
   max-width: 480px;
-  grid-column: 2/4;
+  grid-column: 1/2;
+  grid-row:span 2;
+
+  > .headshot {
+    background: var(--lin-grad-smooth-orange);
+    margin: -3em 2em 2em 2em;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 24px solid var(--orange);
+    box-shadow: var(--shadow-low);
+    align-self: center;
+  }
+
+  > .name {
+    margin-top: 3em;
+    font-size: .9rem;
+    font-weight: 700;
+    > span {
+      display: block;
+      font-style: italic;
+      font-style: normal;
+      font-weight: 300;
+    }
+  }
 `;
 
 
-const InfoBubble = () => {
+const InfoBubble = (props) => {
   return (
     <Bubble>
-      Working with a personal instructor is the perfect kickstart to your
-      fitness journey. For me personally, it provided a structured and
-      personalized plan of action to loose my maternity weight before
-      progressing on my own.
-      <br/>
-      <Link aria-label="Contact Blanka" to="/membership/">
-        Contact Blanka About Personal Training
-      </Link>
+      <Img
+        className="headshot"
+        fixed={props.headshot}
+        alt="{props.name}'s headshot"
+      />
+      <b>
+        Working with a personal instructor is the perfect kickstart to your
+        fitness journey.
+      </b>
+      <hr/>
+      In my own experience, Personal Training provided a structured and personalized plan of action to loose my maternity weight before progressing on my own.
+      <p className="name">
+        Blanka Harvey <span>Personal Trainer & Zumba Specialist</span>
+      </p>
+      <Button
+        title="Ask About Personal Training"
+        aria="Ask Blanka About Personal Training"
+        type="general"
+        destination="/contact"
+      />
     </Bubble>
   )
 }

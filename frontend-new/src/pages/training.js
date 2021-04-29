@@ -2,15 +2,16 @@ import { graphql, Link } from 'gatsby'
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import Layout from '../components/Layout.js';
-import DualSection from '../styles/GridStyles.js';
+import Layout from '../components/Layout';
+import {DualSection} from '../styles/GridStyles';
 import Header from '../components/Header.js';
 import Container from '../styles/ContainerStyle';
-import TextSection from '../components/TextSection.js';
-import Image from '../components/widgets/Image.js';
-import ReviewSection from '../components/ReviewSection.js';
-import InfoBubble from '../components/InfoBubble.js';
-import TextCta from '../components/widgets/TextCta.js';
+import TextSection from '../components/TextSection';
+import Image from '../components/widgets/Image';
+import ReviewSection from '../components/ReviewSection';
+import InfoBubble from '../components/InfoBubble';
+import TextCta from '../components/widgets/TextCta';
+import IntroText from '../components/widgets/text/IntroText';
 
 const TrainingPage = ({data}) =>{
     return (
@@ -43,31 +44,106 @@ const TrainingPage = ({data}) =>{
 
         <Container>
           <DualSection>
-            <TextSection />
+            <InfoBubble
+              location={'content'}
+              headshot={data.blankahead.childImageSharp.fixed}
+              name={'Blanka'}
+            />
+
+            <TextSection
+              title="What is Personal Training?"
+              subtitle="A basic overview of what we do"
+              body="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam eaque dolores reprehenderit, quaerat suscipit debitis
+              labore explicabo recusandae expedita quidem velit quos hic maxime,
+              eius molestias ab, quia nulla? Consequuntur! Accusamus sint alias
+              odio"
+            />
+
+            <TextSection
+              title="Who is personal training for?"
+              subtitle="The Short answer is anyone but there are exceptions"
+              body="         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam eaque dolores reprehenderit, quaerat suscipit debitis
+              labore explicabo recusandae expedita quidem velit quos hic maxime,
+              eius molestias ab, quia nulla? Consequuntur! Accusamus sint alias
+              odio"
+            />
+
+            <TextSection
+              title="What can you expect?"
+              subtitle="Your ambitions and commitment play a key role"
+              body="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam eaque dolores reprehenderit, quaerat suscipit debitis
+              labore explicabo recusandae expedita quidem velit quos hic maxime,
+              eius molestias ab, quia nulla? Consequuntur! Accusamus sint alias
+              odio eligendi necessitatibus consequatur unde ratione excepturi.
+              Blanditiis recusandae nostrum in iste modi corporis ipsum
+              excepturi aliquam, ratione accusamus ut voluptate eum porro
+              repellat ipsa veniam ipsam. Harum numquam sunt fugiat ipsa
+              suscipit alias tenetur eaque deserunt reprehenderit itaque.
+              Corrupti distinctio sint, officia consequatur ullam assumenda fuga
+              modi numquam molestias molestiae eum ad, nobis voluptate delectus
+              temporibus!"
+            />
+
             <Image
-              pic={data.illustration1.childImageSharp.fluid}
+              pic={data.simonclient.childImageSharp.fluid}
               alt="Black and white picture of to men in a gym"
               blurb={
                 'Simon explaining how to use a machine in the Fitness Republic gym to a client'
               }
             />
 
-
-  <ReviewSection
-              location={'content'}
-              headshot={data.headshot1.childImageSharp.fixed}
-              reviewtext={
-                <>
-                  I started with Blanka in January 2021. Her approach to our
-                  personal training sessions are both <strong>creative</strong>{' '}
-                  and <strong>personable</strong>. No two sessions are the same.
-                  I now look forward to exercise and have achieved significant
-                  results. Long may this journey with her continue.
-                </>
-              }
+            <TextSection
+              pos="2/5"
+              subtitle="Your ambitions and commitment play a key role"
+              body="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam eaque dolores reprehenderit, quaerat suscipit debitis
+              labore explicabo recusandae expedita quidem velit quos hic maxime,
+              eius molestias ab, quia nulla? Consequuntur! Accusamus sint alias
+              odio eligendi necessitatibus consequatur unde ratione excepturi.
+              Blanditiis recusandae nostrum in iste modi corporis ipsum
+              excepturi aliquam, ratione accusamus ut voluptate eum porro
+              repellat ipsa veniam ipsam. Harum numquam sunt fugiat ipsa
+              suscipit alias tenetur eaque deserunt reprehenderit itaque.
+              Corrupti distinctio sint, officia consequatur ullam assumenda fuga
+              modi numquam molestias molestiae eum ad, nobis voluptate delectus
+              temporibus!"
             />
-
-            <InfoBubble location={'content'} />
+            <TextSection
+              pos="2/5"
+              title="What can you expect?"
+              subtitle="Your ambitions and commitment play a key role"
+              body="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam eaque dolores reprehenderit, quaerat suscipit debitis
+              labore explicabo recusandae expedita quidem velit quos hic maxime,
+              eius molestias ab, quia nulla? Consequuntur! Accusamus sint alias
+              odio eligendi necessitatibus consequatur unde ratione excepturi.
+              Blanditiis recusandae nostrum in iste modi corporis ipsum
+              excepturi aliquam, ratione accusamus ut voluptate eum porro
+              repellat ipsa veniam ipsam. Harum numquam sunt fugiat ipsa
+              suscipit alias tenetur eaque deserunt reprehenderit itaque.
+              Corrupti distinctio sint, officia consequatur ullam assumenda fuga
+              modi numquam molestias molestiae eum ad, nobis voluptate delectus
+              temporibus!"
+            />
+            <TextSection
+              title="What can you expect?"
+              subtitle="Your ambitions and commitment play a key role"
+              body="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam eaque dolores reprehenderit, quaerat suscipit debitis
+              labore explicabo recusandae expedita quidem velit quos hic maxime,
+              eius molestias ab, quia nulla? Consequuntur! Accusamus sint alias
+              odio eligendi necessitatibus consequatur unde ratione excepturi.
+              Blanditiis recusandae nostrum in iste modi corporis ipsum
+              excepturi aliquam, ratione accusamus ut voluptate eum porro
+              repellat ipsa veniam ipsam. Harum numquam sunt fugiat ipsa
+              suscipit alias tenetur eaque deserunt reprehenderit itaque.
+              Corrupti distinctio sint, officia consequatur ullam assumenda fuga
+              modi numquam molestias molestiae eum ad, nobis voluptate delectus
+              temporibus!"
+            />
           </DualSection>
         </Container>
       </Layout>
@@ -78,16 +154,23 @@ const TrainingPage = ({data}) =>{
 export default TrainingPage;
 
 export const query = graphql`
-        query {
-           headshot1: file(relativePath: { eq: "headshots/katy.jpg" }) {
+         query {
+           kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
              childImageSharp {
                fixed(height: 100, width: 100) {
                  ...GatsbyImageSharpFixed
                }
              }
-           },
+           }
+           blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
+             childImageSharp {
+               fixed(height:152, width: 152) {
+                 ...GatsbyImageSharpFixed
+               }
+             }
+           }
 
-           illustration1: file(relativePath: { eq: "simon-with-client.jpg" }) {
+           simonclient: file(relativePath: { eq: "simon-with-client.jpg" }) {
              childImageSharp {
                fluid(maxWidth: 1000) {
                  base64

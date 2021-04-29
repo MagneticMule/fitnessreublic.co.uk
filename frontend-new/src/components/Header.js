@@ -1,12 +1,18 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import Container from '../styles/ContainerStyle.js';
-import Menu from './Menu.js';
+import Button from './widgets/Button';
+
+/* local components */
+import Container from '../styles/ContainerStyle';
 
 const Head = styled.head`
-  display: grid;
-  min-height: min(40vh, 800px);
+  display: flex;
+  align-items:center;
+  height: 75vh;
+  min-height: min(40em, 800px);
+  max-height: 50em;
+
   background: linear-gradient(
       262.04deg,
       rgba(255, 107, 0, 0.2) 48.53%,
@@ -22,16 +28,15 @@ const Head = styled.head`
 `;
 
 const Title = styled.h1`
-
   background: linear-gradient(
       262.16deg,
       rgba(255, 107, 0, 0.8) 0.74%,
-      rgba(255, 255, 255, .1) 99.73%
+      rgba(255, 255, 255, 0.1) 99.73%
     ),
     linear-gradient(
       98deg,
       rgba(0, 13, 129, 0.5) 0%,
-      rgba(255, 255, 255, .2) 99.66%
+      rgba(255, 255, 255, 0.2) 99.66%
     ),
     linear-gradient(0deg, #410e23, #410e23);
 
@@ -39,7 +44,11 @@ const Title = styled.h1`
   -webkit-background-clip: text;
   background-clip: text;
   -moz-text-fill-color: transparent;
-  text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25) inset;
+
+  text-shadow: 1px 1px 0px 0px
+    rgba(0, 0, 0, 0.25) inset;
+
+  filter: drop-shadow(1px 1px 0 rgba(255, 255, 255, 0.2));
   font-size: 4.209rem;
   color: #770264;
   letter-spacing: -0.05em;
@@ -70,17 +79,15 @@ const Subtitle = styled.p`
 const TextSection = (props) => {
   return (
     <Head>
-      <Menu />
       <Container>
-        <Title>
-          {props.title}
-        </Title>
-        <Subtitle>
-          {props.subtitle}
-        </Subtitle>
+        <div>
+          <Title>{props.title}</Title>
+          <Subtitle>{props.subtitle}</Subtitle>
+          <Button title="Get Started Free"/>
+        </div>
       </Container>
     </Head>
   )
 }
 
-export default TextSection
+export default TextSection;

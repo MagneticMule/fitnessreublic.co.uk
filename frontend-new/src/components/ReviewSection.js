@@ -1,23 +1,27 @@
 import React from 'react'
 import styled, { withTheme } from 'styled-components'
 
-import HeadShot from './widgets/HeadShot.js';
+import Img from 'gatsby-image';
 
 
 
-const ReviewConatiner = styled.section`
+const ReviewContainer = styled.section`
+  flex-direction:row;
   border-radius: 8px;
   background: var(--dark-grad);
   padding: 6em;
   display: flex;
   grid-gap: 2em;
+  margin-bottom:6em;
   align-items: center;
   grid-gap: 10%;
-  grid-column: 1/7;
+  grid-column: 1/5;
 `;
 
-
-
+const ReviewBackground = styled.div`
+  background: rgba(255, 255, 255, 0.1);
+  background: red;
+`;
 
 const Subtitle = styled.h3`
   margin: 0;
@@ -37,18 +41,33 @@ const IntroText = styled.div`
   line-height: 1.5;
 `;
 
+
+
 const Review = styled.div`
-  width:45%;
+  max-width: 45%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   color: var(--white);
   padding: 0;
   margin: 0;
   grid-area: content;
+
+  > .headshot {
+    background: var(--deep-purple);
+    height: 100px;
+    width: 100px;
+    margin: 0 2em 3em 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 16px solid var(--semi-transparent-orange);
+    box-shadow: var(--close-shadow);
+    align-self: center;
+  }
 `;
 
+
 const ReviewText = styled.div`
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   hyphens: auto;
 
   &::before {
@@ -65,7 +84,7 @@ const ReviewText = styled.div`
     content: close-quote;
     margin-left: 0.2rem;
   }
-`
+`;
 
 const ReviewerName = styled.p`
   font-size: 1rem;
@@ -75,10 +94,11 @@ const ReviewerName = styled.p`
     font-style: normal;
     font-weight: 100;
   }
-`
+`;
 
 
 const CallToAction = styled.div`
+  max-width: 45%;
   color:white;
   text-align:right;
   width: 45%;
@@ -86,21 +106,39 @@ const CallToAction = styled.div`
 `;
 
 
-const ReviewSection = (props) => {
+const ReviewSection = props => {
 return (
-  <ReviewConatiner>
-        <Review>
-          <HeadShot name={'katy'} headshot={props.headshot}/>
-          <ReviewText>
-            {props.reviewtext}
-          </ReviewText>
-          <ReviewerName>
-            Kathy <span><i>via</i> Instagram</span>
-          </ReviewerName>
-        </Review>
-        <CallToAction>And here goes the CTA</CallToAction>
-  </ReviewConatiner>
-)
+  <ReviewContainer>
+    <Review>
+      <Img
+        className="headshot"
+        fixed={props.headshot}
+        alt="{props.name}'s headshot"
+      />
+      <ReviewText>{props.reviewtext}</ReviewText>
+      <ReviewerName>
+        Kathy{" "}
+        <span>
+          <i>via</i> Instagram
+        </span>
+      </ReviewerName>
+    </Review>
+    <Review>
+      <Img
+        className="headshot"
+        fixed={props.headshot}
+        alt="{props.name}'s headshot"
+      />
+      <ReviewText>{props.reviewtext}</ReviewText>
+      <ReviewerName>
+        Kathy{" "}
+        <span>
+          <i>via</i> Instagram
+        </span>
+      </ReviewerName>
+    </Review>
+  </ReviewContainer>
+);
 
 }
 

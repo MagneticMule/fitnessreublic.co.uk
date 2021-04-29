@@ -3,12 +3,19 @@ import styled from 'styled-components';
 const DualSection = styled.section`
   margin-top: 6em;
   display: grid;
-  grid-gap: 2em;
-  grid-template-columns: 2fr 4fr 1fr;
-  grid-template-areas:
-  'sidebar content content
-     image   image   image';
+  grid-gap: 2em 4em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 'sidebar content content content,
+   image image image image';
+`;
+
+const SplitSection = styled.section`
+  display: grid;
+  grid-gap: 2em 4em;
+  grid-template-columns: repeat(auto);
+
 `;
 
 
-export default DualSection;
+
+export {DualSection, SplitSection};

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 import {
   FaFacebook,
   FaTwitter,
@@ -9,17 +8,27 @@ import {
   FaYoutube,
   FaAddressCard,
   FaPhoneSquareAlt,
+  FaStar,
+  FaMapMarkerAlt,
 } from 'react-icons/fa';
 
-import Container from '../styles/ContainerStyle.js';
+import Container from '../styles/ContainerStyle';
 
 import FRlogoStacked from '../assets/images/svg/fitness-republic-logo-stacked.svg';
 
 
+
+
 const SiteFooter = styled.footer`
-  padding-top: 4em;
   background: var(--dark-grad);
   color: var(--white);
+  box-shadow: inset 0 0 64px rgba(0, 0, 0, 0.35),
+    inset 0 0 16px rgba(0, 0, 0, 0.45);
+
+`;
+
+const Logo = styled.section`
+grid-column:1/3;
 `;
 
 const SectionHeader = styled.div`
@@ -38,7 +47,7 @@ const SectionHeader = styled.div`
     font-size: .8rem;
     padding-top:.6em;
   }
-`
+`;
 
 const Address = styled.ul`
   > li {
@@ -59,12 +68,14 @@ const SocialIcons = styled.ul`
 
   const Map = styled.div``;
 
-  const Flex = styled.div`
-    margin:8em 0;
-    display:flex;
+  const Grid = styled.div`
+    margin: 8em 0;
+    display: grid;
     align-items: flex-start;
-    justify-content:space-between;
-    grid-gap:10%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    grid-gap: 4em;
+
   `;
 
   const Copyright = styled.div`
@@ -73,17 +84,45 @@ const SocialIcons = styled.ul`
 
 
 
-const Bio = styled.div`
-  width:20%;
-`;
-
-
 
 const Footer = props => (
   <SiteFooter>
     <Container>
-      <FRlogoStacked />
-      <Flex>
+      <Grid>
+        <Logo>
+          <FRlogoStacked />
+          <p>
+            We are a friendly and caring team, passionate about your fitness,
+            health and wellbeing. We will give you a warm welcome and support
+            you every step of the way to reach your fitness goals and achieve
+            them at a pace which is comfortable for you. We will work alongside
+            you to create the right exercise and nutrition programmes for you so
+            that you can relax in the knowledge that you are on track to a
+            fitter, happier, healthier life.
+          </p>
+        </Logo>
+        <section>
+          <SectionHeader>
+            <h4>See our glowing reviews</h4>
+            <p>Over 200 customers gave us Five Stars</p>
+            <uL>
+              <li>
+                Google <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </li>
+              <li>
+                Facebook <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </li>
+            </uL>
+          </SectionHeader>
+        </section>
         <section>
           <SectionHeader>
             <h4>Finding Us</h4>
@@ -98,12 +137,19 @@ const Footer = props => (
               <FaPhoneSquareAlt />
               <a href="tel:+4401530413330"> 01530 413330</a>
             </li>
+            <hr/>
             <li>
-              <a href="#">
-                <FaAddressCard />
-                {' Download vCard  >>'}
+              <a href="https://g.page/fitnessrepublicashby?share">
+                <FaMapMarkerAlt />{" Open in Google Maps >>"}
               </a>
             </li>
+          {/*  <li>
+              <a href="#">
+                <FaAddressCard />
+                {" Download vCard  >>"}
+              </a>
+            </li>
+          */}
           </Address>
         </section>
         <section>
@@ -134,11 +180,11 @@ const Footer = props => (
             </tr>
             <tr>
               <th>Saturday</th>
-              <td>5.30am - 6pm</td>
+              <td>5.30am - 6.00pm</td>
             </tr>
             <tr>
               <th>Sunday</th>
-              <td>10am - 4pm</td>
+              <td>10.00am - 4.00pm</td>
             </tr>
           </table>
         </section>
@@ -179,7 +225,7 @@ const Footer = props => (
             </li>
           </SocialIcons>
         </section>
-      </Flex>
+      </Grid>
     </Container>
     <Copyright>
       <Container>
@@ -194,6 +240,6 @@ const Footer = props => (
       </Container>
     </Copyright>
   </SiteFooter>
-)
+);
 
 export default Footer;

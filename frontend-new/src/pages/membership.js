@@ -48,6 +48,7 @@ const MembershipPage = ({data}) =>{
           />
           <TextSection />
           <ReviewSection />
+
           <InfoBubble />
         </Container>
       </Layout>
