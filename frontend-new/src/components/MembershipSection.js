@@ -103,23 +103,7 @@ const MembershipSection = props => {
           }
           paymethod="Payable in one installment at the Gym"
         />
-        <MembershipCard
-          title={
-            <>
-              Single Adult <span>Annual</span>
-            </>
-          }
-          save={"Save £95"}
-          price={
-            <>
-              <span>£299.99</span> Per Year
-            </>
-          }
-          description={
-            "Full access to the Gym facilities and fitness classes for one year."
-          }
-          paymethod="Payable in one installment at the Gym"
-        />
+
       <Info><div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quasi veniam, ad aliquam hic laudantium vitae omnis culpa officiis quis aspernatur iure itaque laboriosam rem necessitatibus atque minus deserunt unde.</div>
       <div>We have more membership options available in our Membership Page, including Joint Memberships for couples and a reduced priced Student Membership.</div></Info>
     </Container>

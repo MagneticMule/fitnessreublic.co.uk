@@ -19,7 +19,7 @@ const BulletPoint = styled.div`
   width: 5em;
   color: white;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
 
