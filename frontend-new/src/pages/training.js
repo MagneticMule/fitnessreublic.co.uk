@@ -63,7 +63,7 @@ const TrainingPage = ({data}) =>{
             <TextSection
               title="Who is personal training for?"
               subtitle="The Short answer is anyone but there are exceptions"
-              body="         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              body="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Quibusdam eaque dolores reprehenderit, quaerat suscipit debitis
               labore explicabo recusandae expedita quidem velit quos hic maxime,
               eius molestias ab, quia nulla? Consequuntur! Accusamus sint alias

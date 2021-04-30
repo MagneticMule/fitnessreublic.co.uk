@@ -124,7 +124,7 @@ const MembershipCard = props => {
       <div>{props.paymethod}</div>
       <Button>
         <a
-          aria="Opens the registration page for the Fitness Republic so that you can pay for your plan"
+          aria="Opens the exyernal registration page for Fitness Republic on our CLubright system so that you can register for your plan"
           href="https://fitnessrepublic.clubright.co.uk/register"
         >
           Choose Plan

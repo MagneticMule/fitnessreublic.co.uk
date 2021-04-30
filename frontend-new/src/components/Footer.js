@@ -17,14 +17,11 @@ import Container from '../styles/ContainerStyle';
 import FRlogoStacked from '../assets/images/svg/fitness-republic-logo-stacked.svg';
 
 
-
-
 const SiteFooter = styled.footer`
   background: var(--dark-grad);
   color: var(--white);
   box-shadow: inset 0 0 64px rgba(0, 0, 0, 0.35),
     inset 0 0 16px rgba(0, 0, 0, 0.45);
-
 `;
 
 const Logo = styled.section`
@@ -114,7 +111,7 @@ const Footer = props => (
                 <FaStar />
               </li>
               <li>
-                Facebook <FaStar />
+                <a href="https://www.facebook.com/fitnessrepublicashby/reviews" aria="Link to facebook reviews for Fitness Republic Ashby" alt="Read our reviews at Facebook.com">Facebook <FaStar /></a>
                 <FaStar />
                 <FaStar />
                 <FaStar />
@@ -180,11 +177,11 @@ const Footer = props => (
             </tr>
             <tr>
               <th>Saturday</th>
-              <td>5.30am - 6.00pm</td>
+              <td>8.00am - 6.00pm</td>
             </tr>
             <tr>
               <th>Sunday</th>
-              <td>10.00am - 4.00pm</td>
+              <td>8.00am - 4.00pm</td>
             </tr>
           </table>
         </section>

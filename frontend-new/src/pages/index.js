@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import Container from '../styles/ContainerStyle';
 import TextSection from '../components/TextSection';
 import Image from '../components/widgets/Image';
+import ImageGallery from '../components/ImageGallery';
 import Pullquote from '../components/widgets/Text/Pullquote';
 import Button from '../components/widgets/Button';
 import SuperBullet from '../components/widgets/Text/SuperBullet';
@@ -93,6 +94,7 @@ const Index = ({data})=> {
             />
 
             <TextSection
+            pos="2/5"
               title="Your Fitness Republic Journey"
               subtitle="Get started training with us in 3 simple steps"
               body={
@@ -107,6 +109,7 @@ const Index = ({data})=> {
                 </>
               }
             />
+            <ImageGallery/>
             {/* <IntroText text="want to try us out for free? Get access to all our facilities including our state of the art gym, fitness classes and a support from our expert staff for seven days at no cost and with no commitment." /> */}
             <SuperBullet
               pos="2/4"

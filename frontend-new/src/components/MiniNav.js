@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
+import Button from "./widgets/Button";
 
 import {
   FaFacebook,
@@ -18,6 +19,12 @@ const Background = styled.div`
   font-weight: 500;
 `;
 
+const CovidButton = styled.li`
+  background: var(--orange);
+  padding: .6em 1em;
+  border-radius:16px;
+`;
+
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
@@ -32,6 +39,7 @@ const Container = styled.div`
   }
 
   li {
+    padding: 0.6em 1em;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
