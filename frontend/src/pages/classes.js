@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerClasses from '../components/BannerClasses';
 
-import ladiesboxfit from '../assets/images/ladies-boxfit-class.jpg';
-import ladyropes from '../assets/images/lady-ropes-fitness.jpg';
+import ladiesboxfit from '../assets/images/IMG_4836.jpg';
+import ladyropes from '../assets/images/IMG_1007.jpg';
 import ladymanboxfit from '../assets/images/lady-man-boxfit.jpg'
 
 import timetable from '../assets/images/timetable/classtimetable.jpg'
@@ -37,7 +37,7 @@ const Landing = (props) => (
                         <h2>Virtual Timetable</h2>
                     </header>
                     <p>
-                        Unfortunately, Leicestershire is currently in Tier 4 lockdown and as such we are not permitted to hold live classes here at the gym. However, we are currently hosting fitness classes online via our Fitness Republic TV initiative.
+                        We will be strating ut Live Classes at the gym in May, we are currently hosting fitness classes online via our Fitness Republic TV initiative.
                     </p>
                     <div className="image fit">
                         <img src={timetable} alt="Our current class timetable" />
@@ -101,13 +101,13 @@ const Landing = (props) => (
                 </section>
 
                 </section>
-            <section>
+            {/* <section>
                 <div className="inner">
                     <div className="image fit">
                         <img src={ad} alt="Our online classes" />
                     </div>
                     </div>
-            </section>
+            </section> */}
         </div>
 
     </Layout>
