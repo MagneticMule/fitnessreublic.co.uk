@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import BannerClasses from '../components/BannerClasses';
 
 import ladiesboxfit from '../assets/images/1.jpg';
-import ladyropes from '../assets/images/2.jpg';
+import ladyropes from '../assets/images/3.jpg';
 import ladymanboxfit from '../assets/images/lady-man-boxfit.jpg'
 
 import timetable from '../assets/images/timetable/classtimetable.jpg'
