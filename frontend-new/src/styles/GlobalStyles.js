@@ -151,6 +151,21 @@ th {
     padding-bottom:.33em;
 }
 
+.intro-video{
+  grid-column:1/-1;
+  overflow:hidden;
+  border-radius:8px;
+}
+
+#___gatsby {
+    width: 100%;
+    height:100%;
+}
+
+#gatsby-focus-wrapper {
+  width: 100%;
+  height:100%;
+}
 
 `;
 

@@ -5,8 +5,8 @@ import styled from 'styled-components';
 const QuoteContainer = styled.div`
   align-self: start;
   border-left: 1rem solid var(--orange);
-  grid-column: 1;
-`
+
+`;
 
 const Quote = styled.div`
   display: inline-block;

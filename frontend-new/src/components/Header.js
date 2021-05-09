@@ -1,16 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import DualSection from '../styles/GridStyles';
 import Button from './widgets/Button';
+import { device } from "../styles/DeviceSizes";
+
+
+
+
 
 /* local components */
-import Container from '../styles/ContainerStyle';
+const Container = styled.div`
+  grid-column: 2/-1;
+  max-width: 1400px;
+`;
+
 
 const Head = styled.head`
-  display: flex;
-  align-items:center;
+  display: grid;
+  grid-gap: 2em 4em;
+  grid-template-columns: repeat(4, 1fr);
+  flex-direction: row;
+  align-items: center;
   height: 75vh;
-  min-height: min(40em, 800px);
+  min-height: min(30em, 800px);
   max-height: 50em;
 
   background: linear-gradient(
@@ -25,6 +37,19 @@ const Head = styled.head`
     ),
     #f0e1e1;
   box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.25);
+
+  @media ${device.mobileS} {
+  }
+
+  @media ${device.laptop} {
+    grid-column: ${props => (props.pos ? props.pos : "2 / -1")};
+  }
+
+  @media ${device.laptopL} {
+  }
+
+  @media ${device.desktop} {
+  }
 `;
 
 const Title = styled.h1`
@@ -45,8 +70,7 @@ const Title = styled.h1`
   background-clip: text;
   -moz-text-fill-color: transparent;
 
-  text-shadow: 1px 1px 0px 0px
-    rgba(0, 0, 0, 0.25) inset;
+  text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25) inset;
 
   filter: drop-shadow(1px 1px 0 rgba(255, 255, 255, 0.2));
   font-size: 4.209rem;
@@ -57,6 +81,22 @@ const Title = styled.h1`
 
   span {
     font-weight: 900;
+  }
+
+  @media ${device.mobileS} {
+    font-size: 3.209rem;
+  }
+
+  @media ${device.laptop} {
+    font-size: 4.209rem;
+  }
+
+  @media ${device.laptopL} {
+    font-size: 5.209rem;
+  }
+
+  @media ${device.desktop} {
+    font-size: 6.209rem;
   }
 `;
 
@@ -78,16 +118,15 @@ const Subtitle = styled.p`
 
 const TextSection = (props) => {
   return (
-    <Head>
-      <Container>
-        <div>
+      <Head>
+        <Container>
           <Title>{props.title}</Title>
           <Subtitle>{props.subtitle}</Subtitle>
-          <Button title="Get Started Free"/>
-        </div>
-      </Container>
-    </Head>
-  )
+          <Button title="Get Started Free" />
+        </Container>
+      </Head>
+
+  );
 }
 
 export default TextSection;

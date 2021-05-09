@@ -18,28 +18,29 @@ const Container = styled.section`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
    .image {
-     border-radius: 2em;
-    padding: 1em;
-    border: .2em solid blue;
-    min-height:300px;
+    border-radius: 8px;
+    overflow:hidden;
+
   }
 
    .image:nth-of-type(3n) {
-    border: .2em solid red;
     grid-column: 1/-1;
   }
 `;
 
 
 const ImageGallery = props => {
-  console.log({props});
   return (
     <Container>
-      <div className="image">image</div>
-      <div className="image">image</div>
-      <div className="image">image</div>
-      <div className="image">image</div>
-      <div className="image">image</div>
+      <div className="image">
+        <Img fluid={props.pic1} alt={props.alt} />
+      </div>
+      <div className="image">
+        <Img fluid={props.pic2} alt={props.alt} />
+      </div>
+      <div className="image">
+        <Img fluid={props.pic3} alt={props.alt} />
+      </div>
     </Container>
   );
 }

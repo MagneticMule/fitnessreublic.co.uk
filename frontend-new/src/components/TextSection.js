@@ -1,8 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { device } from "../styles/DeviceSizes";
 const TextContent = styled.div`
-  grid-column: ${props => (props.pos ? props.pos : '2/5')};
+  @media ${device.mobileM} {
+    grid-column: 1/-1;
+  }
+
+  @media ${device.laptop} {
+    grid-column: ${props => (props.pos ? props.pos : "2 / -1")};
+  }
+
+  @media ${device.laptopL} {
+  }
+
+  @media ${device.desktop} {
+  }
 `;
 
 const Background = styled.div`

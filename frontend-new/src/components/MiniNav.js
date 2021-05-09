@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Container from '../styles/ContainerStyle';
 import Button from "./widgets/Button";
 
 import {
@@ -25,11 +26,8 @@ const CovidButton = styled.li`
   border-radius:16px;
 `;
 
-const Container = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  padding: 1em 4em;
-  max-width: 1600px;
+const Items = styled.div`
+
 
   ul {
     display: flex;
@@ -39,7 +37,7 @@ const Container = styled.div`
   }
 
   li {
-    padding: 0.6em 1em;
+    padding: 0.6em 0;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -55,18 +53,20 @@ const MiniNav = props => {
 return (
   <Background>
     <Container>
-      <ul>
-        <li>
-          We are open until <strong>9.00PM </strong>today
-        </li>
-        <li>
-          <FaPhoneSquareAlt />
-          <a href="tel:+4401530413330"> 01530 413330</a>
-        </li>
-      </ul>
+      <Items>
+        <ul>
+          <li>
+            We are open until <strong>9.00PM </strong>today
+          </li>
+          <li>
+            <FaPhoneSquareAlt />
+            <a href="tel:+4401530413330"> 01530 413330</a>
+          </li>
+        </ul>
+      </Items>
     </Container>
   </Background>
-)
+);
 }
 
 export default MiniNav;
