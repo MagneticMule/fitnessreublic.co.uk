@@ -11,7 +11,7 @@ import Image from "../components/widgets/Image";
 import ImageGallery from "../components/ImageGallery";
 import Pullquote from "../components/widgets/Text/Pullquote";
 import Button from "../components/widgets/Button";
-import SuperBullet from "../components/widgets/Text/SuperBullet";
+import SuperBullet from "../components/widgets/text/SuperBullet";
 import ReviewSection from "../components/ReviewSection";
 import InfoBubble from "../components/InfoBubble";
 import IntroText from "../components/widgets/text/IntroText";
