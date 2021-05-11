@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
 import TextSection from "../components/TextSection";
 import Image from "../components/widgets/Image";
-import Pullquote from "../components/widgets/Text/Pullquote";
+import Pullquote from "../components/widgets/text/Pullquote";
 import Button from "../components/widgets/Button";
 import SuperBullet from "../components/widgets/text/SuperBullet";
 import ReviewSection from "../components/ReviewSection";
