@@ -22,6 +22,19 @@ const GlobalStyles = createGlobalStyle`
 
     --background-gradient: linear-gradient(107.69deg, #2A292E 0.39%, #312746 100%);
 
+    --light-grad: linear-gradient(
+      262.16deg,
+      rgba(255, 107, 0, 0.3) 0.74%,
+      rgba(255, 255, 255, 0) 99.73%
+    ),
+    linear-gradient(
+      98deg,
+      rgba(0, 13, 129, 0.3) 0%,
+      rgba(255, 255, 255, 0) 99.66%
+    ),
+    #f0e1e1;
+
+
     --dark-grad: linear-gradient(262.16deg, rgba(255, 107, 0, 0.2) 0.74%, rgba(255, 255, 255, 0) 99.73%), linear-gradient(98deg, rgba(0, 13, 129, 0.2) 0%, rgba(255, 255, 255, 0) 99.66%), #410E23;
 
 
@@ -32,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
 
     /* shadows */
     --close-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); //refactor this
-    --shadow-low: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    --shadow-low: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     --shadow-high: 1px 92px 70px 0px rgba(0, 0, 0, 0.2);
 
 }
@@ -42,8 +55,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: var(--white);
+    color: var(--orange);
     text-decoration: none;
+    transition: .2s color;
+
+    :hover {
+      color:var(--deep-purple);
+    }
   }
 
   fieldset {
@@ -78,7 +96,7 @@ const GlobalStyles = createGlobalStyle`
 */
   /* Scrollbar Styles */
   body::-webkit-scrollbar {
-    width: 24px;
+    width: 28px;
   }
 
   html {

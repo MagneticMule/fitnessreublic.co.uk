@@ -17,7 +17,7 @@ import InfoBubble from "../components/InfoBubble";
 import IntroText from "../components/widgets/text/IntroText";
 import MembershipSection from "../components/MembershipSection";
 
-import intro from "../assets/videos/intro.mp4";
+import intro from "/static/intro.mp4";
 
 import FormSevenDayPass from "../components/FormSevenDayPass";
 
@@ -68,17 +68,16 @@ const Index = ({ data }) => {
       />
       <Container>
         <DualSection>
-
-            <Pullquote
-              body="Fitness Republic is a family business and as soon as you walk into the gym you’ll feel at home."
-              attribution={
-                <>
-                  <strong>Simon Pellechia</strong> // Director and Personal
-                  Trainer
-                </>
-              }
-            />
-            {/* <Button title="Book a visit" /> */}
+          <Pullquote
+            body="Fitness Republic is a family business and as soon as you walk into the gym you’ll feel at home."
+            attribution={
+              <>
+                <strong>Simon Pellechia</strong> // Director and Personal
+                Trainer
+              </>
+            }
+          />
+          {/* <Button title="Book a visit" /> */}
 
           <TextSection
             title="Welcome Aboard"
@@ -111,7 +110,7 @@ const Index = ({ data }) => {
 
           {/* <IntroText text="want to try us out for free? Get access to all our facilities including our state of the art gym, fitness classes and a support from our expert staff for seven days at no cost and with no commitment." /> */}
           <SuperBullet
-            pos="2/5"
+            pos="2/4"
             number="01"
             heading="Make Contact"
             body={
@@ -140,7 +139,7 @@ const Index = ({ data }) => {
             type="video/mp4"
           />
           <SuperBullet
-            pos="2/5"
+            pos="2/4"
             number="02"
             heading="Come in for an Induction"
             body={
@@ -163,7 +162,7 @@ const Index = ({ data }) => {
             pic3={data.lowdown.childImageSharp.fluid}
           />
           <SuperBullet
-            pos="2/5"
+            pos="2/4"
             number="03"
             heading="Seven Day Free Pass"
             body={
@@ -181,6 +180,41 @@ const Index = ({ data }) => {
           <MembershipSection
             title="Single Membership Plans"
             subtitle="Gym and Class"
+             memberships={[
+                {
+                  key: 1,
+                  style: "purple",
+                  title: (
+                    <>
+                      Single Adult <span>Monthly</span>
+                    </>
+                  ),
+                  price: (
+                    <>
+                      <span>£32.99</span> Per Month
+                    </>
+                  ),
+                  description:
+                    "Full access to the Gym facilities and fitness classes for one person.",
+                  paymethod: "Payable once per month via Direct Debit"
+                },
+                {
+                  key: 2,
+                  style: "gold",
+                  title: (
+                    <>
+                      Single Adult <span>Annual</span>
+                    </>
+                  ),
+                  price: (
+                    <>
+                      <span>£299.99</span> Per Year
+                    </>
+                  ),
+                  description:
+                    "Full access to the Gym facilities and fitness classes for one person.",
+                  paymethod: "Payable in one installment at the gym or online"
+                }]}
           />
 
           <TextSection
@@ -199,17 +233,44 @@ const Index = ({ data }) => {
             }
           />
           <ReviewSection
-            location={"content"}
-            headshot={data.kathyhead.childImageSharp.fixed}
-            reviewtext={
-              <>
-                I started with Blanka in January 2021. Her approach to our
-                personal training sessions are both <strong>creative</strong>{" "}
-                and <strong>personable</strong>. No two sessions are the same. I
-                now look forward to exercise and have achieved significant
-                results. Long may this journey with her continue.
-              </>
-            }
+            reviews={[
+              {
+                key: 1,
+                location: "content",
+                headshot: data.kathyhead.childImageSharp.fixed,
+                text: (
+                  <>
+                    I started with Blanka in January 2021. Her approach to our
+                    personal training sessions are both{" "}
+                    <strong>creative</strong> and <strong>personable</strong>.
+                    No two sessions are the same. I now look forward to exercise
+                    and have achieved significant results. Long may this journey
+                    with her continue.
+                  </>
+                ),
+
+                reviewer: "Kathy",
+                origin: "Instagram"
+              },
+              {
+                key: 2,
+                location: "content",
+                headshot: data.chrishead.childImageSharp.fixed,
+                text: (
+                  <>
+                    I love this place. The staff are amazing, they are all
+                    friendly and helpfull. They take the time to
+                    answer any questions you have. When the pandemic hit the
+                    whole team created a Facebook page for live workouts which
+                    was brilliant. I can't recommend this place highly
+                    enough.
+                  </>
+                ),
+
+                reviewer: "Chris Osborn",
+                origin: "Google"
+              }
+            ]}
           />
           <TextSection
             title="Your Fitness Republic Journey Continues"
@@ -264,122 +325,137 @@ const Index = ({ data }) => {
 export default Index;
 
 export const query = graphql`
-  query {
-    kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
-      childImageSharp {
-        fixed(height: 100, width: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
-      childImageSharp {
-        fixed(height: 152, width: 152) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
+         query {
+           kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
+             childImageSharp {
+               fixed(height: 120, width: 120) {
+                 ...GatsbyImageSharpFixed
+               }
+             }
+           }
+           chrishead: file(relativePath: { eq: "headshots/chris.jpg" }) {
+             childImageSharp {
+               fixed(height: 120, width: 120) {
+                 ...GatsbyImageSharpFixed
+               }
+             }
+           }
+           blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
+             childImageSharp {
+               fixed(height: 150, width: 150) {
+                 ...GatsbyImageSharpFixed
+               }
+             }
+           }
 
-    simonsarah: file(relativePath: { eq: "simon-sarah-spin.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-        }
-      }
-    }
+           simonsarah: file(relativePath: { eq: "simon-sarah-spin.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
 
-    asksimon: file(relativePath: { eq: "ask-simon.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-        }
-      }
-    }
+           asksimon: file(relativePath: { eq: "ask-simon.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
 
-    topdown: file(relativePath: { eq: "gym/gym-topdown-landscape.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-        }
-      }
-    }
+           topdown: file(
+             relativePath: { eq: "gym/gym-topdown-landscape.jpg" }
+           ) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
 
-    lowdown: file(relativePath: { eq: "gym/simon-consulting-landscape.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-        }
-      }
-    }
+           lowdown: file(
+             relativePath: { eq: "gym/simon-consulting-landscape.jpg" }
+           ) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
 
-    dumbells: file(relativePath: { eq: "gym/simon-client-landscape.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-        }
-      }
-    }
+           dumbells: file(
+             relativePath: { eq: "gym/simon-client-landscape.jpg" }
+           ) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
 
-    side2: file(relativePath: { eq: "gym/simon-demonstrating-landscape.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-        }
-      }
-    }
-  }
-`;
+           side2: file(
+             relativePath: { eq: "gym/simon-demonstrating-landscape.jpg" }
+           ) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
+         }
+       `;

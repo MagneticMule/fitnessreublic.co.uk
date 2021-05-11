@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const QuoteContainer = styled.div`
   align-self: start;
   border-left: 1rem solid var(--orange);
-
 `;
 
 const Quote = styled.div`

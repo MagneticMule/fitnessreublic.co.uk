@@ -7,17 +7,12 @@ const Card = styled.div`
   justify-content: space-between;
   font-weight: 500;
   font-size: 1.1rem;
-  min-height: 600px;
+  min-height: 360px;
   margin: 2em 0;
   color: var(--white);
-  background: linear-gradient(
-      137.32deg,
-      rgba(255, 255, 255, 0.052) 31.46%,
-      rgba(255, 255, 255, 0) 31.47%
-    ),
-    linear-gradient(340.96deg, #340e41 1.58%, #ee0ed8 101.38%);
+  background: black;
   border-radius: 32px;
-  max-width: 300px;
+  max-width: 320px;
   overflow: hidden;
   border: 2px solid var(--white);
   margin-bottom: _size(element-margin);
@@ -32,6 +27,11 @@ const Card = styled.div`
   > :last-child > :last-child,
   > :last-child > :last-child > :last-child {
     margin-bottom: 0;
+  }
+
+  li {
+    list-style-type: disc;
+    list-style-position: inside;
   }
 
   > hr {
@@ -107,32 +107,40 @@ const Button = styled.div`
     transition: all 0.2s;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border: 2px solid var(--white);
-      &:hover {
-        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
-      }
+    &:hover {
+      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    }
   }
-  `;
+`;
 
-const MembershipCard = ({membership}) => {
+const TrainingCard = ({ training }) => {
   return (
     <Card>
-      <h3>{membership.title}</h3>
+      <h3>{training.title}</h3>
       <hr />
-      <div>{membership.description}</div>
+      <div>{training.description}</div>
       <hr />
-      <div className="save">{membership.save}</div>
-      <div className="price">{membership.price}</div>
-      <div>{membership.paymethod}</div>
+      <div className="price">{training.cost}</div>
+      <ul>
+        {training.bullets.map(bullet => (
+          <li>{bullet}</li>
+        ))}
+      </ul>
+      <div className="price">
+        {training.price}
+      </div>
+      <p>Payable via Card or Cash in one installment of £225</p>
+      <p>Total Cost: {training.totalcost}</p>
       <Button>
         <a
-          aria="Opens the external registration page for Fitness Republic on our CLubright system so that you can register for your plan"
-          href="https://fitnessrepublic.clubright.co.uk/register"
+          aria="Takes you to our general contact form so that you can contact us about personal training oprions"
+          href="/training/#frm-training"
         >
-          Choose Plan
+          Contact Us
         </a>
       </Button>
     </Card>
   );
 };
 
-export default MembershipCard;
+export default TrainingCard;

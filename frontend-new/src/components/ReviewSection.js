@@ -1,21 +1,24 @@
-import React from 'react'
-import styled, { withTheme } from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+import Img from "gatsby-image";
 
-import Img from 'gatsby-image';
+import { FaStar } from "react-icons/fa";
 
-
-
-const ReviewContainer = styled.section`
-  flex-direction:row;
-  border-radius: 8px;
-  background: var(--dark-grad);
-  padding: 6em;
-  display: flex;
-  grid-gap: 2em;
-  margin-bottom:6em;
-  align-items: center;
-  grid-gap: 10%;
+const Section = styled.section`
   grid-column: 1/5;
+`;
+
+const ReviewContainer = styled.div`
+  border-radius: 8px;
+  display: flex;
+  gap: 2em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: var(--dark-grad);
+  margin: 2em 0;
+  margin-bottom: 6em;
+  padding: 4em;
 `;
 
 const ReviewBackground = styled.div`
@@ -41,32 +44,34 @@ const IntroText = styled.div`
   line-height: 1.5;
 `;
 
-
-
 const Review = styled.div`
-  max-width: 45%;
+  background: rgba(255, 255, 255, 0.1);
+  flex: 1;
+  padding: 4em;
   display: flex;
+  gap: 2em;
   flex-direction: column;
+  justify-content: space-between;
   color: var(--white);
-  padding: 0;
-  margin: 0;
-  grid-area: content;
+  border-radius: 8px;
+  margin-top: 4em;
 
   > .headshot {
     background: var(--deep-purple);
-    height: 100px;
-    width: 100px;
-    margin: 0 2em 3em 0;
-    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin: 0 2em 1em 0;
+    border-radius: 20%;
     overflow: hidden;
-    border: 16px solid var(--semi-transparent-orange);
-    box-shadow: var(--close-shadow);
+    border: 8px solid rgba(255,100,100,.4);
+    box-shadow: var(--shadow-low);
     align-self: center;
+    margin-top: -130px;
   }
 `;
 
-
 const ReviewText = styled.div`
+  justify-self: flex-start;
   font-size: 1.2rem;
   hyphens: auto;
 
@@ -90,56 +95,81 @@ const ReviewerName = styled.p`
   font-size: 1rem;
   font-weight: 900;
   > span {
+    color:var(--orange);
+    display:block;
     font-style: italic;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
   }
 `;
 
-
 const CallToAction = styled.div`
-  max-width: 45%;
-  color:white;
-  text-align:right;
-  width: 45%;
-  flex: 1;
+  padding: 8em 0;
+  flex-basis: 100%;
+  background: var(--orange);
+  color: white;
 `;
 
+const Header = styled.div`
+  flex-basis: 100%;
+  margin-bottom: 1em;
+`;
 
-const ReviewSection = props => {
-return (
-  <ReviewContainer>
+const Title = styled.h3`
+  color: var(--white);
+  font-weight: 500;
+  margin: 0;
+`;
+
+const SubTitle = styled.p`
+  color: var(--orange);
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2em;
+`;
+
+const SingleReview = ({ review }) => {
+  return (
     <Review>
       <Img
         className="headshot"
-        fixed={props.headshot}
-        alt="{props.name}'s headshot"
+        fixed={review.headshot}
+        alt="{review.reviewer}'s headshot"
       />
-      <ReviewText>{props.reviewtext}</ReviewText>
+      <ReviewText>{review.text}</ReviewText>
       <ReviewerName>
-        Kathy{" "}
+        {review.reviewer}
+        {" : "}
+        <FaStar />
+        <FaStar />
+        <FaStar />
+        <FaStar />
+        <FaStar />
         <span>
-          <i>via</i> Instagram
+          Review left via <strong>{review.origin}</strong>
         </span>
       </ReviewerName>
     </Review>
-    <Review>
-      <Img
-        className="headshot"
-        fixed={props.headshot}
-        alt="{props.name}'s headshot"
-      />
-      <ReviewText>{props.reviewtext}</ReviewText>
-      <ReviewerName>
-        Kathy{" "}
-        <span>
-          <i>via</i> Instagram
-        </span>
-      </ReviewerName>
-    </Review>
-  </ReviewContainer>
-);
+  );
+};
 
-}
+const ReviewSection = ({ reviews }) => {
+  if (!reviews) return;
+  return (
+    <Section>
+      <ReviewContainer>
+        <Header>
+          <Title>You are in good company</Title>
+          <SubTitle>Over 200 five star reviews on Google and Facebook</SubTitle>
+        </Header>
+        {reviews.map(review => (
+          <SingleReview review={review} />
+        ))}
+      </ReviewContainer>
+    </Section>
+  );
+};
 
 export default ReviewSection;

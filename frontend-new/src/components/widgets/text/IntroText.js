@@ -6,7 +6,7 @@ const Text = styled.div`
   letter-spacing: -1px;
   color: var(--orange);
   font-style: italic;
-  margin: 0 0 2em 0;
+  margin: 0;
   line-height: 1.5;
   grid-column: ${props => (props.pos ? props.pos : '2/4')};
 `;

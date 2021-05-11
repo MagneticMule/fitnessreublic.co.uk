@@ -23,6 +23,7 @@ const StyledLink = styled(GatsbyLink)`
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--deep-purple);
   &:hover {
+    color:white;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
   }
 `;

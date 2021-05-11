@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { device } from "../styles/DeviceSizes";
 const TextContent = styled.div`
   @media ${device.mobileM} {
-    grid-column: 1/-1;
+    grid-column: ${props => (props.pos ? props.pos : "1 / -1")};
   }
 
   @media ${device.laptop} {
@@ -43,6 +43,20 @@ const SubTitle = styled.h3`
 const BodyText = styled.div`
   font-size: 1.2rem;
   margin: 1.2em 0 2em 0;
+  >ul {
+    >li {
+      margin:1em 0;
+      padding-left:2em;
+      border-left: 4px solid var(--orange);
+    > strong {
+        color: var(--orange);
+        text-transform:capitalize;
+        font-weight:500;
+        font-size:1.4rem;
+        display:block;
+    }
+    }
+  }
 `;
 
 const BackStripe = styled.div`

@@ -4,26 +4,27 @@ import DualSection from '../styles/GridStyles';
 import Button from './widgets/Button';
 import { device } from "../styles/DeviceSizes";
 
-
+import Container from "../styles/ContainerStyle";
 
 
 
 /* local components */
-const Container = styled.div`
-  grid-column: 2/-1;
-  max-width: 1400px;
-`;
+// const Container = styled.div`
+//   grid-column: 2/-1;
+//   max-width: 1400px;
+// `;
 
-
-const Head = styled.head`
-  display: grid;
-  grid-gap: 2em 4em;
-  grid-template-columns: repeat(4, 1fr);
-  flex-direction: row;
-  align-items: center;
+const Contents = styled.div`
   height: 75vh;
   min-height: min(30em, 800px);
   max-height: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+`;
+const Head = styled.head`
+  display: block;
 
   background: linear-gradient(
       262.04deg,
@@ -42,7 +43,6 @@ const Head = styled.head`
   }
 
   @media ${device.laptop} {
-    grid-column: ${props => (props.pos ? props.pos : "2 / -1")};
   }
 
   @media ${device.laptopL} {
@@ -77,7 +77,6 @@ const Title = styled.h1`
   color: #770264;
   letter-spacing: -0.05em;
   text-transform: capitalize;
-  margin: 0;
 
   span {
     font-weight: 900;
@@ -118,14 +117,17 @@ const Subtitle = styled.p`
 
 const TextSection = (props) => {
   return (
-      <Head>
-        <Container>
-          <Title>{props.title}</Title>
-          <Subtitle>{props.subtitle}</Subtitle>
-          <Button title="Get Started Free" />
-        </Container>
-      </Head>
-
+    <Head>
+      <Container>
+        <Contents>
+          <div>
+            <Title>{props.title}</Title>
+            <Subtitle>{props.subtitle}</Subtitle>
+            <Button title="Get Started Free" />
+          </div>
+        </Contents>
+      </Container>
+    </Head>
   );
 }
 

@@ -18,6 +18,7 @@ const Background = styled.div`
   background: var(--dark-grad);
   color: var(--white);
   font-weight: 500;
+  z-index:-1;
 `;
 
 const CovidButton = styled.li`
@@ -27,6 +28,14 @@ const CovidButton = styled.li`
 `;
 
 const Items = styled.div`
+
+  a {
+    color: var(--white);
+
+    :hover {
+      color:var(--orange);
+    }
+  }
 
 
   ul {
@@ -60,7 +69,9 @@ return (
           </li>
           <li>
             <FaPhoneSquareAlt />
-            <a href="tel:+4401530413330"> 01530 413330</a>
+            <a
+            aria-label="Call the gym to chat to one of our team"
+            href="tel:+4401530413330"> 01530 413330</a>
           </li>
         </ul>
       </Items>

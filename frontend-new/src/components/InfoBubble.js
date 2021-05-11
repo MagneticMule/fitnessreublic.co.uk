@@ -5,6 +5,11 @@ import Img from 'gatsby-image';
 import HeadShot from './widgets/HeadShot';
 import Button from './widgets/Button';
 
+
+const Container = styled.div`
+  grid-column: 4/-1;
+  grid-row: span 2;
+`;
 const Bubble = styled.div`
   text-align: center;
   box-shadow: var(--shadow-high);
@@ -19,8 +24,7 @@ const Bubble = styled.div`
   font-weight: 500;
   padding: 0 4em 2em 4em;
   max-width: 480px;
-  grid-column: 1/2;
-  grid-row:span 2;
+
 
   > .headshot {
     background: var(--lin-grad-smooth-orange);
@@ -48,29 +52,33 @@ const Bubble = styled.div`
 
 const InfoBubble = (props) => {
   return (
-    <Bubble>
-      <Img
-        className="headshot"
-        fixed={props.headshot}
-        alt="{props.name}'s headshot"
-      />
-      <b>
-        Working with a personal instructor is the perfect kickstart to your
-        fitness journey.
-      </b>
-      <hr/>
-      In my own experience, Personal Training provided a structured and personalized plan of action to loose my maternity weight before progressing on my own.
-      <p className="name">
-        Blanka Harvey <span>Personal Trainer & Zumba Specialist</span>
-      </p>
-      <Button
-        title="Ask About Personal Training"
-        aria="Ask Blanka About Personal Training"
-        type="general"
-        destination="/contact"
-      />
-    </Bubble>
-  )
+    <Container>
+      <Bubble>
+        <Img
+          className="headshot"
+          fixed={props.headshot}
+          alt="{props.name}'s headshot"
+        />
+        <b>
+          Working with a personal instructor is the perfect kickstart to your
+          fitness journey.
+        </b>
+        <hr />
+        In my own experience, Personal Training provided a structured and
+        personalized plan of action to loose my maternity weight before
+        progressing on my own.
+        <p className="name">
+          Blanka Harvey <span>Personal Trainer & Zumba Specialist</span>
+        </p>
+        {/* <Button
+          title="Ask About Personal Training"
+          aria="Ask Blanka About Personal Training"
+          type="general"
+          destination="/contact"
+        /> */}
+      </Bubble>
+    </Container>
+  );
 }
 
 

@@ -22,6 +22,14 @@ const SiteFooter = styled.footer`
   color: var(--white);
   box-shadow: inset 0 0 64px rgba(0, 0, 0, 0.35),
     inset 0 0 16px rgba(0, 0, 0, 0.45);
+
+   a {
+    color:var(--white);
+
+    :hover {
+      color: var(--orange);
+    }
+  }
 `;
 
 const Logo = styled.section`
@@ -66,7 +74,7 @@ const SocialIcons = styled.ul`
   const Map = styled.div``;
 
   const Grid = styled.div`
-    margin: 8em 0;
+    margin: 4em 0;
     display: grid;
     align-items: flex-start;
     grid-template-columns: repeat(3, 1fr);
@@ -102,7 +110,7 @@ const Footer = props => (
           <SectionHeader>
             <h4>See our glowing reviews</h4>
             <p>Over 200 customers gave us Five Stars</p>
-            <uL>
+            <ul>
               <li>
                 Google <FaStar />
                 <FaStar />
@@ -111,13 +119,21 @@ const Footer = props => (
                 <FaStar />
               </li>
               <li>
-                <a href="https://www.facebook.com/fitnessrepublicashby/reviews" aria="Link to facebook reviews for Fitness Republic Ashby" alt="Read our reviews at Facebook.com">Facebook <FaStar /></a>
+                  Facebook
+                {' '}
+                <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
               </li>
-            </uL>
+            </ul>
+                {/* Head over to{' '}
+                <a
+                  href="https://www.facebook.com/fitnessrepublicashby/reviews"
+                  aria="Link to facebook reviews for Fitness Republic Ashby"
+                  alt="Read our reviews at Facebook.com"
+                >Facebook</a> or Google to see the reviews in full. */}
           </SectionHeader>
         </section>
         <section>
@@ -134,13 +150,13 @@ const Footer = props => (
               <FaPhoneSquareAlt />
               <a href="tel:+4401530413330"> 01530 413330</a>
             </li>
-            <hr/>
             <li>
               <a href="https://g.page/fitnessrepublicashby?share">
-                <FaMapMarkerAlt />{" Open in Google Maps >>"}
+                <FaMapMarkerAlt />
+                {" Open in Google Maps >>"}
               </a>
             </li>
-          {/*  <li>
+            {/*  <li>
               <a href="#">
                 <FaAddressCard />
                 {" Download vCard  >>"}

@@ -24,11 +24,14 @@ class Layout extends React.Component {
     const { children } = this.props;
     return (
       <>
-        <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
+        <IconContext.Provider
+          value={{ style: { verticalAlign: "-2" } }}
+        >
           <GlobalStyles />
           <Typography />
-          <MiniNav/>
-          <Menu/>
+          <MiniNav />
+          <Menu />
+
           {children}
           <Footer />
           <WhatsAppWidget
@@ -39,7 +42,7 @@ class Layout extends React.Component {
           />
         </IconContext.Provider>
       </>
-    )
+    );
   }
 }
 
