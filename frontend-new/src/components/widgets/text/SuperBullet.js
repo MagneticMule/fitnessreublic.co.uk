@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { device } from "../../../styles/DeviceSizes";
 const Bullet = styled.div`
+  margin: 0 0 2em 0;
   justify-content: top;
   display: flex;
   flex-direction: column;
@@ -69,7 +70,7 @@ const Body = styled.div`
 const SuperBullet = props =>{
 
   return (
-    <Bullet pos={props.pos}>
+    <Bullet pos={props.pos} id={props.id}>
       <BulletPoint>
         step <span>{props.number}</span>
       </BulletPoint>

@@ -76,8 +76,9 @@ const Index = ({ data }) => {
                 Trainer
               </>
             }
+
           />
-          {/* <Button title="Book a visit" /> */}
+
 
           <TextSection
             title="Welcome Aboard"
@@ -110,6 +111,7 @@ const Index = ({ data }) => {
 
           {/* <IntroText text="want to try us out for free? Get access to all our facilities including our state of the art gym, fitness classes and a support from our expert staff for seven days at no cost and with no commitment." /> */}
           <SuperBullet
+            id="getstarted"
             pos="2/4"
             number="01"
             heading="Make Contact"

@@ -123,7 +123,7 @@ const TextSection = (props) => {
           <div>
             <Title>{props.title}</Title>
             <Subtitle>{props.subtitle}</Subtitle>
-            <Button title="Get Started Free" />
+            <Button title="Get Started Free" destination={"/#getstarted"}/>
           </div>
         </Contents>
       </Container>

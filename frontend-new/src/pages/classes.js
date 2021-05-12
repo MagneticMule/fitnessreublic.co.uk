@@ -73,7 +73,7 @@ const Index = ({ data }) => {
                 </>
               }
             />
-            {/* <Button title="Book a visit" /> */}
+            <Button title="Book a visit" />
           </div>
           <TextSection
             title="Let's Get Started"
