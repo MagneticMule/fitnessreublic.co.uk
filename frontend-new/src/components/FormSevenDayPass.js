@@ -1,19 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
 import { navigate } from 'gatsby-link';
-
+import { device } from "../styles/DeviceSizes";
 
 
 const Form = styled.form`
-  margin-bottom:4em;
+  margin-bottom: 2em;
   grid-column: 2/4;
   display: flex;
   flex-direction: column;
 
   > .field {
-    margin-top:2em;
+    margin-bottom: 2em;
+  }
 
+  @media ${device.mobileS} {
+    grid-column: 1/-1;
+    padding: 1em;
+  }
+  @media ${device.mobileM} {
+    grid-column: 1/-1;
+    padding: 1em;
+  }
+  @media ${device.mobileL} {
+    grid-column: 1/-1;
+    padding: 4em 2em;
+  }
 
+  @media ${device.laptop} {
+    grid-column: 2/4;
+    padding: 0;
+  }
+
+  @media ${device.laptopL} {
+  }
+
+  @media ${device.desktop} {
   }
 `;
 

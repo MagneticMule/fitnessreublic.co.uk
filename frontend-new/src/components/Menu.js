@@ -115,7 +115,7 @@ const NavToggle = styled.input.attrs({ type: "checkbox" })`
 
 const BurgerIcon = styled.label.attrs({ for: "nav-toggle" })`
   display: inline-block;
-  margin-left: 4em;
+  margin-left: 2em;
   margin-top: 2em;
   cursor: pointer;
   span,

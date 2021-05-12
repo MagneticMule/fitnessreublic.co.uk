@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from "../styles/DeviceSizes";
 
 import {
   FaFacebook,
@@ -32,8 +33,43 @@ const SiteFooter = styled.footer`
   }
 `;
 
+  const Grid = styled.div`
+    margin: 2em 0;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    grid-gap: 4em;
+
+    @media ${device.mobileS} {
+      grid-template-columns: 1fr;
+    }
+
+    @media ${device.laptop} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media ${device.laptopL} {
+    }
+
+    @media ${device.desktop} {
+    }
+  `;
+
 const Logo = styled.section`
-grid-column:1/3;
+  @media ${device.mobileS} {
+    grid-column: 1/-1;
+  }
+
+  @media ${device.laptop} {
+    grid-column: 1/3;
+  }
+
+  @media ${device.laptopL} {
+  }
+
+  @media ${device.desktop} {
+  }
 `;
 
 const SectionHeader = styled.div`
@@ -73,15 +109,7 @@ const SocialIcons = styled.ul`
 
   const Map = styled.div``;
 
-  const Grid = styled.div`
-    margin: 4em 0;
-    display: grid;
-    align-items: flex-start;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    grid-gap: 4em;
 
-  `;
 
   const Copyright = styled.div`
     background: rgba(0,0,0,0.3);

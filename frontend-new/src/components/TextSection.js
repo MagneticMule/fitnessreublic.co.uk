@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from "../styles/DeviceSizes";
 const TextContent = styled.div`
+
   @media ${device.mobileM} {
-    grid-column: ${props => (props.pos ? props.pos : "1 / -1")};
+    grid-column: 1 / -1;
   }
 
   @media ${device.laptop} {

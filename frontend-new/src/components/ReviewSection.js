@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Img from "gatsby-image";
-
 import { FaStar } from "react-icons/fa";
+import { device } from "../styles/DeviceSizes";
+
 
 const Section = styled.section`
-  grid-column: 1/5;
+  grid-column: 1/-1;
+  margin-bottom:4em;
 `;
 
 const ReviewContainer = styled.div`
@@ -16,9 +18,26 @@ const ReviewContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   background: var(--dark-grad);
-  margin: 2em 0;
-  margin-bottom: 6em;
   padding: 4em;
+  margin: 0 2em 2em 2em;
+
+  @media ${device.mobileS} {
+    padding: 2em;
+    margin: 0 -1.5em;
+    border-radius: 0;
+  }
+
+  @media ${device.laptop} {
+    padding: 4em;
+    border-radius: 8px;
+    margin: 0 0 1em;
+  }
+
+  @media ${device.laptopL} {
+  }
+
+  @media ${device.desktop} {
+  }
 `;
 
 const ReviewBackground = styled.div`
@@ -40,7 +59,7 @@ const IntroText = styled.div`
   letter-spacing: -1px;
   color: var(--orange);
   font-style: italic;
-  margin: 0 0 2em 0;
+  margin: 0 2em 4em 2em;
   line-height: 1.5;
 `;
 

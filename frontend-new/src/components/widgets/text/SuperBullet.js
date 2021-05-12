@@ -1,11 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { device } from "../../../styles/DeviceSizes";
 const Bullet = styled.div`
   justify-content: top;
   display: flex;
   flex-direction: column;
-  grid-column: ${props => props.pos ? props.pos : "2/4"};
+  grid-column: ${props => (props.pos ? props.pos : "2/4")};
+
+  @media ${device.mobileM} {
+    grid-column: 1/-1;
+  }
+
+  @media ${device.laptop} {
+    grid-column: ${props => (props.pos ? props.pos : "1/2")};
+    margin-bottom: 0;
+  }
+
+  @media ${device.laptopL} {
+  }
+
+  @media ${device.desktop} {
+  }
 `;
 
 const BulletPoint = styled.div`

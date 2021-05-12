@@ -6,22 +6,22 @@ const Container = styled.div`
   padding: 2em 4em;
   max-width: 1400px;
 
-  /* @media ${device.mobileM} {
-    padding: 2em;
+  @media ${device.mobileS} {
+    padding: 2em 1.5em;
   }
 
   @media ${device.laptop} {
-    max-width: 980px;
+    /* max-width: 980px; */
+    padding: 2em 4em;
   }
 
   @media ${device.laptopL} {
-    max-width: 1200px;
+    /* max-width: 1200px; */
   }
 
   @media ${device.desktop} {
-    background: red;
-    max-width: 1600px;
-  } */
+    /* max-width: 1600px; */
+  }
 `;
 
 

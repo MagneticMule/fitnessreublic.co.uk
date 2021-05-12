@@ -60,7 +60,7 @@ const TrainingSection = ({ title, subtitle, trainings }) => {
         <TrainingCard training={training} />
       ))}
 
-      <Info>
+      {/* <Info>
         <div>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
           quasi veniam, ad aliquam hic laudantium vitae omnis culpa officiis
@@ -72,7 +72,7 @@ const TrainingSection = ({ title, subtitle, trainings }) => {
           including Joint trainings for couples and a reduced priced Student
           Membership.
         </div>
-      </Info>
+      </Info> */}
     </Container>
   );
 };

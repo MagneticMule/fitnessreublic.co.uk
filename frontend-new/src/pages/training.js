@@ -46,19 +46,20 @@ const TrainingPage = ({data}) =>{
 
         <Container>
           <DualSection>
-            <TextSection
-              pos="1/4"
-              title="What is Personal Training?"
-              subtitle="A basic overview of what we do"
-              body="Here at Fitness Republic looking after our clients is our number one priority. With Personal Training we take this one stage further. One to One focus and attention on every session to bring out the very best in You. Accountability to keep you committed and consistent, whilst helping you to squeeze every last rep out, helping you achieve your goals faster and more efficiently. All of our trainers are distinguished by their ability to practice what they preach."
-            />
             <InfoBubble
               location={"content"}
               headshot={data.blankahead.childImageSharp.fixed}
               name={"Blanka"}
             />
             <TextSection
-              pos="1/4"
+              pos="2/-1"
+              title="What is Personal Training?"
+              subtitle="A basic overview of what we do"
+              body="Here at Fitness Republic looking after our clients is our number one priority. With Personal Training we take this one stage further. One to One focus and attention on every session to bring out the very best in You. Accountability to keep you committed and consistent, whilst helping you to squeeze every last rep out, helping you achieve your goals faster and more efficiently. All of our trainers are distinguished by their ability to practice what they preach."
+            />
+
+            <TextSection
+              pos="2/-1"
               title="Who is personal training for?"
               subtitle="The Short answer is anyone but there are exceptions"
               body="Everyone can hugely benefit from personal training, whether you are an absolute beginner, have limited gym experience or an experienced gym goer. We will tailor your plan to your specific ability and goals. Don’t worry if you’re not sure it for you, or if you have any medical issues holding you back, please talk to us as we can help to improve so much of your lifestyle and training in only a short space of time. "
@@ -183,8 +184,8 @@ const TrainingPage = ({data}) =>{
                 }
               ]}
             />
-            <IntroText text="Have a question about personal training? Let's start the conversation."/>
-            <FormGeneral id="frm-training" name="Seven Day Pass"/>
+            <IntroText text="Have a question about personal training? Let's start the conversation." />
+            <FormGeneral id="frm-training" name="Seven Day Pass" />
           </DualSection>
         </Container>
       </Layout>

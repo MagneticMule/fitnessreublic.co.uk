@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from '../styles/ContainerStyle';
 import Button from "./widgets/Button";
+import { device } from "../styles/DeviceSizes";
 
 import {
   FaFacebook,
@@ -18,7 +19,24 @@ const Background = styled.div`
   background: var(--dark-grad);
   color: var(--white);
   font-weight: 500;
-  z-index:-1;
+  z-index: -1;
+
+  @media ${device.mobileS} {
+    font-size: 0.75rem;
+  }
+
+  @media ${device.laptop} {
+    /* max-width: 980px; */
+    font-size: 1rem;
+  }
+
+  @media ${device.laptopL} {
+    /* max-width: 1200px; */
+  }
+
+  @media ${device.desktop} {
+    /* max-width: 1600px; */
+  }
 `;
 
 const CovidButton = styled.li`

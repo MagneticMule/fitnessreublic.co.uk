@@ -25,13 +25,12 @@ class Layout extends React.Component {
     return (
       <>
         <IconContext.Provider
-          value={{ style: { verticalAlign: "-2" } }}
+          value={{ style: { verticalAlign: "-2px" } }}
         >
           <GlobalStyles />
           <Typography />
           <MiniNav />
           <Menu />
-
           {children}
           <Footer />
           <WhatsAppWidget
@@ -46,4 +45,4 @@ class Layout extends React.Component {
   }
 }
 
-export default Layout
+export default Layout;

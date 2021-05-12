@@ -4,11 +4,23 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import HeadShot from './widgets/HeadShot';
 import Button from './widgets/Button';
+import { device } from "../styles/DeviceSizes";
 
 
 const Container = styled.div`
-  grid-column: 4/-1;
+  grid-column: ${props => (props.pos ? props.pos : "1/2")};
   grid-row: span 2;
+
+  @media ${device.mobileS} {
+    text-align:center;
+    grid-column: 1/-1;
+    margin: 3em;
+  }
+
+  @media ${device.laptop} {
+    grid-column: ${props => (props.pos ? props.pos : "1/2")};
+    grid-row: span 2;
+  }
 `;
 const Bubble = styled.div`
   text-align: center;

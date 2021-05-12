@@ -13,7 +13,7 @@ const SingleImage = props =>{
 const Container = styled.section`
   grid-column: ${props => (props.pos ? props.pos : "1/-1")};
   display: grid;
-  margin: 4em 0;
+  margin: 0 0 4em 0;
   /* grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); */
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
