@@ -9,14 +9,7 @@ import Container from "../styles/ContainerStyle";
 import TextSection from "../components/TextSection";
 import Image from "../components/widgets/Image";
 import Pullquote from "../components/widgets/text/Pullquote";
-import Button from "../components/widgets/Button";
-import SuperBullet from "../components/widgets/text/SuperBullet";
-import ReviewSection from "../components/ReviewSection";
-import InfoBubble from "../components/InfoBubble";
-import IntroText from "../components/widgets/text/IntroText";
-import MembershipSection from "../components/MembershipSection";
-
-import FormSevenDayPass from "../components/FormSevenDayPass";
+import Calender from "../components/ClubrightCalender";
 
 const Index = ({ data }) => {
   return (
@@ -37,6 +30,7 @@ const Index = ({ data }) => {
         ]}
       >
         <script src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
+
         <script type="application/ldon">
           {`
             {
@@ -63,7 +57,7 @@ const Index = ({ data }) => {
       />
       <Container>
         <DualSection>
-          <div>
+
             <Pullquote
               body="Fitness classes are an ideal way to add structure, fun and motivation to your fitness plan"
               attribution={
@@ -73,8 +67,8 @@ const Index = ({ data }) => {
                 </>
               }
             />
-            <Button title="Book a visit" />
-          </div>
+            {/* <Button title="Book a visit" /> */}
+
           <TextSection
             title="Let's Get Started"
             subtitle="From AB's through Core to Zumba"
@@ -168,6 +162,7 @@ const Index = ({ data }) => {
             subtitle="From AB's through Core to Zumba"
             body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of activities to suit any fitness level."
           />
+          <Calender />
         </DualSection>
       </Container>
     </Layout>
