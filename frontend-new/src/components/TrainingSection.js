@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { SplitSection } from "../styles/GridStyles";
 import TrainingCard from "./widgets/TrainingCard";
-
+import { device } from "../styles/DeviceSizes";
 const Container = styled.section`
   display: flex;
   flex-wrap: wrap;
@@ -14,6 +14,18 @@ const Container = styled.section`
   border-radius: 8px;
   gap: 0 5%;
   grid-column: 1/-1;
+
+  @media ${device.mobileS} {
+    padding: 2em;
+    margin: 0 -1.5em 4em -1.5em;
+    border-radius: 0;
+  }
+
+  @media ${device.laptop} {
+    padding: 4em;
+    margin: 0 0 4em 0;
+    border-radius: 8px;
+  }
 `;
 
 const Header = styled.div`

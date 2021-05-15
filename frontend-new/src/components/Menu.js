@@ -181,7 +181,7 @@ return (
             <StyledLink to="/classes">Classes</StyledLink>
           </li>
           <li>
-            <StyledLink to="/team">About</StyledLink>
+            <StyledLink to="/about">About</StyledLink>
           </li>
         </ul>
       </Navigation>

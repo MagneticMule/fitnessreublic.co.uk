@@ -74,23 +74,23 @@ const TrainingPage = ({data}) =>{
 
             <TextSection
               title="What can you expect?"
-              pos="2/5"
+              pos="2/-1"
               subtitle="Your ambitions and commitment play a key role"
               body="Personal Training gives you full accountability. We will require full commitment to your workouts and nutrition. We will guide you through tough training sessions designed to get the very best out of you, show you how maximise your exercise technique and performance, pushing you further than you dream possible. We will guide you through your nutrition, advising you on how to eat for optimum performance and results, whether it be to slim down or build up. We leave nothing to chance! It’s not going to be easy, but we promise to deliver!"
             />
 
             <TextSection
-              pos="2/5"
+              pos="2/-1"
               subtitle="We work directly with a physiotherapist"
               body="At our facility in Ashby de la Zouch we have an in house physiotherapist with over 20 years of experience. Craig is on hand to help with any injuries or problems you may have. Craig is also an active runner and performs running assessments held at the gym. All of our coaches work with Craig helping us to help you even more!"
             />
             <TextSection
-              pos="2/5"
+              pos="2/-1"
               subtitle="Everybody is different"
               body="We know that everybody has different levels of fitness, flexibility, balance, strength, agility and motor skills. Many of our clients come to us with injuries and we have the knowledge and skills to work with them to continue training, rehabilitate and make consistent progress. All our coaches have been educated in nutrition for fitness and sport, we also have a dedicated nutritionist on hand to answer questions or create a nutrition plan to compliment your training."
             />
             <TextSection
-              pos="2/5"
+              pos="2/-1"
               subtitle="It takes commitment and time to form good habits"
               body="Habits can make you or break you. In order to change you must change certain things you do daily. Most of the time we don’t even realise the habits we have that are having a detrimental effect on our bodies and mind. Our Personal Coaches should keep you accountable. Ensuring you turn up and give it your all, every session. What you think is achievable and where you think your limitations are, is just the beginning."
             />
@@ -124,13 +124,16 @@ const TrainingPage = ({data}) =>{
                     "Diet advice and support",
                     "Personalized Fitness Plan"
                   ],
+                  paymethod: (
+                    <>Payable via Card or Cash in one installment of £225</>
+                  ),
                   totalcost: "£225"
                 },
                 {
                   key: 2,
                   title: (
                     <>
-                      Solid Impact <span>6 week Plan</span>
+                      High Impact <span>8 week Plan</span>
                     </>
                   ),
                   price: (
@@ -140,19 +143,20 @@ const TrainingPage = ({data}) =>{
                   ),
                   description: (
                     <>
-                      Looking to bulk up or slim down for an event? Perhaps you
-                      want to hit the ground running after a period of
-                      inactivity? This plan will help you achieve realistic and
-                      manitanable results.
+                      <b>Looking to bulk up or slim down for an event?</b>{" "}
+                      Perhaps you want to hit the ground running after a period
+                      of inactivity? This plan will help you achieve realistic
+                      and manitanable results.
                     </>
                   ),
-                  paymethod:
-                    "Payable via Card or Cash in two installments of £240",
                   bullets: [
                     "Two PT sessions Per Week",
                     "Diet advice and support",
                     "Personalized Fitness Plan"
                   ],
+                  paymethod: (
+                    <>Payable via Card or Cash in one installment of £225</>
+                  ),
                   totalcost: "£480"
                 },
                 {
@@ -169,8 +173,12 @@ const TrainingPage = ({data}) =>{
                   ),
                   description: (
                     <>
-                      Looking to build good habits over time and achieve your
-                      health goals in a structured and manageable timeframe?
+                      <b>
+                        Looking to build good habits over time and achieve your
+                        health goals in a structured and manageable timeframe?
+                      </b>{' '}
+                      This longer course will ensure you have the skills and
+                      techniques to train for the long haul.
                     </>
                   ),
                   paymethod:
@@ -185,7 +193,7 @@ const TrainingPage = ({data}) =>{
               ]}
             />
             <IntroText text="Have a question about personal training? Let's start the conversation." />
-            <FormGeneral id="frm-training" name="Seven Day Pass" />
+            <FormGeneral id="PTForm" name="Seven Day Pass" />
           </DualSection>
         </Container>
       </Layout>

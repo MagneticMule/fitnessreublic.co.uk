@@ -14,7 +14,7 @@ const Container = styled.div`
   @media ${device.mobileS} {
     text-align:center;
     grid-column: 1/-1;
-    margin: 3em;
+    margin: 0;
   }
 
   @media ${device.laptop} {
@@ -32,11 +32,18 @@ const Bubble = styled.div`
   background: var(--lin-grad-smooth-orange);
   color: var(--deep-wine);
   font-size: 1rem;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-weight: 500;
   padding: 0 4em 2em 4em;
   max-width: 480px;
+  @media ${device.mobileS} {
+    margin:0 auto 4em auto;
+    padding: 0 2em 2em 4em;
+  }
 
+  @media ${device.laptop} {
+    padding: 0 4em 2em 4em;
+  }
 
   > .headshot {
     background: var(--lin-grad-smooth-orange);
@@ -50,7 +57,7 @@ const Bubble = styled.div`
 
   > .name {
     margin-top: 3em;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 700;
     > span {
       display: block;

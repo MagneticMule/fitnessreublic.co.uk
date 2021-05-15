@@ -72,7 +72,7 @@ const Index = ({ data }) => {
             body="Fitness Republic is a family business and as soon as you walk into the gym you’ll feel at home."
             attribution={
               <>
-                <strong>Simon Pellechia</strong> // Director and Personal
+                <strong>Simon Pellecchia</strong> // Director and Personal
                 Trainer
               </>
             }
@@ -89,7 +89,7 @@ const Index = ({ data }) => {
           <Image
             pic={data.simonsarah.childImageSharp.fluid}
             alt="Simon and Sarah, directors of Fitness Republic, standing in the gym, smiling at the camera"
-            blurb={"Simon and Sarah Pellechia started Fitness Republic in 2010"}
+            blurb={"Simon and Sarah Pellecchia started Fitness Republic in 2010"}
           />
 
           <TextSection

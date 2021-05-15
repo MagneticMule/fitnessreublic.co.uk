@@ -1,10 +1,24 @@
 import React from 'react';
 import { navigate } from 'gatsby-link';
+import styled from "styled-components";
+import { device } from "../styles/DeviceSizes";
 
+const FormSection = styled.section`
+  @media ${device.mobileS} {
+    padding: 2em;
+    margin: 0 -1.5em 4em -1.5em;
+    border-radius: 0;
+  }
 
+  @media ${device.laptop} {
+    padding: 4em;
+    margin: 0 0 4em 0;
+    border-radius: 8px;
+  }
+`;
 
 const Form = (props)=> (
-<>
+<FormSection>
  <h1>Contact</h1>
  <form name="contact" method="post" action="#" data-netlify="true" data-netlify-honeypot="bot-field">
 
@@ -32,7 +46,7 @@ const Form = (props)=> (
     </li>
   </ul>
 </form>
-    </>
+    </FormSection>
   )
 
   export default Form;

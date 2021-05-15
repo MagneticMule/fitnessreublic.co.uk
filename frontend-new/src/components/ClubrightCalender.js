@@ -17,7 +17,7 @@ const Calender = styled.section`
       flex-direction: column;
       .class {
         flex-grow: 1;
-        min-height: 400px;
+        min-height: 430px;
         display: flex;
         flex-direction: column;
         border: 0;

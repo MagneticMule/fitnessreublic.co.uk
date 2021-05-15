@@ -74,8 +74,8 @@ const Card = styled.div`
     }
   }
 
-  > div.description {
-    min-height: 180px;
+   div.description {
+      min-height: 180px;
   }
 `;
 
@@ -118,7 +118,7 @@ const TrainingCard = ({ training }) => {
     <Card>
       <h3>{training.title}</h3>
       <hr />
-      <div>{training.description}</div>
+      <div className="description">{training.description}</div>
       <hr />
       <div className="price">{training.cost}</div>
       <ul>
@@ -129,7 +129,7 @@ const TrainingCard = ({ training }) => {
       <div className="price">
         {training.price}
       </div>
-      <p>Payable via Card or Cash in one installment of £225</p>
+      <p>{training.paymethod}</p>
       <p>Total Cost: {training.totalcost}</p>
       <Button>
         <a

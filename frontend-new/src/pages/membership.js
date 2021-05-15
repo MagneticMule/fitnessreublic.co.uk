@@ -56,14 +56,13 @@ const MembershipPage = ({data}) =>{
                 <>
                   <ul>
                     <li>
-                      <strong>Single Monthly</strong> Membership for one person,
-                      Pay as you go membership, cancel any time
+                      <strong>Single Monthly</strong> Membership for one person
+
                     </li>
                     <li>
                       <strong>Joint Monthly</strong> Couples who train together,
                       stay together. Or so we hear. That's why we offer a unique
-                      joint membership for two people. Pay as you go and cancel
-                      any time.
+                      joint membership for two people.
                     </li>
                     <li>
                       <strong>Single Annual</strong> A massive saving for those
@@ -118,6 +117,7 @@ const MembershipPage = ({data}) =>{
                       <span>£299.99</span> Per Year
                     </>
                   ),
+                  save:(<>Save £95</>),
                   description:
                     "Full access to the Gym facilities and fitness classes for one person.",
                   paymethod: "Payable in one installment at the gym or online"
@@ -149,7 +149,7 @@ const MembershipPage = ({data}) =>{
                   ),
                   price: (
                     <>
-                      <span>£25.99</span> Per Year
+                      <span>£25.99</span> Per Month
                     </>
                   ),
                   description:

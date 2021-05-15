@@ -147,16 +147,14 @@ const Footer = props => (
                 <FaStar />
               </li>
               <li>
-                  Facebook
-                {' '}
-                <FaStar />
+                Facebook <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
               </li>
             </ul>
-                {/* Head over to{' '}
+            {/* Head over to{' '}
                 <a
                   href="https://www.facebook.com/fitnessrepublicashby/reviews"
                   aria="Link to facebook reviews for Fitness Republic Ashby"
@@ -199,34 +197,36 @@ const Footer = props => (
             <p>Seven days a week</p>
           </SectionHeader>
           <table>
-            <tr>
-              <th>Monday</th>
-              <td>5.30am - 9.00pm</td>
-            </tr>
-            <tr>
-              <th>Tuesday</th>
-              <td>5.30am - 9.00pm</td>
-            </tr>
-            <tr>
-              <th>Wednesday</th>
-              <td>5.30am - 9.00pm</td>
-            </tr>
-            <tr>
-              <th>Thursday</th>
-              <td>5.30am - 9.00pm</td>
-            </tr>
-            <tr>
-              <th>Friday</th>
-              <td>5.30am - 9.00pm</td>
-            </tr>
-            <tr>
-              <th>Saturday</th>
-              <td>8.00am - 6.00pm</td>
-            </tr>
-            <tr>
-              <th>Sunday</th>
-              <td>8.00am - 4.00pm</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Monday</th>
+                <td>5.30am - 9.00pm</td>
+              </tr>
+              <tr>
+                <th>Tuesday</th>
+                <td>5.30am - 9.00pm</td>
+              </tr>
+              <tr>
+                <th>Wednesday</th>
+                <td>5.30am - 9.00pm</td>
+              </tr>
+              <tr>
+                <th>Thursday</th>
+                <td>5.30am - 9.00pm</td>
+              </tr>
+              <tr>
+                <th>Friday</th>
+                <td>5.30am - 9.00pm</td>
+              </tr>
+              <tr>
+                <th>Saturday</th>
+                <td>8.00am - 6.00pm</td>
+              </tr>
+              <tr>
+                <th>Sunday</th>
+                <td>8.00am - 4.00pm</td>
+              </tr>
+            </tbody>
           </table>
         </section>
         <section>
