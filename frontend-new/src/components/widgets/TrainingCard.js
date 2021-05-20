@@ -10,7 +10,7 @@ const Card = styled.div`
   min-height: 360px;
   margin: 2em 0;
   color: var(--white);
-  background: black;
+  background: var(--orange);
   border-radius: 32px;
   max-width: 320px;
   overflow: hidden;
@@ -46,7 +46,7 @@ const Card = styled.div`
     letter-spacing: 0;
     line-height: 1;
     > span {
-      font-size: 0.8em;
+      font-size: 0.6em;
       padding-top: 0.3em;
       font-weight: normal;
       display: block;
@@ -74,8 +74,8 @@ const Card = styled.div`
     }
   }
 
-   div.description {
-      min-height: 180px;
+  div.description {
+    min-height: 180px;
   }
 `;
 
@@ -134,7 +134,7 @@ const TrainingCard = ({ training }) => {
       <Button>
         <a
           aria="Takes you to our general contact form so that you can contact us about personal training oprions"
-          href="/training/#frm-training"
+          href="/training/#PTForm"
         >
           Contact Us
         </a>

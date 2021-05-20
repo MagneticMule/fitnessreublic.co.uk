@@ -15,6 +15,17 @@ import TextCta from '../components/widgets/TextCta';
 import IntroText from '../components/widgets/text/IntroText';
 import FormGeneral from '../components/FormGeneral';
 
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaAddressCard,
+  FaPhoneSquareAlt,
+  FaStar,
+  FaMapMarkerAlt
+} from "react-icons/fa";
+
 const TrainingPage = ({data}) =>{
     return (
       <Layout>
@@ -61,8 +72,8 @@ const TrainingPage = ({data}) =>{
             <TextSection
               pos="2/-1"
               title="Who is personal training for?"
-              subtitle="The Short answer is anyone but there are exceptions"
-              body="Everyone can hugely benefit from personal training, whether you are an absolute beginner, have limited gym experience or an experienced gym goer. We will tailor your plan to your specific ability and goals. Don’t worry if you’re not sure it for you, or if you have any medical issues holding you back, please talk to us as we can help to improve so much of your lifestyle and training in only a short space of time. "
+              subtitle="The simple answer is everyone, and we mean everyone"
+              body="Everyone can benefit from personal training, whether you are an absolute beginner, have limited gym experience or an experienced gym goer. We will tailor your plan to your specific ability and goals. Don’t worry if you’re not sure it for you, or if you have any medical issues holding you back, please talk to us as we can help to improve so much of your lifestyle and training in only a short space of time. "
             />
             <Image
               pic={data.simonclient.childImageSharp.fluid}
@@ -86,23 +97,58 @@ const TrainingPage = ({data}) =>{
             />
             <TextSection
               pos="2/-1"
-              subtitle="Everybody is different"
+              subtitle={
+                <>
+                  <strong>Everybody</strong> and <strong>Every body</strong> is
+                  different
+                </>
+              }
               body="We know that everybody has different levels of fitness, flexibility, balance, strength, agility and motor skills. Many of our clients come to us with injuries and we have the knowledge and skills to work with them to continue training, rehabilitate and make consistent progress. All our coaches have been educated in nutrition for fitness and sport, we also have a dedicated nutritionist on hand to answer questions or create a nutrition plan to compliment your training."
             />
             <TextSection
               pos="2/-1"
-              subtitle="It takes commitment and time to form good habits"
+              subtitle={
+                <>
+                  It takes <strong>commitment</strong> and <strong>time</strong>{" "}
+                  to form good habits
+                </>
+              }
               body="Habits can make you or break you. In order to change you must change certain things you do daily. Most of the time we don’t even realise the habits we have that are having a detrimental effect on our bodies and mind. Our Personal Coaches should keep you accountable. Ensuring you turn up and give it your all, every session. What you think is achievable and where you think your limitations are, is just the beginning."
             />
             <TrainingSection
               title="Personal Training Plans"
               subtitle="Kickstart your training with one of these options"
+              info={
+                <>
+                  <div>
+                    Each of these plans are available in one, two or three
+                    sessions per week and can be extended for as long as you
+                    want.
+                  </div>
+                  <div>
+                    Feel free to give us a ring{" "}
+                    <span>
+                      <a href="tel:+4401530413330">
+                        <FaPhoneSquareAlt /> 01530 413330
+                      </a>
+                    </span>
+                    {' '} or use the{' '}
+                    <a
+                      aria="Takes you to our general contact form so that you can contact us about personal training options"
+                      href="/training/#PTForm"
+                    >
+                      Contact Form
+                    </a>{" "}
+                    below and we can chat about what would work for you.
+                  </div>
+                </>
+              }
               trainings={[
                 {
                   key: 1,
                   title: (
                     <>
-                      Solid Impact <span>6 week Plan</span>
+                      6 Week Plan <span>1 session per week</span>
                     </>
                   ),
                   price: (
@@ -133,7 +179,7 @@ const TrainingPage = ({data}) =>{
                   key: 2,
                   title: (
                     <>
-                      High Impact <span>8 week Plan</span>
+                      8 week plan <span>1 session per week</span>
                     </>
                   ),
                   price: (
@@ -163,7 +209,7 @@ const TrainingPage = ({data}) =>{
                   key: 3,
                   title: (
                     <>
-                      Maximum Impact <span>12 week Plan</span>
+                      12 week plan <span>1 session per week</span>
                     </>
                   ),
                   price: (
@@ -176,7 +222,7 @@ const TrainingPage = ({data}) =>{
                       <b>
                         Looking to build good habits over time and achieve your
                         health goals in a structured and manageable timeframe?
-                      </b>{' '}
+                      </b>{" "}
                       This longer course will ensure you have the skills and
                       techniques to train for the long haul.
                     </>
@@ -193,7 +239,7 @@ const TrainingPage = ({data}) =>{
               ]}
             />
             <IntroText text="Have a question about personal training? Let's start the conversation." />
-            <FormGeneral id="PTForm" name="Seven Day Pass" />
+            <FormGeneral pos={"2/4"} id="PTForm" name="Seven Day Pass" />
           </DualSection>
         </Container>
       </Layout>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "gatsby";
 import { device } from "../styles/DeviceSizes";
 
 import {
@@ -112,7 +113,22 @@ const SocialIcons = styled.ul`
 
 
   const Copyright = styled.div`
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
+
+    ul {
+      > li + li {
+        margin-left: 2em;
+      }
+      > li {
+        display: inline-block;
+
+        > a {
+          text-decoration: underline;
+          text-decoration-thickness: 0.15em;
+          text-underline-offset: 4px;
+        }
+      }
+    }
   `;
 
 
@@ -278,6 +294,17 @@ const Footer = props => (
           transmitted, cached or otherwise used, except with the prior written
           permission of Fitness Republic.
         </p>
+        <ul>
+          <li>
+            <Link to="/privacy">Terms and Conditions</Link>
+          </li>
+          <li>
+            <Link to="/privacy#privacy-policy">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link to="/privacy#cookie-policy">Cookie Policy</Link>
+          </li>
+        </ul>
       </Container>
     </Copyright>
   </SiteFooter>

@@ -50,7 +50,7 @@ const BulletPoint = styled.div`
     -moz-background-clip: text;
     background-clip: text;
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: 700;
   }
 `;
 

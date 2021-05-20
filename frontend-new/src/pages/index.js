@@ -76,9 +76,7 @@ const Index = ({ data }) => {
                 Trainer
               </>
             }
-
           />
-
 
           <TextSection
             title="Welcome Aboard"
@@ -89,7 +87,9 @@ const Index = ({ data }) => {
           <Image
             pic={data.simonsarah.childImageSharp.fluid}
             alt="Simon and Sarah, directors of Fitness Republic, standing in the gym, smiling at the camera"
-            blurb={"Simon and Sarah Pellecchia started Fitness Republic in 2010"}
+            blurb={
+              "Simon and Sarah Pellecchia started Fitness Republic in 2010"
+            }
           />
 
           <TextSection
@@ -182,41 +182,42 @@ const Index = ({ data }) => {
           <MembershipSection
             title="Single Membership Plans"
             subtitle="Gym and Class"
-             memberships={[
-                {
-                  key: 1,
-                  style: "purple",
-                  title: (
-                    <>
-                      Single Adult <span>Monthly</span>
-                    </>
-                  ),
-                  price: (
-                    <>
-                      <span>£32.99</span> Per Month
-                    </>
-                  ),
-                  description:
-                    "Full access to the Gym facilities and fitness classes for one person.",
-                  paymethod: "Payable once per month via Direct Debit"
-                },
-                {
-                  key: 2,
-                  style: "gold",
-                  title: (
-                    <>
-                      Single Adult <span>Annual</span>
-                    </>
-                  ),
-                  price: (
-                    <>
-                      <span>£299.99</span> Per Year
-                    </>
-                  ),
-                  description:
-                    "Full access to the Gym facilities and fitness classes for one person.",
-                  paymethod: "Payable in one installment at the gym or online"
-                }]}
+            memberships={[
+              {
+                key: 1,
+                style: "purple",
+                title: (
+                  <>
+                    Single Adult <span>Monthly</span>
+                  </>
+                ),
+                price: (
+                  <>
+                    <span>£32.99</span> Per Month
+                  </>
+                ),
+                description:
+                  "Full access to the Gym facilities and fitness classes for one person.",
+                paymethod: "Payable once per month via Direct Debit"
+              },
+              {
+                key: 2,
+                style: "gold",
+                title: (
+                  <>
+                    Single Adult <span>Annual</span>
+                  </>
+                ),
+                price: (
+                  <>
+                    <span>£299.99</span> Per Year
+                  </>
+                ),
+                description:
+                  "Full access to the Gym facilities and fitness classes for one person.",
+                paymethod: "Payable in one installment at the gym or online"
+              }
+            ]}
           />
 
           <TextSection
@@ -224,13 +225,30 @@ const Index = ({ data }) => {
             subtitle="It's all good, very good"
             body={
               <>
-                At Fitness Republic, we promote health and wellbeing over body
-                image. Experience tells us that if you are given the right
-                guidance and are having fun while training, you will stick with
-                your plan achieve a happier, healthier, fitter life. We will
-                take the time to listen to you and give you the tools and
-                equipment you need to
-                <strong> exercise safely and confidently</strong>.
+                At Fitness Republic we are proud of the service we deliver to
+                our members and are continually working to improve ourselves as fitness professionals to
+                help give you the very best training and support possible. We currenty have{" "}
+                <strong>
+                  over 200 five star reviews on{" "}
+                  <a
+                    href="https://www.google.com/search?q=fitness+republic+reviews&oq=fitness+republic+reviews&aqs=chrome..69i57.4743j0j7&sourceid=chrome&ie=UTF-8#lrd=0x4879fc383cd0fdb3:0x4daa961f269ae01f,1,,,"
+                    target="_blank"
+                    aria-label="Takes you to our reviews on Google"
+                  >
+                    Google
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="https://www.facebook.com/fitnessrepublicashby/reviews"
+                    target="_blank"
+                    aria-label="Takes you to our reviews on Facebook"
+                  >
+                    Facebook
+                  </a>
+                </strong>{' '}
+                 and we couldn't be more delghted.
+                <br/>
+                <i>Feel free to have a look but promise you'll come back!</i> 😊
               </>
             }
           />
@@ -261,11 +279,10 @@ const Index = ({ data }) => {
                 text: (
                   <>
                     I love this place. The staff are amazing, they are all
-                    friendly and helpfull. They take the time to
-                    answer any questions you have. When the pandemic hit the
-                    whole team created a Facebook page for live workouts which
-                    was brilliant. I can't recommend this place highly
-                    enough.
+                    friendly and helpfull. They take the time to answer any
+                    questions you have. When the pandemic hit the whole team
+                    created a Facebook page for live workouts which was
+                    brilliant. I can't recommend this place highly enough.
                   </>
                 ),
 
@@ -275,22 +292,26 @@ const Index = ({ data }) => {
             ]}
           />
           <TextSection
-            title="Your Fitness Republic Journey Continues"
-            subtitle="Looking to up your game?"
+            pos={"2/-1"}
+            subtitle="Your Fitness Republic Journey Continues"
             body={
               <>
-                At Fitness Republic, we promote health and wellbeing over body
-                image. Experience tells us that if you are given the right
-                guidance and are having fun while training, you will stick with
-                your plan achieve a happier, healthier, fitter life. We will
-                take the time to listen to you and give you the tools and
-                equipment you need to
-                <strong> exercise safely and confidently</strong>.
+                We are always on hand to offer advice on how to use the
+                eqiupment at the gym, which classes would suit you best and of
+                course will design a fitness plan that's suitable for your
+                fitness goals. This is all included in your membership.{" "}
+                <Link
+                  to="/membership"
+                  aria-label="Takes you to our membership page"
+                >
+                  Have a look at our four membership plans and decide which one
+                  suits you best.
+                </Link>
               </>
             }
           />
 
-          <Image
+          {/* <Image
             pos="1/5"
             pic={data.asksimon.childImageSharp.fluid}
             alt="An advert for Ask Simon. It shows Simon holding his arm out in a champion pose and sporting a wide smile."
@@ -317,7 +338,7 @@ const Index = ({ data }) => {
                 <strong> Exciting.</strong>.
               </>
             }
-          />
+          /> */}
         </DualSection>
       </Container>
     </Layout>

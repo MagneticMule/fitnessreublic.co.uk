@@ -196,11 +196,11 @@ const TeamPage = ({ data }) => {
                     trace process.
                   </li>
                   <li>
-                    Where can I park? From our opening at 5.30AM until 9AM you
-                    can park outside the club on Market Street, with no fees or
-                    penalties. From 9.00AM to 5.30PM you are limited to 1 hour.
-                    There are many car parks within a short walk to the gym at a
-                    small cost.{" "}
+                    <strong>Where can I park?</strong> From our opening at
+                    5.30AM until 9AM you can park outside the club on Market
+                    Street, with no fees or penalties. From 9.00AM to 5.30PM you
+                    are limited to 1 hour. There are many car parks within a
+                    short walk to the gym at a small cost.{" "}
                     <b>We have a car park plan available at reception.</b>
                   </li>
                   <li>

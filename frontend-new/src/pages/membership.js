@@ -57,7 +57,6 @@ const MembershipPage = ({data}) =>{
                   <ul>
                     <li>
                       <strong>Single Monthly</strong> Membership for one person
-
                     </li>
                     <li>
                       <strong>Joint Monthly</strong> Couples who train together,
@@ -80,7 +79,15 @@ const MembershipPage = ({data}) =>{
                 </>
               }
             />
-            <IntroText text="Sound Good? Let's get you signed up and started on your new fitness journey." />
+            <IntroText
+              text={
+                <>
+                  Sound Good? <br />
+                  Let's get you signed up and started on your new fitness
+                  journey.
+                </>
+              }
+            />
 
             <MembershipSection
               title="Membership for one adult"
@@ -117,7 +124,7 @@ const MembershipPage = ({data}) =>{
                       <span>£299.99</span> Per Year
                     </>
                   ),
-                  save:(<>Save £95</>),
+                  save: <>Save £95</>,
                   description:
                     "Full access to the Gym facilities and fitness classes for one person.",
                   paymethod: "Payable in one installment at the gym or online"
@@ -163,37 +170,36 @@ const MembershipPage = ({data}) =>{
                 {
                   key: 1,
                   location: "content",
-                  headshot: data.kathyhead.childImageSharp.fixed,
+                  headshot: data.zoehead.childImageSharp.fixed,
                   text: (
                     <>
-                      I started with Blanka in January 2021. Her approach to our
-                      personal training sessions are both{" "}
-                      <strong>creative</strong> and <strong>personable</strong>.
-                      No two sessions are the same. I now look forward to
-                      exercise and have achieved significant results. Long may
-                      this journey with her continue.
+                      It's such a friendly & welcoming atmosphere, I've honestly
+                      never been to a gym like it. I always used to feel
+                      uncomfortable in the gym, being a larger lady,{" "}
+                      <strong>
+                        but at FR there really is a range of people of all
+                        shapes & sizes from al walks of life;
+                      </strong>{" "}
+                      this helps me to feel comfortable to workout properly.
                     </>
                   ),
 
-                  reviewer: "Kathy",
-                  origin: "Instagram"
+                  reviewer: "Zoe",
+                  origin: "Facebook"
                 },
                 {
                   key: 2,
                   location: "content",
-                  headshot: data.chrishead.childImageSharp.fixed,
+                  headshot: data.sergiohead.childImageSharp.fixed,
                   text: (
                     <>
-                      I love this place. The staff are amazing, they are all
-                      friendly and helpfull. They take the time to answer any
-                      questions you have. When the pandemic hit the whole team
-                      created a Facebook page for live workouts which was
-                      brilliant. I can't recommend this place highly enough.
+                      The best gym in Ashby, for sure! Friendly team, nice,
+                      clean and very safe when we talk about covid!
                     </>
                   ),
 
-                  reviewer: "Chris Osborn",
-                  origin: "Google"
+                  reviewer: "Sérgio Oliveira Souza",
+                  origin: "Facebook"
                 }
               ]}
             />
@@ -234,7 +240,10 @@ const MembershipPage = ({data}) =>{
               subtitle="Need further support on your fitness journey?"
               body={
                 <>
-                  Once you have your membership sorted out then have a look at one of our <Link to="/training/"> personal training options</Link>. Or simple ask one of the team when you are at the gym.
+                  Once you have your membership sorted out then have a look at
+                  one of our{" "}
+                  <Link to="/training/"> personal training options</Link>. Or
+                  simple ask one of the team when you are at the gym.
                 </>
               }
             />
@@ -250,14 +259,14 @@ export default MembershipPage;
 
 export const query = graphql`
          query {
-           kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
+           zoehead: file(relativePath: { eq: "headshots/zoe.jpg" }) {
              childImageSharp {
                fixed(height: 120, width: 120) {
                  ...GatsbyImageSharpFixed
                }
              }
            }
-           chrishead: file(relativePath: { eq: "headshots/chris.jpg" }) {
+           sergiohead: file(relativePath: { eq: "headshots/sergio.jpg" }) {
              childImageSharp {
                fixed(height: 120, width: 120) {
                  ...GatsbyImageSharpFixed

@@ -36,13 +36,14 @@ const Bubble = styled.div`
   font-weight: 500;
   padding: 0 4em 2em 4em;
   max-width: 480px;
+
   @media ${device.mobileS} {
     margin:0 auto 4em auto;
-    padding: 0 2em 2em 4em;
+    padding: 0 2em 2em 2em;
   }
 
   @media ${device.laptop} {
-    padding: 0 4em 2em 4em;
+    padding: 0 3em 2em 3em;
   }
 
   > .headshot {

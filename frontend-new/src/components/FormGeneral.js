@@ -1,15 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 import { navigate } from "gatsby-link";
-
+import { device } from "../styles/DeviceSizes";
 const Form = styled.form`
   margin-bottom: 4em;
-  grid-column: 2/4;
+  grid-column: ${props => (props.pos ? props.pos : "2/4")};
   display: flex;
   flex-direction: column;
 
   > .field {
     margin-top: 2em;
+  }
+
+  @media ${device.mobileS} {
+    grid-column: 1/-1;
+  }
+
+  @media ${device.laptop} {
+    grid-column: ${props => (props.pos ? props.pos : "2/4")};
+  }
+
+  @media ${device.laptopL} {
+  }
+
+  @media ${device.desktop} {
   }
 `;
 

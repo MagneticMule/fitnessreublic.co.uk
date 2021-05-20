@@ -44,18 +44,26 @@ const SubTitle = styled.h3`
 const BodyText = styled.div`
   font-size: 1.2rem;
   margin: 1.2em 0 2em 0;
-  >ul {
-    >li {
-      margin:1em 0;
-      padding-left:2em;
+  ul {
+    > li {
+      margin: 1em 0;
+      padding-left: 2em;
       border-left: 4px solid var(--orange);
-    > strong {
+      > strong {
         color: var(--orange);
-        text-transform:capitalize;
-        font-weight:500;
-        font-size:1.4rem;
-        display:block;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 1.4rem;
+        display: block;
+      }
     }
+  }
+
+  ol {
+    margin: 1em 0;
+
+    > li {
+      list-style: decimal;
     }
   }
 `;
@@ -88,7 +96,7 @@ const SideBar = styled.div`
 
 const TextSection = (props) => {
 return (
-  <TextContent pos={props.pos}>
+  <TextContent id={props.id} pos={props.pos}>
     <SectionTitle>{props.title}</SectionTitle>
     <SubTitle>{props.subtitle}</SubTitle>
     <BodyText>{props.body}</BodyText>

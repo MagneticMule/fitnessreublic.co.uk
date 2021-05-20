@@ -102,6 +102,7 @@ const GlobalStyles = createGlobalStyle`
   html {
     scrollbar-width: thick;
     scrollbar-color: var(--orange) var(--white);
+    scroll-behavior: smooth;
   }
 
   body::-webkit-scrollbar-track {
@@ -115,7 +116,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   hr {
-    border: 0;
+    border: 1px;
     height: 8px;
     background-size: 1500px;
   }

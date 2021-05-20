@@ -39,6 +39,7 @@ const Title = styled.h3`
 `;
 
 const SubTitle = styled.p`
+color: var(--deep-purple);
   font-size: 1.4rem;
   font-weight: 700;
   padding: 0;
@@ -59,9 +60,18 @@ const Info = styled.div`
     flex-basis: 50%;
     padding: 0 1em;
   }
+
+  a {
+    color: var(--deep-purple);
+    font-weight:700;
+
+    &:hover{
+      color: var(--deeper-purple);
+    }
+  }
 `;
 
-const TrainingSection = ({ title, subtitle, trainings }) => {
+const TrainingSection = ({ title, subtitle, trainings,info }) => {
   return (
     <Container>
       <Header>
@@ -72,19 +82,9 @@ const TrainingSection = ({ title, subtitle, trainings }) => {
         <TrainingCard training={training} />
       ))}
 
-      {/* <Info>
-        <div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-          quasi veniam, ad aliquam hic laudantium vitae omnis culpa officiis
-          quis aspernatur iure itaque laboriosam rem necessitatibus atque minus
-          deserunt unde.
-        </div>
-        <div>
-          We have more membership options available in our Membership Page,
-          including Joint trainings for couples and a reduced priced Student
-          Membership.
-        </div>
-      </Info> */}
+      <Info>
+        {info}
+      </Info>
     </Container>
   );
 };
