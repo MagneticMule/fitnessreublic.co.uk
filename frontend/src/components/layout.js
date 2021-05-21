@@ -1,63 +1,60 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import CookieConsent from 'react-cookie-consent';
-import '../assets/scss/main.scss'
-import Header from './Header'
-import Menu from './Menu'
-import Contact from './Contact'
-import Footer from './Footer'
+import React from 'react';
+import styled from 'styled-components';
+import { IconContext } from 'react-icons/lib';
+
+import 'normalize.css';
+import GlobalStyles from '../styles/GlobalStyles.js';
+import Typography from '../styles/Typography.js';
+import Menu from './Menu';
+import MiniNav from './MiniNav';
+import Footer from './Footer.js';
 
 import WhatsAppWidget from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
 
+import "@fontsource/lato/300.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
+import "@fontsource/lato/900.css";
+
+import "@fontsource/nunito/200.css";
+import "@fontsource/nunito/300.css";
+import "@fontsource/nunito/400.css";
+import "@fontsource/nunito/700.css";
+import "@fontsource/nunito/900.css";
+
+// require("@fontsource/lato");
+// require("@fontsource/nunito");
+
 class Layout extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isMenuVisible: false,
-            loading: 'is-loading'
-        }
-        this.handleToggleMenu = this.handleToggleMenu.bind(this)
-    }
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
 
-    componentDidMount () {
-        this.timeoutId = setTimeout(() => {
-            this.setState({loading: ''});
-        }, 100);
-    }
-
-    componentWillUnmount () {
-        if (this.timeoutId) {
-            clearTimeout(this.timeoutId);
-        }
-    }
-
-    handleToggleMenu() {
-        this.setState({
-            isMenuVisible: !this.state.isMenuVisible
-        })
-    }
-
-    render() {
-        const { children } = this.props
-
-        return (
-            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
-                <div id="wrapper">
-                    <Header onToggleMenu={this.handleToggleMenu} />
-                    {children}
-                    <Contact />
-                    <Footer />
-                </div>
-                    <Menu onToggleMenu={this.handleToggleMenu} />
-                        <WhatsAppWidget
-                            companyName='Fitness Republic Ashby'
-                            phoneNumber='+441530413330' textReplyTime='We Typically get back to you within the hour'
-                            message="Hi there! Ready to increase your health and fitness in 2021? Let's chat about it"
-                        />
-            </div>
-        )
-    }
+  render() {
+    const { children } = this.props;
+    return (
+      <>
+        <IconContext.Provider
+          value={{ style: { verticalAlign: "-2px" } }}
+        >
+          <GlobalStyles />
+          <Typography />
+          <MiniNav />
+          <Menu />
+          {children}
+          <Footer />
+          <WhatsAppWidget
+            companyName="Fitness Republic Ashby"
+            phoneNumber="+441530413330"
+            textReplyTime="Typically replies within an hour or two"
+            message="Hi there! Ready to increase your health and fitness in 2021? Let's chat about it"
+          />
+        </IconContext.Provider>
+      </>
+    );
+  }
 }
 
-export default Layout
+export default Layout;

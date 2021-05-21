@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import Helmet from 'react-helmet';
 
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 
 import WorkoutHeader from '../../components/workout/WorkoutHeader.js';
 import SetList from '../../components/workout/SetList.js';

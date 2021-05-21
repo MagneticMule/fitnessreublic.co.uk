@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 import Helmet from 'react-helmet';
 
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 
 const BlockContent = require('@sanity/block-content-to-react');
 const client = require('@sanity/client')({
