@@ -6,7 +6,7 @@ html {font-size: 100%;} /*16px*/
 body {
   background: white;
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.75;
   color: #323232;
 }

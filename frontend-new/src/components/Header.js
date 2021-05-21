@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import DualSection from '../styles/GridStyles';
 import Button from './widgets/Button';
 import { device } from "../styles/DeviceSizes";
-
 import Container from "../styles/ContainerStyle";
 
 
