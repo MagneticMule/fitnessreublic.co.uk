@@ -23,12 +23,12 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: ["Lato:100,300,400,700,900", "Nunito:100,200,300,400,700,900"]
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: ["Lato:100,300,400,700,900", "Nunito:100,200,300,400,700,900"]
+    //   }
+    // },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

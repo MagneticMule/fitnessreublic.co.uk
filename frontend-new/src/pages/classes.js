@@ -250,7 +250,7 @@ const Index = ({ data }) => {
             body={
               <>
                 To join in simply click the Zoom options when booking, click and
-                join the class from the comfort of your own home! You can book
+                join the class from the comfort of your own home (or anywhere else for that matter). You can book
                 your class right here or through our members app up to{" "}
                 <strong>seven days in advance</strong>.
               </>
@@ -270,7 +270,7 @@ const Index = ({ data }) => {
                     <a
                       href="https://apps.apple.com/gb/app/zoom-cloud-meetings/id546505307"
                       target="_blank"
-                      aria-label="Takes you to the Zoom app on the Google Play Store; opens in a new window"
+                      aria-label="Takes you to the Zoom app on the Apple App Store; opens in a new window"
                     >
                       [download from the App Store]
                     </a>

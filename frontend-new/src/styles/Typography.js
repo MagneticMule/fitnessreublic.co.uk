@@ -8,7 +8,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 1.75;
-  color: #000000;
+  color: #323232;
 }
 
 p {margin-bottom: 1rem;}

@@ -69,9 +69,7 @@ const Title = styled.h1`
   -webkit-background-clip: text;
   background-clip: text;
   -moz-text-fill-color: transparent;
-
   text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25) inset;
-
   filter: drop-shadow(1px 1px 0 rgba(255, 255, 255, 0.2));
   font-size: 4.209rem;
   color: #770264;

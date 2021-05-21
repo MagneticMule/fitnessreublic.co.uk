@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons/lib';
 
 import 'normalize.css';
+import "@fontsource/lato";
+import "@fontsource/nunito";
 
 import GlobalStyles from '../styles/GlobalStyles.js';
 import Typography from '../styles/Typography.js';
 import Menu from './Menu';
 import MiniNav from './MiniNav';
 import Footer from './Footer.js';
+
 
 import WhatsAppWidget from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
