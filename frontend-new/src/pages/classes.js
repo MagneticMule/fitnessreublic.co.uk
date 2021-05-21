@@ -14,8 +14,6 @@ import Calender from "../components/ClubrightCalender";
 import {
   FaApple,
   FaWindows,
-  FaStar,
-  FaMapMarkerAlt
 } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 
@@ -86,7 +84,10 @@ const Index = ({ data }) => {
             pic={data.timetable.childImageSharp.fluid}
             alt="Our fitness class timetable."
             blurb={
-              "This weeks timetable. You can save it off, print it and stick it on the front of your fridge"
+              <>
+                This weeks timetable. Download it, print it and
+                stick it on the front of your fridge
+              </>
             }
           />
 
@@ -250,8 +251,9 @@ const Index = ({ data }) => {
             body={
               <>
                 To join in simply click the Zoom options when booking, click and
-                join the class from the comfort of your own home (or anywhere else for that matter). You can book
-                your class right here or through our members app up to{" "}
+                join the class from the comfort of your own home (or anywhere
+                else for that matter). You can book your class right here or
+                through our members app up to{" "}
                 <strong>seven days in advance</strong>.
               </>
             }
@@ -296,7 +298,7 @@ const Index = ({ data }) => {
                     </a>
                   </li>
                   <li>
-                    <FaApple/> Apple Mac{" "}
+                    <FaApple /> Apple Mac{" "}
                     <a
                       href="https://zoom.us/download"
                       target="_blank"
