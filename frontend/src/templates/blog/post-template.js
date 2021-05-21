@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 import Helmet from 'react-helmet';
 
-import Layout from '../../components/Layout';
+// import Layout from '../../../src/components/Layout';
 
 const BlockContent = require('@sanity/block-content-to-react');
 const client = require('@sanity/client')({
@@ -43,7 +43,7 @@ const BlockRenderer = props => {
 const BlogPost = ({ data }) => {
   const { post } = data;
   return(
-    <Layout>
+    <div>
       <Helmet>
           <title>{post.title}</title>
           <meta name="description" content={post.title} />
@@ -59,7 +59,7 @@ const BlogPost = ({ data }) => {
           </div>
         </section>
       </div>
-    </Layout>
+    </div>
   );
 }
 
